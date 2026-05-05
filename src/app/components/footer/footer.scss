@@ -13,6 +13,16 @@ footer {
   margin-bottom: 2rem;
 }
 
+.logo {
+  margin-bottom: 1rem;
+}
+
+.logo-subtitle {
+  max-width: 65ch;
+  color: hsl(var(--secondary-text));
+  margin-bottom: 1rem;
+}
+
 .facebook-link {
   color: hsl(var(--primary));
   display: inline-flex;

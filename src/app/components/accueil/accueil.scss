@@ -1,0 +1,87 @@
+.hero-header-content {
+  min-height: 100dvh;
+  width: 100%;
+  background-image: url("/images/accueil/hero-header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  -webkit-backdrop-filter: brightness(60%);
+  backdrop-filter: brightness(60%);
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.hero-header-title {
+  font-family: "Merriweather", serif;
+  color: hsl(var(--tertiary-text));
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+  text-wrap: pretty;
+}
+
+.hero-header-subtitle {
+  font-family: "DMSans", sans-serif;
+  max-width: 42rem;
+  color: #ffffffe6;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: 0;
+  margin: 0 auto 2rem auto;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.about-button {
+  gap: 0.5rem;
+  background: #ffffff1a;
+  border: 1px solid #ffffff4d;
+  backdrop-filter: blur(4px);
+}
+
+.about-button:hover {
+  background-color: #fff3;
+}
+
+@media (min-width: 640px) {
+  .hero-header-text {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-header-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .hero-header-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-header-text {
+      padding: 0 2rem;
+    }
+
+  .hero-header-title {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+

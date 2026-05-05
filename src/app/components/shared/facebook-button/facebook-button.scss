@@ -1,0 +1,8 @@
+button {
+  gap: 0.5rem;
+  background: hsl(var(--primary));
+}
+
+button:hover {
+  background: hsl(var(--primary) / 0.9);
+}
