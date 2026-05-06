@@ -38,16 +38,44 @@ body {
   overflow-x: clip;
 
   --primary: 120 25% 45%;
+  --secondary: 40 20% 97%;
   --tertiary: 40 15% 92%;
   --primary-text: 0 0% 15%;
   --secondary-text: 0 0% 40%;
   --tertiary-text: 0 0% 100%;
+  --card: 40 25% 99%;
   --border: 40 12% 85%;
   --radius: 0.75rem;
 }
 
-h1, p {
+h1, h2, p {
   margin: 0;
+  text-wrap: pretty;
+}
+
+p {
+  color: hsl(var(--secondary-text));
+  line-height: 1.625;
+}
+
+h1, h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  color: hsl(var(--tertiary-text));
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  color: hsl(var(--primary-text));
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -98,4 +126,18 @@ button {
 .text-sm {
   font-size: 0.8rem;
   line-height: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
