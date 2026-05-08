@@ -4,9 +4,6 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: hsl(40 20% 97% / .6);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid hsl(var(--border));
 }
 
 nav {
@@ -15,7 +12,9 @@ nav {
   align-items: center;
   height: 4rem;
   padding: 0 1rem;
-  background-color: hsl(0 0% 100%);
+  background: hsl(40 20% 97% / .6);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid hsl(var(--border));
 }
 
 .navbar-nav {
@@ -26,25 +25,24 @@ nav {
 .nav-item {
   display: flex;
   margin: 0;
+  font-size: 0.7rem;
   font-weight: 600;
   list-style-type: none;
 }
 
 .nav-link {
-  padding: 0.5rem 1rem;
-  color: hsl(var(--primary-text));
+  padding: 0.5rem;
+  color: hsl(var(--secondary-text));
   border-radius: var(--radius);
 }
 
 .nav-link:hover {
-  background-color: hsl(var(--tertiary));
-  border-radius: var(--radius);
   color: hsl(var(--primary));
 }
 
 .route-active {
   color: hsl(var(--primary));
-  background-color: hsl(var(--primary) / .1);
+  background-color: hsl(var(--primary) / 0.1);
   border-radius: var(--radius);
 }
 

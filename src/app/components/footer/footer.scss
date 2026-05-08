@@ -1,8 +1,8 @@
 footer {
   padding: 1rem 2rem;
-  background-color: hsl(var(--tertiary));
+  background-color: hsl(39 50% 90%);
   border-top: 1px solid hsl(var(--border));
-  color: hsl(var(--secondary-text));
+  color: hsl(var(--primary-text));
 }
 
 .container {
@@ -19,7 +19,7 @@ footer {
 
 .logo-subtitle {
   max-width: 65ch;
-  color: hsl(var(--secondary-text));
+  color: hsl(var(--primary-text));
   margin-bottom: 1rem;
 }
 
@@ -71,7 +71,7 @@ li > svg:first-child {
 }
 
 a {
-  color: hsl(var(--secondary-text));
+  color: hsl(var(--primary-text));
 }
 
 a:hover {

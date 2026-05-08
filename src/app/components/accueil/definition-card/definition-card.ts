@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Card } from './definition-card.interface';
 
 @Component({
   selector: 'app-definition-card',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './definition-card.scss',
 })
 export class DefinitionCard {
-
+  @Input() card!: Card;
 }

@@ -1,24 +1,33 @@
-<section class="hero-header-section">
-  <div class="hero-header-text">
+<section class="banner-section">
+  <div class="banner-content">
     <h1>Connecter les cœurs grâce à l'équithérapie</h1>
-    <p class="hero-header-subtitle">Découvrez le pouvoir de guérison de la nature et des chevaux à Ô Cheval Radiant, où nous tissons des liens profonds entre l'humain et le vivant.</p>
+    <p class="banner-subtitle">Découvrez le pouvoir de guérison de la nature et des chevaux à Ô Cheval Radiant, où nous tissons des liens profonds entre l'humain et le vivant.</p>
     <div class="buttons-container">
       <app-facebook-button></app-facebook-button>
-      <button class="about-button">En savoir plus<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+      <a class="button about-button text-sm">Nous soutenir<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
     </div>
   </div>
 </section>
 <section class="definition-section">
-  <div class="definition-content">
-    <div class="definition-text">
+  <div class="text-section-content">
+    <div class="text-content">
       <h2>Qu'est-ce que l'équithérapie ?</h2>
       <p>L'équithérapie est un soin psychique médiatisé via l’animal Cheval afin de soutenir et développer les dimensions psycho-corporelles. Peu importe les étapes à franchir, ce cadre thérapeutique offre une prise en charge multidimensionnelle, permettant d’accompagner les personnes sur les différents plans de leur vie afin de favoriser leurs épanouissements.</p>
       <p>Chaque séance est adaptée en fonction des demandes, des besoins et des possibilités de chacun. L’équithérapeute créé du lien avec ce qui nous lie au Vivant pour que chaque être humain appréhende aux mieux la vie qui lui est offerte.</p>
     </div>
     <div class="definition-cards-container">
-      <app-definition-card></app-definition-card>
-      <app-definition-card></app-definition-card>
-      <app-definition-card></app-definition-card>
+      @for (card of definitionCards.card; track card.id) {
+        <app-definition-card [card]="card"></app-definition-card>
+      }
+    </div>
+  </div>
+</section>
+<section class="contact-section">
+  <div class="text-section-content">
+    <div class="text-content">
+      <h2>Contactez-nous</h2>
+      <p>Suivez notre aventure sur Facebook pour rester informé de nos programmes, de nos événements coopératifs et des moments merveilleux que nous partageons avec nos chevaux.</p>
+      <app-facebook-button></app-facebook-button>
     </div>
   </div>
 </section>

@@ -1,31 +1,10 @@
-.hero-header-section {
+.banner-section {
   min-height: 100dvh;
-  width: 100%;
   background-image: url("/images/accueil/hero-header.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
-.hero-header-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.banner-content {
   min-height: 100dvh;
-  -webkit-backdrop-filter: brightness(60%);
-  backdrop-filter: brightness(60%);
-  padding: 0 1rem;
-  text-align: center;
-}
-
-.hero-header-subtitle {
-  font-family: "DMSans", sans-serif;
-  max-width: 42rem;
-  color: #ffffffe6;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  letter-spacing: 0;
-  margin: 0 auto 2rem auto;
 }
 
 .buttons-container {
@@ -48,20 +27,22 @@
 .definition-section {
   background: hsl(var(--secondary));
   padding: 5rem 0;
+  & .text-content {
+    margin-bottom: 4rem;
+  }
 }
 
-.definition-content {
+.text-section-content {
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-.definition-text {
-  margin-bottom: 4rem;
+.text-content {
   text-align: center;
   & > p {
     max-width: 48rem;
     margin: 0 auto 1.5rem auto;
-    font-size: 1.125rem;
+    font-size: 1.05rem;
   }
 }
 
@@ -71,39 +52,37 @@
   gap: 2rem;
 }
 
-@media (min-width: 640px) {
-  .hero-header-text {
-    padding: 0 1.5rem;
-  }
+.contact-section {
+  background: hsl(var(--tertiary));
+  padding: 5rem 0;
+}
 
-  .definition-content {
+@media (min-width: 640px) {
+  .text-section-content {
     padding: 0 1.5rem;
   }
 }
 
 @media (min-width: 768px) {
-  .hero-header-title {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .hero-header-subtitle {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .definition-cards-container {
     grid-template-columns: repeat(3, minmax(0px, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
-  .hero-header-text {
-    padding: 0 2rem;
+  h1 {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
-  .definition-content {
+  .text-section-content {
     padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .text-section-content {
+    max-width: 1400px;
   }
 }
 

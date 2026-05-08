@@ -1,0 +1,22 @@
+{
+  "card": [
+    {
+      "id": 1,
+      "nom": "Guérison émotionnelle",
+      "info": "Développez la confiance et la conscience émotionnelle grâce à des interactions douces avec les chevaux dans un cadre bienveillant.",
+      "icon_url": "/icons/heart.png"
+    },
+    {
+      "id": 2,
+      "nom": "Lien social",
+      "info": "Renforcez vos capacités de communication et tissez des relations sincères au sein de notre communauté accueillante.",
+      "icon_url": "/icons/users.png"
+    },
+    {
+      "id": 3,
+      "nom": "Immersion en nature",
+      "info": "Reconnectez-vous au monde naturel et profitez de la présence apaisante de notre environnement rural.",
+      "icon_url": "/icons/leaf.png"
+    }
+  ]
+}
