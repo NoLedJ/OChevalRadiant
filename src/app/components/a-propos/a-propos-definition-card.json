@@ -1,0 +1,40 @@
+{
+  "card": [
+    {
+      "id": 1,
+      "nom": "Favoriser l'estime de soi",
+      "info": "La relation avec le cheval offre un espace sécurisant où chacun peut expérimenter la réussite, développer sa confiance et renforcer une image de soi plus positive et stable.",
+      "icon_url": "/icons/self.png"
+    },
+    {
+      "id": 2,
+      "nom": "Développer les capacités motrices, cognitives et sensorielles",
+      "info": "Les interactions avec le cheval stimulent la motricité globale, l’attention, la coordination et la perception sensorielle, grâce à un environnement vivant, riche et engageant.",
+      "icon_url": "/icons/brain.png"
+    },
+    {
+      "id": 3,
+      "nom": "Favoriser le bien-être et la détente",
+      "info": "Le contact avec le cheval et le cadre naturel apaisant permettent de relâcher les tensions, de diminuer le stress et de retrouver un état de calme profond.",
+      "icon_url": "/icons/flower.png"
+    },
+    {
+      "id": 4,
+      "nom": "Améliorer la communication verbale et non-verbale",
+      "info": "Le cheval, très sensible aux signaux corporels, encourage une communication plus claire, authentique et consciente, tout en renforçant l’expression verbale et la compréhension mutuelle.",
+      "icon_url": "/icons/handshake.png"
+    },
+    {
+      "id": 5,
+      "nom": "Favoriser une réhabilitation psycho-sociale",
+      "info": "L’équithérapie soutient la reconstruction des liens sociaux, la reprise de repères relationnels et la capacité à interagir sereinement avec les autres, dans un cadre bienveillant et structurant.",
+      "icon_url": "/icons/together.png"
+    },
+    {
+      "id": 6,
+      "nom": "Renforcer le lien à soi et à l’environnement",
+      "info": "La présence du cheval et le cadre naturel invitent à ralentir, à se recentrer et à développer une conscience plus fine de soi et de ce qui nous entoure. Cette expérience favorise l’ancrage, l’équilibre intérieur et une meilleure connexion au vivant.",
+      "icon_url": "/icons/nature.png"
+    }
+  ]
+}

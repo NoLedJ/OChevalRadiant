@@ -1,0 +1,18 @@
+{
+  "card": [
+    {
+      "id": 1,
+      "nom": "Anatole Lenne",
+      "role": "Président & Fondateur",
+      "info": "Anatole Lenne le fondateur de l’association Ô Cheval Radiant. Elle a été créée le 17/10/2021 pendant la formation d’équithérapie à l’Institut de formation d’équithérapie (Ifeq). Cette association loi 1901 est à but non-lucratif est l’objet est de promouvoir ce métier non reconnu par l’État.",
+      "photo_url": "/images/equipe/profil_director.jpg"
+    },
+    {
+      "id": 2,
+      "nom": "Guenièvre Lenne",
+      "role": "Secrétaire",
+      "info": "Portée par les valeurs du vivre ensemble et de l’intelligence partagée, Guenièvre est secrétaire de l’Association « Ô cheval Radiant » ainsi que de l’association « NIOFAR ». Définie comme une force tranquille persévérante et dynamique, Guenièvre investit le développement de projet avec la volonté de réfléchir collectivement. Éducatrice spécialisée de profession, elle sait se monter forte de proposition, pragmatique et organisée.",
+      "photo_url": "/images/equipe/profil_secretary.jpg"
+    }
+  ]
+}

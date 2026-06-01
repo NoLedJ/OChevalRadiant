@@ -1,8 +1,8 @@
 footer {
   padding: 1rem 2rem;
-  background-color: hsl(39 50% 90%);
+  background-color: hsl(29 31% 42%);
   border-top: 1px solid hsl(var(--border));
-  color: hsl(var(--primary-text));
+  color: hsl(var(--tertiary));
 }
 
 .container {
@@ -17,14 +17,18 @@ footer {
   margin-bottom: 1rem;
 }
 
+.logo-font {
+  color: hsl(var(--tertiary));
+}
+
 .logo-subtitle {
   max-width: 65ch;
-  color: hsl(var(--primary-text));
+  color: hsl(var(--tertiary));
   margin-bottom: 1rem;
 }
 
 .facebook-link {
-  color: hsl(var(--primary));
+  color: hsl(var(--primary-variant));
   display: inline-flex;
   gap: 0.5rem;
   align-items: center;
@@ -62,8 +66,7 @@ li {
 
 li > svg {
   width: 1rem;
-  height: auto;
-  color: hsl(var(--primary));
+  color: hsl(var(--primary-variant));
 }
 
 li > svg:first-child {
@@ -71,11 +74,11 @@ li > svg:first-child {
 }
 
 a {
-  color: hsl(var(--primary-text));
+  color: hsl(var(--tertiary));
 }
 
 a:hover {
-  color: hsl(var(--primary));
+  color: hsl(var(--primary-variant));
 }
 
 .contract-links-container {
@@ -84,6 +87,9 @@ a:hover {
   align-items: center;
   padding-top: 2rem;
   border-top: 1px solid hsl(var(--border));
+  & > p {
+    color: hsl(var(--tertiary));
+  }
 }
 
 .links {
@@ -92,7 +98,7 @@ a:hover {
 }
 
 .borisclaude-link {
-  color: hsl(var(--primary));
+  color: hsl(var(--primary-variant));
   text-decoration: none;
   font-weight: 600;
 }

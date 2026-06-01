@@ -1,0 +1,46 @@
+h1 {
+  color: hsl(var(--primary-text));
+}
+
+.title-subtitle {
+  color: hsl(var(--secondary-text));
+}
+
+.presentation-cards-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.quote {
+  position: relative;
+  z-index: 10;
+  font-family: Georgia, serif;
+  font-weight: 600;
+  font-style: italic;
+  color: hsl(var(--primary-text));
+  font-size: 5rem;
+  opacity: 0.4;
+}
+
+.quote-first {
+  top: 7rem;
+  right: 3rem;
+}
+
+.quote-last {
+  left: 41rem;
+}
+
+@media (min-width: 768px) {
+  .presentation-cards-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .presentation-cards-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

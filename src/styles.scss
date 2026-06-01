@@ -38,14 +38,15 @@ body {
   overflow-x: clip;
 
   --primary: 120 25% 45%;
+  --primary-variant: 106 23% 70%;
   --secondary: 40 37% 97%;
-  --tertiary: 0 0 100%;
+  --tertiary: 39 50% 90%;
   --primary-text: 29 31% 42%;
   --secondary-text: 0 0% 40%;
   --tertiary-text: 0 0% 100%;
-  --button: 106 23% 70%;
   --card: 40 25% 99%;
   --border: 40 12% 85%;
+  --shadow: 0 0% 78%;
   --radius: 0.75rem;
 }
 
@@ -56,6 +57,7 @@ h1, h2, h3, p {
 
 p {
   font-family: "DMSans", sans-serif;
+  font-size: 1rem;
   color: hsl(var(--secondary-text));
   line-height: 1.625;
   letter-spacing: 0;
@@ -86,9 +88,12 @@ h3 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin-bottom: 0.75rem;
+  text-align: left;
 }
 
 a {
+  color: hsl(var(--primary));
+  font-weight: 500;
   text-decoration: none;
   cursor: pointer;
   animation-duration: 0.2s;
@@ -135,6 +140,18 @@ a {
   border-radius: 50%;
 }
 
+section {
+  &:not(.banner-section) {
+    padding: 5rem 0;
+  }
+  &:nth-child(odd):not(.banner-section) {
+    background: hsl(var(--tertiary));
+  }
+  &:nth-child(even) {
+    background: hsl(var(--secondary));
+  }
+}
+
 .banner-section {
   background-size: cover;
   background-position: center;
@@ -165,13 +182,50 @@ a {
   margin: 0 auto 2rem auto;
 }
 
+.text-section-content {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-content {
+  margin-bottom: 4rem;
+  text-align: center;
+  & > p {
+    max-width: 48rem;
+    margin: 0 auto 1.5rem auto;
+  }
+}
+
+.storytelling-text-content {
+  text-align: left;
+  max-width: 56rem;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  & > p {
+    max-width: 65ch;
+    line-height: 1.7;
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+}
+
 .text-sm {
-  font-size: 0.8rem;
-  line-height: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
 }
 
 @media (min-width: 640px) {
   .banner-content {
+    padding: 0 1.5rem;
+  }
+
+  .text-section-content {
+    padding: 0 1.5rem;
+  }
+
+  .storytelling-text-content {
     padding: 0 1.5rem;
   }
 }
@@ -183,7 +237,7 @@ a {
   }
 
   h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     line-height: 2.5rem;
   }
 
@@ -196,5 +250,19 @@ a {
 @media (min-width: 1024px) {
   .banner-content {
     padding: 0 2rem;
+  }
+
+  .text-section-content {
+    padding: 0 2rem;
+  }
+
+  .storytelling-text-content {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .text-section-content {
+    max-width: 1400px;
   }
 }

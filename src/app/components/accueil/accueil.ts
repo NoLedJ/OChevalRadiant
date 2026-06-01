@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { FacebookButton } from "../shared/facebook-button/facebook-button";
-import { DefinitionCard } from './definition-card/definition-card';
-import { DefinitionCardInterface } from './definition-card/definition-card.interface';
-import import_definition_card_json from './definition-card/definition-card.json';
+import { DefinitionCard } from '../shared/definition-card/definition-card';
+import { DefinitionCardArrayInterface } from '../shared/definition-card/definition-card.interface';
+import import_definition_card_json from './accueil-definition-card.json';
 
 @Component({
   selector: 'app-accueil',
@@ -12,6 +12,6 @@ import import_definition_card_json from './definition-card/definition-card.json'
 })
 export class Accueil {
 
-  definitionCards: DefinitionCardInterface = import_definition_card_json;
+  definitionCards: DefinitionCardArrayInterface = import_definition_card_json;
 
 }

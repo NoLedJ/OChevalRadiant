@@ -24,43 +24,10 @@
   background-color: #fff3;
 }
 
-.definition-section {
-  background: hsl(var(--secondary));
-  padding: 5rem 0;
-  & .text-content {
-    margin-bottom: 4rem;
-  }
-}
-
-.text-section-content {
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.text-content {
-  text-align: center;
-  & > p {
-    max-width: 48rem;
-    margin: 0 auto 1.5rem auto;
-    font-size: 1.05rem;
-  }
-}
-
 .definition-cards-container {
   display: grid;
   grid-template-columns: repeat(1, minmax(0px, 1fr));
   gap: 2rem;
-}
-
-.contact-section {
-  background: hsl(var(--tertiary));
-  padding: 5rem 0;
-}
-
-@media (min-width: 640px) {
-  .text-section-content {
-    padding: 0 1.5rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -73,16 +40,6 @@
   h1 {
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .text-section-content {
-    padding: 0 2rem;
-  }
-}
-
-@media (min-width: 1400px) {
-  .text-section-content {
-    max-width: 1400px;
   }
 }
 

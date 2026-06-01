@@ -4,3 +4,16 @@
     <p class="banner-subtitle">Des programmes professionnels d'équithérapie conçus pour accompagner votre cheminement</p>
   </div>
 </section>
+<section>
+  <div class="text-section-content">
+    <div class="text-content">
+      <h2>Ce que nous proposons</h2>
+      <p>À Ô Cheval Radiant, nous offrons une gamme de services thérapeutiques qui exploitent le pouvoir de guérison des chevaux. Nos programmes répondent à divers besoins, du cheminement individuel au renforcement communautaire.</p>
+    </div>
+    <div class="definition-cards-container">
+      @for (card of definitionCards.card; track card.id) {
+        <app-definition-card [card]="card"></app-definition-card>
+      }
+    </div>
+  </div>
+</section>
