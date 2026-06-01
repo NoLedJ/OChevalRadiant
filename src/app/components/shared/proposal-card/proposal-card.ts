@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ProposalCardInterface } from './proposal-card.interface';
 
 @Component({
   selector: 'app-proposal-card',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './proposal-card.scss',
 })
 export class ProposalCard {
+
+  @Input() card!: ProposalCardInterface;
 
 }

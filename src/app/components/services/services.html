@@ -10,10 +10,43 @@
       <h2>Ce que nous proposons</h2>
       <p>À Ô Cheval Radiant, nous offrons une gamme de services thérapeutiques qui exploitent le pouvoir de guérison des chevaux. Nos programmes répondent à divers besoins, du cheminement individuel au renforcement communautaire.</p>
     </div>
-    <div class="definition-cards-container">
-      @for (card of definitionCards.card; track card.id) {
-        <app-definition-card [card]="card"></app-definition-card>
+    <div class="proposal-cards-container">
+      @for (card of proposalCards.card; track card.id) {
+        <app-proposal-card [card]="card"></app-proposal-card>
       }
+    </div>
+  </div>
+</section>
+<section>
+  <div class="text-section-content">
+    <div class="storytelling-text-content">
+      <h2>Déroulement des prises en charge</h2>
+      <p>Lors d’un premier entretien, nous définissons ensemble les besoins spécifiques. Ces besoins deviennent ensuite nos axes de travail et constituent les objectifs des séances d’équithérapie.</p>
+      <p>Nous pouvons ainsi être amenés à travailler avec le cheval dans toutes sortes de contextes et d’activités autour du cheval : découvrir le cheval ou le poney, son matériel et son environnement, le toiletter, communiquer avec le cheval en liberté, jouer ou interagir avec un cheval tenu en longe, observer les chevaux au pré, se relaxer allongé sur le dos du cheval, réaliser des parcours, imaginer et jouer une histoire, nourrir et soigner les chevaux, atteler…</p>
+      <p>Chaque situation est unique et nous composons pour que l’activité proposée soit adaptée, évaluable en fonction des objectifs fixés.</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="text-section-content">
+    <div class="text-content">
+      <h2>Nos installations</h2>
+      <p>Nos installations à Maroilles offrent un cadre naturel et paisible pour tous nos programmes.
+      <br />Nous entretenons des écuries dans la ferme familiale, des espaces de pratique sécurisés et des lieux confortables pour les activités de groupe et la réflexion.</p>
+    </div>
+    <div class="location-photos-container">
+      <img src="/images/services/location01.jpg" alt="La ferme d'Ô Cheval Radiant" class="location">
+      <img src="/images/services/location02.jpg" alt="La ferme d'Ô Cheval Radiant" class="location">
+      <img src="/images/services/location03.jpg" alt="La ferme d'Ô Cheval Radiant" class="location">
+    </div>
+  </div>
+</section>
+<section>
+  <div class="text-section-content">
+    <div class="text-content">
+      <h2>Prêt à commencer ?</h2>
+      <p>Contactez-nous pour en savoir plus sur nos services, planifier une visite ou réserver votre première séance. Nous avons hâte de vous accueillir à Ô Cheval Radiant.</p>
+      <p>Vous souhaitez devenir bénévole ? Contactez-nous via <a [routerLink]="['/contact']">notre page de contact</a> ou envoyez-nous un message sur <a href="https://www.facebook.com/OChevalRadiant" target="_blank" rel="noopener noreferrer">Facebook</a>.</p>
     </div>
   </div>
 </section>

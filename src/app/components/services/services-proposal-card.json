@@ -1,0 +1,30 @@
+{
+  "card": [
+    {
+      "id": 1,
+      "nom": "Accompagnements individuels",
+      "info1": "Des séances personnalisées, adaptées au rythme et aux besoins de chacun, pour accompagner un changement face à différentes problématiques.",
+      "info2": "Elles permettent d’explorer ses émotions, de mieux comprendre ses réactions et d’avancer vers un mieux‑être durable."
+    },
+    {
+      "id": 2,
+      "nom": "Accompagnements collectifs (médico‑social)",
+      "info1": "Séances en petits groupes (2 à 8 personnes), destinées aux publics accompagnés par des institutions médico‑sociales.",
+      "info2": "Elles favorisent la coopération, l’expression émotionnelle, la confiance et la communication, dans un cadre sécurisant et structuré."
+    },
+    {
+      "id": 3,
+      "nom": "Accompagnements collectifs (privé)",
+      "info1": "Séances de 2 à 20 personnes, adaptées aux couples, familles ou groupes privés.",
+      "info2": "Elles permettent de travailler sur des thématiques telles que : l'estime de soi, le deuil, le passage à la retraite, l'addiction, le stress, l'irritabilité, la communication familiale…",
+      "info3": "Un espace pour comprendre, évoluer et se libérer de certains blocages."
+    },
+    {
+      "id": 4,
+      "nom": "Accompagnements collectifs (professionnel)",
+      "info1": "Séances de 2 à 20 personnes destinées aux équipes, entreprises et organisations.",
+      "info2": "Elles permettent de travailler sur la communication, le leadership, la cohésion, la coopération, le dynamisme, la gestion du stress…",
+      "info3": "Ce modèle systémique encourage la créativité, l’adaptation et l’intelligence collective. Il peut également être utilisé pour la supervision ou l’analyse de pratiques professionnelles."
+    }
+  ]
+}
