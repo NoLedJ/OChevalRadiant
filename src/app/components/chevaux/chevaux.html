@@ -1,6 +1,6 @@
 <section>
   <div class="text-section-content">
-    <div class="text-content">
+    <div class="title-text-content text-content">
       <h1>Nos chevaux, partenaires de soin</h1>
       <p class="title-subtitle">Les chevaux qui nous accompagnent jouent un rôle essentiel dans chaque séance.
       <br />Chacun possède sa personnalité, sa sensibilité et sa manière unique d’entrer en relation avec les participants.
@@ -28,11 +28,5 @@
   </div>
 </section>
 <section>
-  <div class="text-section-content">
-    <div class="text-content">
-      <h2>Rencontrer nos chevaux</h2>
-      <p>Passer du temps auprès de nos chevaux, c’est découvrir leur sensibilité, leur douceur et leur manière unique d’entrer en relation avec chacun.</p>
-      <p>Vous souhaitez en savoir plus, organiser une visite ou simplement prendre un premier contact ? Contactez-nous via <a [routerLink]="['/contact']">notre page de contact</a> ou envoyez-nous un message sur <a href="https://www.facebook.com/OChevalRadiant" target="_blank" rel="noopener noreferrer">Facebook</a>.</p>
-    </div>
-  </div>
+  <app-cta-section [cta_title]="cta_title" [cta_text]="cta_text"></app-cta-section>
 </section>

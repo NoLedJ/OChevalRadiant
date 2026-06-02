@@ -1,7 +1,7 @@
 <section class="banner-section">
   <div class="banner-content">
     <h1>À propos d'Ô Cheval Radiant</h1>
-    <p class="banner-subtitle">Créer des ponts entre les humains, la nature et le vivant</p>
+    <p class="banner-subtitle">Créer des ponts entre les humains, la nature et le vivant.</p>
   </div>
 </section>
 <section>
@@ -24,21 +24,6 @@
   </div>
 </section>
 <section>
-  <div class="text-section-content">
-    <div class="text-content">
-      <h2>Les bienfaits de l'équithérapie</h2>
-      <p>
-        Le contact avec les chevaux offre des avantages thérapeutiques uniques pour un bien-être global.
-      </p>
-      <div class="definition-cards-container">
-        @for (card of definitionCards.card; track card.id) {
-          <app-definition-card [card]="card"></app-definition-card>
-        }
-      </div>
-    </div>
-  </div>
-</section>
-<section>
   <div class="storytelling-text-content">
     <h2>Notre vision</h2>
     <p>
@@ -48,5 +33,19 @@
     <p>
       Nous considérons notre rôle comme celui de facilitateurs de transformation—aidant chacun à se reconnecter à lui-même, aux autres et à la terre. Chaque interaction avec nos chevaux est une opportunité de croissance, de guérison et de découverte.
     </p>
+  </div>
+</section>
+<section>
+  <div class="text-section-content">
+    <div class="text-content">
+      <h2>Nos installations</h2>
+      <p>Nos installations à Maroilles offrent un cadre naturel et paisible pour tous nos programmes.
+      <br />Nous entretenons des écuries dans la ferme familiale, des espaces de pratique sécurisés et des lieux confortables pour les activités de groupe et la réflexion.</p>
+    </div>
+    <div class="location-photos-container">
+      <img src="/images/a-propos/location01.jpg" alt="La ferme d'Ô Cheval Radiant" class="location">
+      <img src="/images/a-propos/location02.jpg" alt="La ferme d'Ô Cheval Radiant" class="location">
+      <img src="/images/a-propos/location03.jpg" alt="La ferme d'Ô Cheval Radiant" class="location">
+    </div>
   </div>
 </section>

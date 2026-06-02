@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-facebook-button',
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './facebook-button.scss',
 })
 export class FacebookButton {
+
+  @Input() text_button: string = "Suivez notre actualité";
+  @Input() width: string = "auto";
+  @Input() display: string = "inherit";
 
 }

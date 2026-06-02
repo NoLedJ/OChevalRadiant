@@ -1,11 +1,3 @@
-h1 {
-  color: hsl(var(--primary-text));
-}
-
-.title-subtitle {
-  color: hsl(var(--secondary-text));
-}
-
 .presentation-cards-container {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));

@@ -2,16 +2,18 @@ import { Component } from '@angular/core';
 import { PresentationCardArrayInterface } from '../shared/presentation-card/presentation-card.interface';
 import import_presentation_card_json from './chevaux-presentation-card.json';
 import { PresentationCard } from '../shared/presentation-card/presentation-card';
-import { RouterLink } from '@angular/router';
+import { CTASection } from '../shared/cta-section/cta-section';
 
 @Component({
   selector: 'app-chevaux',
-  imports: [PresentationCard, RouterLink],
+  imports: [PresentationCard, CTASection],
   templateUrl: './chevaux.html',
   styleUrl: './chevaux.scss',
 })
 export class Chevaux {
 
   presentationCards: PresentationCardArrayInterface = import_presentation_card_json;
+  cta_title: string = "Rencontrer nos chevaux";
+  cta_text: string = "Passer du temps auprès de nos chevaux, c’est découvrir leur sensibilité, leur douceur et leur manière unique d’entrer en relation avec chacun.";
 
 }

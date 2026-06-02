@@ -1,7 +1,5 @@
 <div class="content">
-  <div class="icon-content">
-    <img [src]="card.icon_url" alt="Icon" class="card-icon">
-  </div>
+  <app-stylized-icon [icon_url]="card.icon_url"></app-stylized-icon>
   <h3>{{ card.nom }}</h3>
   <p>{{ card.info }}</p>
 </div>

@@ -4,7 +4,7 @@
   height: 100%;
   background-color: hsl(var(--card));
   border: 1px solid hsl(var(--border));
-  border-radius: 0.75rem;
+  border-radius: var(--radius);
   box-shadow: 1px 1px 1px hsl(var(--shadow));
 }
 

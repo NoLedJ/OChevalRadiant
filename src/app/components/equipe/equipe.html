@@ -1,8 +1,8 @@
 <section>
   <div class="text-section-content">
-    <div class="text-content">
+    <div class="title-text-content text-content">
       <h1>Rencontrez notre équipe</h1>
-      <p class="title-subtitle">Nos professionnels dévoués travaillent ensemble pour créer un environnement accueillant où la guérison et l'épanouissement personnel peuvent prospérer</p>
+      <p class="title-subtitle">Nos professionnels dévoués travaillent ensemble pour créer un environnement accueillant où la guérison et l'épanouissement personnel peuvent prospérer.</p>
     </div>
     <div class="presentation-cards-container">
       @for (card of presentationCards.card; track card.id) {
@@ -12,11 +12,5 @@
   </div>
 </section>
 <section>
-  <div class="text-section-content">
-    <div class="text-content">
-      <h2>Rejoignez notre équipe de bénévoles</h2>
-      <p>Nous sommes toujours à la recherche de personnes passionnées qui souhaitent contribuer à notre mission. Que vous ayez de l'expérience avec les chevaux ou simplement l'envie d'aider notre communauté, vous avez votre place à Ô Cheval Radiant.</p>
-      <p>Vous souhaitez devenir bénévole ? Contactez-nous via <a [routerLink]="['/contact']">notre page de contact</a> ou envoyez-nous un message sur <a href="https://www.facebook.com/OChevalRadiant" target="_blank" rel="noopener noreferrer">Facebook</a>.</p>
-    </div>
-  </div>
+  <app-cta-section [cta_title]="cta_title" [cta_text]="cta_text" [cta_question]="cta_question"></app-cta-section>
 </section>

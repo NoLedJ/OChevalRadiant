@@ -211,6 +211,16 @@ section {
   }
 }
 
+.title-text-content {
+  & > h1 {
+    color: hsl(var(--primary-text));
+  }
+}
+
+.title-subtitle {
+  color: hsl(var(--secondary-text));
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.625rem;
