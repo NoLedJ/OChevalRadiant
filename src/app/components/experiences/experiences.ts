@@ -2,21 +2,21 @@ import { Component } from '@angular/core';
 import { FsLightbox } from "fslightbox-angular";
 
 @Component({
-  selector: 'app-a-propos',
+  selector: 'app-experiences',
   imports: [FsLightbox],
-  templateUrl: './a-propos.html',
-  styleUrl: './a-propos.scss',
+  templateUrl: './experiences.html',
+  styleUrl: './experiences.scss',
 })
-export class APropos {
+export class Experiences {
 
-  nbOfPhotos = 3;
+  nbOfPhotos = 17;
   toggler: boolean = false;
   sources: string[] = [];
   slide: number = 0;
 
   constructor() {
     for (let i = 1; i <= this.nbOfPhotos; i++) {
-      this.sources.push(`/images/a-propos/location0${i}.jpg`);
+      this.sources.push(`/images/experiences/experience${i}.jpg`);
     }
   }
 

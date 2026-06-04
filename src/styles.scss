@@ -132,6 +132,7 @@ a {
   display: flex;
   align-items: center;
   gap: 1rem;
+  cursor: pointer;
 }
 
 .logo > img {
@@ -170,7 +171,7 @@ section {
   padding: 0 1rem;
   text-align: center;
   -webkit-backdrop-filter: brightness(60%);
-  backdrop-filter: brightness(60%);
+  backdrop-filter: brightness(50%);
 
 }
 

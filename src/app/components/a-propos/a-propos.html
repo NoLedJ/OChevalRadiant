@@ -43,9 +43,16 @@
       <br />Nous entretenons des écuries dans la ferme familiale, des espaces de pratique sécurisés et des lieux confortables pour les activités de groupe et la réflexion.</p>
     </div>
     <div class="location-photos-container">
-      <img src="/images/a-propos/location01.jpg" alt="La ferme d'Ô Cheval Radiant" class="location">
-      <img src="/images/a-propos/location02.jpg" alt="La ferme d'Ô Cheval Radiant" class="location">
-      <img src="/images/a-propos/location03.jpg" alt="La ferme d'Ô Cheval Radiant" class="location">
+      @for(photo of sources; track $index) {
+        <img
+          src="{{ photo }}"
+          alt="Les installations - {{ $index + 1 }}"
+          class="experience-photo"
+          (click)="openLightbox($index)"
+          (keydown.enter)="openLightbox($index)"
+        >
+      }
     </div>
+    <fslightbox	[toggler]="toggler"	[sources]="sources" [slide]="slide" />
   </div>
 </section>
