@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { DefinitionCardInterface } from './definition-card.interface';
 import { StylizedIcon } from '../stylized-icon/stylized-icon';
+import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 
 @Component({
   selector: 'app-definition-card',
-  imports: [StylizedIcon],
+  imports: [StylizedIcon, AnimateOnVisibleDirective],
   templateUrl: './definition-card.html',
   styleUrl: './definition-card.scss',
 })

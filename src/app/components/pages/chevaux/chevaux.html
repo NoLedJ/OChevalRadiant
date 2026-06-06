@@ -1,0 +1,32 @@
+<section>
+  <div class="text-section-content">
+    <div class="title-text-content text-content fade-in" animateOnVisible="visible">
+      <h1>Nos chevaux, partenaires de soin</h1>
+      <p class="title-subtitle">Les chevaux qui nous accompagnent jouent un rôle essentiel dans chaque séance.
+      <br />Chacun possède sa personnalité, sa sensibilité et sa manière unique d’entrer en relation avec les participants.
+      <br />Découvrez ceux qui rendent l’équithérapie possible au sein d'<span class="insecable">Ô Cheval Radiant</span>.</p>
+    </div>
+    <div class="presentation-cards-container">
+      @for (card of presentationCards.card; track card.id) {
+        <app-presentation-card [card]="card"></app-presentation-card>
+      }
+    </div>
+  </div>
+</section>
+<section>
+  <div class="text-section-content">
+    <div class="storytelling-text-content fade-in" animateOnVisible="visible">
+      <span class="quote quote-first">“</span>
+      <h2>Le mot du président</h2>
+      <p>Les partenaires chevaux sont pour la plupart nés sur place.
+      <br />Leur présence me fascine. Ils m’ont appris à grandir à leur présence et celle-ci m’apaise et m’inspire puissance tranquille et liberté.</p>
+      <p>La plupart sont originaires d’Amérique du Nord, de race « Paint » et nés au domicile.
+      <br />Ils sont dociles, porteurs, généreux et possèdent "un bon pied".</p>
+      <p>Ils évoluent en troupeau dans un milieu naturel afin d’être au plus près des besoins nécessaires à un bon mental au cheval.</p>
+      <span class="quote quote-last">”</span>
+    </div>
+  </div>
+</section>
+<section>
+  <app-cta-section [cta_title]="cta_title" [cta_text]="cta_text"></app-cta-section>
+</section>

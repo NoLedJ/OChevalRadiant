@@ -1,11 +1,11 @@
 <div class="text-section-content">
-  <div class="text-content">
+  <div class="text-content fade-in" animateOnVisible="visible">
     <h2>{{ cta_title }}</h2>
-    <p>{{ cta_text }}</p>
+    <p class="text-content-paragraph">{{ cta_text }}</p>
     @if (on_contact_page) {
-      <p>Nous avons hâte de vous rencontrer et de partager la beauté d'Ô Cheval Radiant avec vous.</p>
+      <p class="text-content-paragraph">Nous avons hâte de vous rencontrer et de partager la beauté d'Ô Cheval Radiant avec vous.</p>
     } @else {
-      <p>{{ cta_question }} Contactez-nous via <a [routerLink]="['/contact']">notre page de contact</a> ou envoyez-nous un message sur <a href="https://www.facebook.com/OChevalRadiant" target="_blank" rel="noopener noreferrer">Facebook</a>.</p>
+      <p class="text-content-paragraph">{{ cta_question }} Contactez-nous via <a [routerLink]="['/contact']">notre page de contact</a> ou envoyez-nous un message sur <a href="https://www.facebook.com/OChevalRadiant" target="_blank" rel="noopener noreferrer">Facebook</a>.</p>
     }
   </div>
 </div>

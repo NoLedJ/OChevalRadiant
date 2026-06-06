@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 
 @Component({
   selector: 'app-cta-section',
-  imports: [RouterLink],
+  imports: [RouterLink, AnimateOnVisibleDirective],
   templateUrl: './cta-section.html',
   styleUrl: './cta-section.scss',
 })

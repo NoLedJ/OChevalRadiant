@@ -1,0 +1,24 @@
+.definition-cards-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0px, 1fr));
+  gap: 2rem;
+}
+
+.contact-button {
+  gap: 0.5rem;
+  background: hsl(var(--primary-text) / 0.4);
+}
+
+@media (min-width: 768px) {
+  .definition-cards-container {
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+

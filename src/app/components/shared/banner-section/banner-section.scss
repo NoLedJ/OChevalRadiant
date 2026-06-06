@@ -1,0 +1,39 @@
+.banner-section {
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.banner-backdrop-filter {
+  -webkit-backdrop-filter: brightness(50%);
+  backdrop-filter: brightness(50%);
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.banner-subtitle {
+  max-width: 46rem;
+  color: #ffffffe6;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin: 0 auto 2rem auto;
+}
+
+.about-button {
+  gap: 0.5rem;
+  background: #ffffff1a;
+  border: 1px solid #ffffff4d;
+  backdrop-filter: blur(4px);
+}
+
+.about-button:hover {
+  background-color: #fff3;
+}

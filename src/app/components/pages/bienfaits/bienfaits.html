@@ -1,0 +1,61 @@
+<app-banner-section
+  [bannerTitle]="bannerTitle"
+  [bannerSubtitle]="bannerSubtitle"
+  [bannerImage]="bannerImage"></app-banner-section>
+<section>
+  <div class="storytelling-text-content fade-in" animateOnVisible="visible">
+    <h2>Notre passé nous enseigne</h2>
+    <p>
+      L’homme ne serait pas là où il est sans le cheval. Cet animal intrigue, passionne, soigne. Déjà à l’époque de la Grèce antique, les médecins prônaient la pratique du cheval comme « un remède bon pour le corps et l’esprit ».
+      <br />Encore plus loin dans le temps, dans les grottes de Lascaux, les peintures murales représentées les chevaux différemment des autres animaux. Certaines cultures comme les vikings, sacrifiaient un cheval pour mettre le défunt à l’intérieur et ainsi permettre le passage vers l’au-delà. Le cheval est lié à l’Homme et contribue à l’élever aujourd’hui et demain de plus belle, ceci grâce aux liens si particuliers qu’il éveille.
+    </p>
+  </div>
+</section>
+<section>
+  <div class="storytelling-text-content fade-in" animateOnVisible="visible">
+    <h2>Symbolique : Tout un monde<br />Un levier motivationnel car évocateur d’émotion collective</h2>
+    <p>
+      Le cheval comme un médiateur thérapeutique permet une approche tout en douceur respectant des codes de communication intuitives, innée à chaque être vivant. Cette communication est universelle et permet de s’adapter à toute situation. En favorisant la communication universelle reliant corps et esprit, la prise de conscience de soi, des autres permet de rester centrer, ancrer, lucide pour favoriser l’observation du subtil, de ce qui est juste là.
+    </p>
+    <p>
+      Elle offre un cadre thérapeutique ouvert unique. Cette approche avant tout sensoriel se vit et puisque toute évolution se fait dans le corps : passons par le corps pour élever nos plans de conscience. Cette dimension sensorielle si particulière avec le cheval vivant dans une nature en mouvement. Cet appel à tendre vers ce qui nous est offert mouvement, à la force, à la beauté, à la chaleur corporelle, au son vibratoire des sabots, du foin qui craque sous la dent contribuent à nous happer dans des instants hors du temps, propice au bien-être d'être là et faisant parti d’un tout.
+    </p>
+    <p>
+      Par exemple, avec les personnes atteintes du trouble du spectre autistique, les sensations corporelles ressenties (proprioception kinesthésique) lors de la monte permettent d’observer un véritable changement. Le fait de se sentir porter et en déséquilibre va permettre à la personne de se recentrer sur soi pour mieux interagir face à l’environnement.
+    </p>
+  </div>
+</section>
+<section>
+  <div class="text-section-content">
+    <div class="text-content">
+      <div class="fade-in" animateOnVisible="visible">
+        <h2>Les bienfaits de l'équithérapie</h2>
+        <p class="text-content-paragraph">
+          Le contact avec les chevaux offre des avantages thérapeutiques uniques pour un bien-être global.
+        </p>
+      </div>
+      <div class="definition-cards-container">
+        @for (card of definitionCards.card; track card.id) {
+          <app-definition-card [card]="card"></app-definition-card>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="storytelling-text-content fade-in" animateOnVisible="visible">
+    <h2>Un miroir émotionnel</h2>
+    <p>
+      Le cheval possède une sensibilité lui permettant de détecter le moindre changement émotionnel afin de survivre en tant qu’animal prédaté. L’expression de ses ressentis, émotions permettraient de sauver bien des situations. Chacun réagissant différemment face aux interactions en fonction de ses propres peurs qu’il serait bon de s’exprimer de manière bienveillante en référence à la CNV.
+    </p>
+    <p>
+      Le cheval permet ce dépassement de soi car il vous voit et vous révèle. Cette capacité à ressentir les émotions fait partie de son ADN, le cheval agit comme un miroir émotionnel. Il peut détecter le stress, l’anxiété, l’intention, la fréquence mieux que nous grâce à des capteurs sensoriels très développés. Cet effet miroir permet des prises de conscience permettant d’accéder à des spirales vertueuses.  Le cheval, être de la nature ne peut pas mentir, juger … l’animal ne fait qu’interagir sur ce qu’il ressent dans l’interaction que propose la personne ce qui rend beaucoup plus percutant ce que l’on peut observer dans des situations où nous travaillons avec des chevaux en liberté (Méthode EAGALA).
+    </p>
+    <p>
+      De plus, Il interagit avec l’humain sans préjugés, permettant aux jeunes de se sentir acceptés et compris. Cette dimension non verbale est essentielle pour de nombreuses personnes qui ont du mal à s’exprimer verbalement ou à communiquer leurs émotions.
+    </p>
+  </div>
+</section>
+<section>
+  <app-cta-section [cta_title]="cta_title" [cta_text]="cta_text" [cta_question]="cta_question"></app-cta-section>
+</section>

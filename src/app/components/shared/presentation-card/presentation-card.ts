@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { PresentationCardInterface } from './presentation-card.interface';
+import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 
 @Component({
   selector: 'app-presentation-card',
-  imports: [],
+  imports: [AnimateOnVisibleDirective],
   templateUrl: './presentation-card.html',
   styleUrl: './presentation-card.scss',
 })
