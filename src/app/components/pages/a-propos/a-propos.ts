@@ -20,7 +20,7 @@ export class APropos {
 
   bannerTitle: string = "À propos d'Ô Cheval Radiant";
   bannerSubtitle: string = "Créer des ponts entre les humains, la nature et le vivant.";
-  bannerImage: string = "/images/a-propos/banner.jpg";
+  bannerImage: string = "/images/a-propos/banner";
 
   cta_title: string = "Découvrez-nous davantage";
   cta_text: string = "Notre approche place la relation au cheval au cœur de chaque accompagnement. Au‑delà des mots, c’est une expérience qui se vit : une rencontre authentique, un moment suspendu où chacun peut se découvrir autrement. Le mieux pour comprendre ce que nous faisons est encore de venir le ressentir par vous‑même, au rythme des chevaux.";
@@ -29,11 +29,13 @@ export class APropos {
   nbOfPhotos = 3;
   toggler: boolean = false;
   sources: string[] = [];
+  sources_thumbnail: string[] = [];
   slide: number = 0;
 
   constructor() {
     for (let i = 1; i <= this.nbOfPhotos; i++) {
       this.sources.push(`/images/a-propos/location0${i}.jpg`);
+      this.sources_thumbnail.push(`/images/a-propos/location0${i}-thumbnail.jpg`);
     }
   }
 

@@ -5,7 +5,7 @@
       <p class="title-subtitle">Voyages, émotions et moments partagés à Ô Cheval Radiant.</p>
     </div>
     <div class="photos-container">
-      @for(photo of sources; track $index) {
+      @for(photo of sources_thumbnail; track $index) {
         <img
           src="{{ photo }}"
           alt="Experience n°{{ $index + 1 }}"

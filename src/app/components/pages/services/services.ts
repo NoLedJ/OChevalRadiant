@@ -23,7 +23,7 @@ export class Services {
 
   bannerTitle: string = "Nos services";
   bannerSubtitle: string = "Des programmes professionnels d'équithérapie conçus pour accompagner votre cheminement";
-  bannerImage: string = "/images/services/banner.jpg";
+  bannerImage: string = "/images/services/banner";
 
   cta_title: string = "Prêt à commencer ?";
   cta_text: string = "Contactez-nous pour en savoir plus sur nos services, planifier une visite ou réserver votre première séance. Nous avons hâte de vous accueillir à Ô Cheval Radiant.";

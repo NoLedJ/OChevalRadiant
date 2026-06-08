@@ -18,7 +18,7 @@ export class Bienfaits {
 
   bannerTitle: string = "Les bienfaits de l'équithérapie";
   bannerSubtitle: string = "Une approche thérapeutique ancrée dans l’histoire et la relation au cheval.";
-  bannerImage: string = "/images/bienfaits/banner.jpg";
+  bannerImage: string = "/images/bienfaits/banner";
 
   cta_title: string = "Profitez des bienfaits du cheval";
   cta_text: string = "L’équithérapie est une approche inclusive, adaptable et centrée sur la personne, quel que soit l’âge, le parcours ou la situation. Le cheval accompagne chacun dans un cheminement unique, respectueux et profondément humain.";

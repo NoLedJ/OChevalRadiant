@@ -43,7 +43,7 @@
       </p>
     </div>
     <div class="location-photos-container">
-      @for(photo of sources; track $index) {
+      @for(photo of sources_thumbnail; track $index) {
         <img
           src="{{ photo }}"
           alt="Les installations - {{ $index + 1 }}"

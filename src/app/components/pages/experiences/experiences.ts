@@ -18,11 +18,13 @@ export class Experiences {
   nbOfPhotos = 17;
   toggler: boolean = false;
   sources: string[] = [];
+  sources_thumbnail: string[] = [];
   slide: number = 0;
 
   constructor() {
     for (let i = 1; i <= this.nbOfPhotos; i++) {
       this.sources.push(`/images/experiences/experience${i}.jpg`);
+      this.sources_thumbnail.push(`/images/experiences/experience${i}-thumbnail.jpg`);
     }
   }
 

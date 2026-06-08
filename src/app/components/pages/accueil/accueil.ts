@@ -19,6 +19,6 @@ export class Accueil {
 
   bannerTitle: string = "Connecter les cœurs grâce à l'équithérapie";
   bannerSubtitle: string = "Découvrez le pouvoir de guérison de la nature et des chevaux à Ô Cheval Radiant, où nous tissons des liens profonds entre l'humain et le vivant.";
-  bannerImage: string = "/images/accueil/hero-header.jpg";
+  bannerImage: string = "/images/accueil/hero-header";
 
 }
