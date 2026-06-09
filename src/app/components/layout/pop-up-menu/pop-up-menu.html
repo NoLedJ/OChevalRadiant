@@ -1,0 +1,5 @@
+<div class="modal" animate.enter="modal-enter-animation" (click)="openMenu.set(false)" (keydown)="openMenu.set(false)"></div>
+<div class="menu" animate.enter="pop-up-enter-animation">
+  <button class="button close" (click)="openMenu.set(false)">Fermer le menu</button>
+  <app-navbar-items [popUpMenu]="true" [(openMenu)]="openMenu"></app-navbar-items>
+</div>

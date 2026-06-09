@@ -6,7 +6,7 @@ import { Directive, ElementRef, Input, OnInit, OnDestroy } from '@angular/core';
 export class AnimateOnVisibleDirective implements OnInit, OnDestroy {
 
   @Input() animateOnVisible: string = 'visible';
-  @Input() threshold: number = 0.2;
+  @Input() threshold: number = 0.1;
 
   private observer?: IntersectionObserver;
 

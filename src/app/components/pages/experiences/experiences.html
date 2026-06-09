@@ -1,6 +1,6 @@
 <section>
-  <div class="text-section-content fade-in" animateOnVisible="visible">
-    <div class="title-text-content text-content">
+  <div class="text-section-content">
+    <div class="title-text-content text-content fade-in" animateOnVisible="visible">
       <h1>Vos retours d'expériences</h1>
       <p class="title-subtitle">Voyages, émotions et moments partagés à Ô Cheval Radiant.</p>
     </div>
@@ -9,7 +9,8 @@
         <img
           src="{{ photo }}"
           alt="Experience n°{{ $index + 1 }}"
-          class="experience-photo"
+          class="experience-photo fade-in"
+          animateOnVisible="visible"
           (click)="openLightbox($index)"
           (keydown.enter)="openLightbox($index)"
         >

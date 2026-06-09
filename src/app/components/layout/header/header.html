@@ -1,40 +1,17 @@
 <header>
   <nav>
     <div class="logo" [routerLink]="['/accueil']">
-      <img src="images/logo/logo.jpg" alt="Logo">
+      <img class="logo-image" src="images/logo/logo.jpg" alt="Logo">
       <span class="logo-font">Ô<br/>Cheval Radiant</span>
     </div>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/accueil']" routerLinkActive="route-active">Accueil</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/a-propos']" routerLinkActive="route-active">À Propos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/equipe']" routerLinkActive="route-active">Équipe</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/chevaux']" routerLinkActive="route-active">Chevaux</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/bienfaits']" routerLinkActive="route-active">Bienfaits</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/services']" routerLinkActive="route-active">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/experiences']" routerLinkActive="route-active">Expériences</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/projets']" routerLinkActive="route-active">Projets</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/partenaires']" routerLinkActive="route-active">Partenaires</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/contact']" routerLinkActive="route-active">Contact</a>
-      </li>
-    </ul>
+    <div class="navbar-items-container">
+      <app-navbar-items></app-navbar-items>
+    </div>
+    <button class="menu-button" aria-label="Ouvrir le menu" (click)="openMenu.set(true)" (keydown.enter)="openMenu.set(true)" (keydown.space)="openMenu.set(true)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+    </button>
   </nav>
+  @if(openMenu()) {
+    <app-pop-up-menu [(openMenu)]="openMenu"></app-pop-up-menu>
+  }
 </header>

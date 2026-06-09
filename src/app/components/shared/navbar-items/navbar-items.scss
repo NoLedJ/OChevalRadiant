@@ -1,0 +1,28 @@
+.main-container {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.nav-item {
+  display: flex;
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+.nav-link {
+  padding: 0.5rem;
+  color: hsl(var(--secondary-text));
+  border-radius: var(--radius);
+}
+
+.nav-link:hover {
+  color: hsl(var(--primary));
+}
+
+.route-active {
+  color: hsl(var(--primary));
+  background-color: hsl(var(--primary) / 0.1);
+  border-radius: var(--radius);
+}
