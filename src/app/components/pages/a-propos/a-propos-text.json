@@ -1,0 +1,30 @@
+{
+  "banner": {
+    "title": "À propos d'Ô Cheval Radiant",
+    "subtitle": "Créer des ponts entre les humains, la nature et le vivant.",
+    "image_url": "/images/a-propos/banner"
+  },
+  "histoire_section": {
+    "title": "Notre histoire",
+    "paragraph_01": "C’est en quittant en 2006 le Master 2 prévention rééducation santé à Liévin, que le projet d’ouvrir un centre de remise en forme à la ferme né. Pourtant, il a fallu 15 ans pour revenir fort d’une expérience transcendante en me donnant toute la légitimité pour fonder ce projet et de surcroit là où je l’avais toujours imaginé. Effectivement, C’est en tant qu’enseignant d’APA que j’ai pu avoir le plaisir de côtoyer différents publics en difficultés et de travailler en équipe pluridisciplinaire. J’ai commencé à travailler d’abord pour l’éducation Nationale en classe relais puis prof d’EPS, puis comme enseignant de sport en milieu pénitencier, à hôpital (addictologie, médico-diététique, MAS) en EHPAD unité fermé (Mémoire Alzheimer), SESSAD, ITEP.",
+    "paragraph_02": "Ma difficulté a été de mettre en mouvement certaines personnes alors j’ai voulu associer l’animal Cheval pour créer ce lien manquant. Cette envie de fonder ce projet vient aussi de mon vécu personnel qui m’a permis de trouver les ressources nécessaires pour avancer dans mon cheminement.",
+    "paragraph_03": "Ô Cheval Radiant a été fondé avec une vision simple et puissante : créer un espace où les personnes peuvent se reconnecter avec la nature et découvrir les bienfaits thérapeutiques du travail avec les chevaux. Située dans la paisible campagne de Maroilles, notre association est devenue une communauté chaleureuse dédiée à la guérison et à l'épanouissement.",
+    "paragraph_04": "Ce qui a commencé comme une petite initiative s'est transformé en un programme complet qui accompagne des individus de tous horizons. Nous sommes convaincus que le lien entre l'humain et le cheval peut déclencher un profond développement émotionnel et social. Ce lien ouvre la voie à une meilleure connaissance de soi, à une véritable paix intérieure où tout un chacun se trouverait à sa place, dans l’harmonie du sacré : le Vivant.",
+    "paragraph_05": "Notre approche est enracinée dans le respect de tous les êtres vivants et de notre environnement. Nous travaillons en étroite collaboration avec nos chevaux, les considérant comme de véritables partenaires thérapeutiques, et nous entretenons nos installations avec une grande attention pour l'écologie."
+  },
+  "vision_section": {
+    "title": "Notre vision",
+    "paragraph_01": "À Ô Cheval Radiant, nous imaginons un monde où le lien entre les humains et la nature est valorisé et nourri. Nous croyons qu'en cultivant ces relations avec les chevaux et notre environnement, nous aidons les individus à découvrir leur force intérieure et à bâtir des communautés plus solidaires. Notre engagement va au-delà des séances de thérapie individuelles. Nous voulons créer un espace où chacun peut se rassembler, partager ses expériences et se soutenir mutuellement. À travers nos initiatives de co-collectif et nos projets communautaires, nous souhaitons sensibiliser à l'importance du respect du vivant.",
+    "paragraph_02": "Nous considérons notre rôle comme celui de facilitateurs de transformation—aidant chacun à se reconnecter à lui-même, aux autres et à la terre. Chaque interaction avec nos chevaux est une opportunité de croissance, de guérison et de découverte."
+  },
+  "installations_section": {
+    "title": "Nos installations",
+    "paragraph_01": "Nos installations à Maroilles offrent un cadre naturel et paisible pour tous nos programmes. Nous entretenons des écuries dans la ferme familiale, des espaces de pratique sécurisés et des lieux confortables pour les activités de groupe et la réflexion.",
+    "photos_url": "/images/a-propos/location0"
+  },
+  "cta_section" : {
+    "title": "Découvrez-nous davantage",
+    "text": "Notre approche place la relation au cheval au cœur de chaque accompagnement. Au‑delà des mots, c’est une expérience qui se vit : une rencontre authentique, un moment suspendu où chacun peut se découvrir autrement. Le mieux pour comprendre ce que nous faisons est encore de venir le ressentir par vous‑même, au rythme des chevaux.",
+    "question": "Vous aimeriez en savoir plus sur nos accompagnements ?"
+  }
+}

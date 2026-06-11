@@ -1,16 +1,20 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import import_contact_json from '../../pages/contact/contact.json';
-import { ContactArrayInterface } from '../../pages/contact/contact.interface';
+import { FacebookButton } from "../../shared/facebook-button/facebook-button";
+import import_footer_text_json from './footer-text.json';
+import import_contact_text_json from '../../pages/contact/contact-text.json';
+import import_navigation_link_json from '../../shared/navbar-items/navigation-link.json';
+import { Logo } from '../../shared/logo/logo';
 
 @Component({
   selector: 'app-footer',
-  imports: [RouterLink],
+  imports: [RouterLink, FacebookButton, Logo],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })
 export class Footer {
 
-  contacts: ContactArrayInterface = import_contact_json;
-
+  footer_text = import_footer_text_json;
+  contact_text = import_contact_text_json;
+  navigation_links = import_navigation_link_json;
 }

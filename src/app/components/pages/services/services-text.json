@@ -1,0 +1,49 @@
+{
+  "banner": {
+    "title": "Nos services",
+    "subtitle": "Des programmes professionnels d'équithérapie conçus pour accompagner votre cheminement.",
+    "image_url": "/images/services/banner"
+  },
+  "proposition_section": {
+    "title": "Ce que nous proposons",
+    "paragraph_01": "À Ô Cheval Radiant, nous offrons une gamme de services thérapeutiques qui exploitent le pouvoir de guérison des chevaux. Nos programmes répondent à divers besoins, du cheminement individuel au renforcement communautaire.",
+    "card": [
+      {
+        "id": 1,
+        "nom": "Accompagnements individuels",
+        "info1": "Des séances personnalisées, adaptées au rythme et aux besoins de chacun, pour accompagner un changement face à différentes problématiques.",
+        "info2": "Elles permettent d’explorer ses émotions, de mieux comprendre ses réactions et d’avancer vers un mieux‑être durable."
+      },
+      {
+        "id": 2,
+        "nom": "Accompagnements collectifs (médico‑social)",
+        "info1": "Séances en petits groupes (2 à 8 personnes), destinées aux publics accompagnés par des institutions médico‑sociales.",
+        "info2": "Elles favorisent la coopération, l’expression émotionnelle, la confiance et la communication, dans un cadre sécurisant et structuré."
+      },
+      {
+        "id": 3,
+        "nom": "Accompagnements collectifs (privé)",
+        "info1": "Séances de 2 à 20 personnes, adaptées aux couples, familles ou groupes privés.",
+        "info2": "Elles permettent de travailler sur des thématiques telles que : l'estime de soi, le deuil, le passage à la retraite, l'addiction, le stress, l'irritabilité, la communication familiale…",
+        "info3": "Un espace pour comprendre, évoluer et se libérer de certains blocages."
+      },
+      {
+        "id": 4,
+        "nom": "Accompagnements collectifs (professionnel)",
+        "info1": "Séances de 2 à 20 personnes destinées aux équipes, entreprises et organisations.",
+        "info2": "Elles permettent de travailler sur la communication, le leadership, la cohésion, la coopération, le dynamisme, la gestion du stress…",
+        "info3": "Ce modèle systémique encourage la créativité, l’adaptation et l’intelligence collective. Il peut également être utilisé pour la supervision ou l’analyse de pratiques professionnelles."
+      }
+    ]
+  },
+  "deroulement_section": {
+    "title": "Déroulement des prises en charge",
+    "paragraph_01": "Lors d’un premier entretien, nous définissons ensemble les besoins spécifiques. Ces besoins deviennent ensuite nos axes de travail et constituent les objectifs des séances d’équithérapie.",
+    "paragraph_02": "Nous pouvons ainsi être amenés à travailler avec le cheval dans toutes sortes de contextes et d’activités autour du cheval : découvrir le cheval ou le poney, son matériel et son environnement, le toiletter, communiquer avec le cheval en liberté, jouer ou interagir avec un cheval tenu en longe, observer les chevaux au pré, se relaxer allongé sur le dos du cheval, réaliser des parcours, imaginer et jouer une histoire, nourrir et soigner les chevaux, atteler…",
+    "paragraph_03": "Chaque situation est unique et nous composons pour que l’activité proposée soit adaptée, évaluable en fonction des objectifs fixés."
+  },
+  "cta_section" : {
+    "title": "Prêt à commencer ?",
+    "text": "Contactez-nous pour en savoir plus sur nos services, planifier une visite ou réserver votre première séance. Nous avons hâte de vous accueillir à Ô Cheval Radiant."
+  }
+}

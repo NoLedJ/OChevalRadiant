@@ -1,12 +1,12 @@
-import { Directive, ElementRef, Input, OnInit, OnDestroy } from '@angular/core';
+import { Directive, ElementRef, input, OnInit, OnDestroy } from '@angular/core';
 
 @Directive({
   selector: '[animateOnVisible]'
 })
 export class AnimateOnVisibleDirective implements OnInit, OnDestroy {
 
-  @Input() animateOnVisible: string = 'visible';
-  @Input() threshold: number = 0.1;
+  animateOnVisible = input<string>('visible');
+  threshold = input<number>(0.1);
 
   private observer?: IntersectionObserver;
 
@@ -17,12 +17,12 @@ export class AnimateOnVisibleDirective implements OnInit, OnDestroy {
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            this.el.nativeElement.classList.add(this.animateOnVisible);
+            this.el.nativeElement.classList.add(this.animateOnVisible());
             this.observer?.unobserve(this.el.nativeElement);
           }
         });
       },
-      { threshold: this.threshold }
+      { threshold: this.threshold() }
     );
 
     this.observer.observe(this.el.nativeElement);

@@ -123,28 +123,6 @@ a, .menu-button, .close {
   white-space: nowrap;
 }
 
-.logo-font {
-  font-size: 0.9rem;
-  font-weight: 800;
-  line-height: 1.1rem;
-  letter-spacing: 0.02rem;
-  color: hsl(var(--primary-text));
-  text-align: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  cursor: pointer;
-}
-
-.logo-image {
-  width: 4rem;
-  height: auto;
-  border-radius: 50%;
-}
-
 section {
   &:not(.banner-section) {
     padding: 5rem 0;

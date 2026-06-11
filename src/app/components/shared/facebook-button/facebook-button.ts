@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-facebook-button',
@@ -8,8 +8,9 @@ import { Component, Input } from '@angular/core';
 })
 export class FacebookButton {
 
-  @Input() text_button: string = "Suivez notre actualité";
-  @Input() width: string = "auto";
-  @Input() display: string = "inherit";
+  text_button = input<string>("Suivez notre actualité");
+  width = input<string>("auto");
+  display = input<string>("inherit");
+  onFooter = input<boolean>(false);
 
 }

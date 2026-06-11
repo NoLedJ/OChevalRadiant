@@ -13,34 +13,10 @@ footer {
   margin-bottom: 2rem;
 }
 
-.logo {
-  margin-bottom: 1rem;
-}
-
-.logo-font {
-  color: hsl(var(--tertiary));
-}
-
 .logo-subtitle {
   max-width: 65ch;
   color: hsl(var(--tertiary));
   margin-bottom: 1rem;
-}
-
-.facebook-link {
-  color: hsl(var(--primary-variant));
-  display: inline-flex;
-  gap: 0.5rem;
-  align-items: center;
-  font-weight: 600;
-  text-decoration: none;
-  animation-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-
-.facebook-link > svg {
-  width: 1.25rem;
-  height: auto;
 }
 
 .title-footer {
@@ -97,7 +73,7 @@ a:hover {
   gap: 1.5rem;
 }
 
-.borisclaude-link {
+.developer-link {
   color: hsl(var(--primary-variant));
   text-decoration: none;
   font-weight: 600;

@@ -6,12 +6,12 @@
 <section>
   <div class="text-section-content">
     <div class="text-content fade-in" animateOnVisible="visible">
-      <h2>Qu'est-ce que l'équithérapie ?</h2>
-      <p class="text-content-paragraph">L'équithérapie est un soin psychique médiatisé via l’animal Cheval afin de soutenir et développer les dimensions psycho-corporelles. Peu importe les étapes à franchir, ce cadre thérapeutique offre une prise en charge multidimensionnelle, permettant d’accompagner les personnes sur les différents plans de leur vie afin de favoriser leurs épanouissements.</p>
-      <p class="text-content-paragraph">Chaque séance est adaptée en fonction des demandes, des besoins et des possibilités de chacun. L’équithérapeute créé du lien avec ce qui nous lie au Vivant pour que chaque être humain appréhende aux mieux la vie qui lui est offerte.</p>
+      <h2>{{ accueil_text.equitherapie_section.title }}</h2>
+      <p class="text-content-paragraph">{{ accueil_text.equitherapie_section.paragraph_01 }}</p>
+      <p class="text-content-paragraph">{{ accueil_text.equitherapie_section.paragraph_02 }}</p>
     </div>
     <div class="definition-cards-container">
-      @for (card of definitionCards.card; track card.id) {
+      @for (card of accueil_text.equitherapie_section.card; track card.id) {
         <app-definition-card [card]="card"></app-definition-card>
       }
     </div>
@@ -20,11 +20,11 @@
 <section>
   <div class="text-section-content">
     <div class="text-content fade-in" animateOnVisible="visible">
-      <h2>Restez informés</h2>
-      <p class="text-content-paragraph">Suivez notre aventure sur Facebook pour découvrir nos programmes, nos événements coopératifs et les moments merveilleux que nous partageons avec nos chevaux.</p>
+      <h2>{{ accueil_text.contact_section.title }}</h2>
+      <p class="text-content-paragraph">{{ accueil_text.contact_section.paragraph_01 }}</p>
       <div class="buttons-container">
         <app-facebook-button></app-facebook-button>
-        <a [routerLink]="['/contact']" class="button contact-button text-sm">Nous contacter<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        <a [routerLink]="['/contact']" class="button contact-button text-sm">{{ accueil_text.contact_section.button_text }}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
       </div>
     </div>
   </div>

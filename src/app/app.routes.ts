@@ -3,51 +3,61 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: 'accueil',
+    title: 'Ô Cheval Radiant - Bienvenue sur notre site !',
     loadComponent: () =>
       import('./components/pages/accueil/accueil').then(m => m.Accueil)
   },
   {
     path: 'a-propos',
+    title: 'À propos d\'Ô Cheval Radiant',
     loadComponent: () =>
       import('./components/pages/a-propos/a-propos').then(m => m.APropos)
   },
   {
     path: 'equipe',
+    title: 'Rencontrez notre équipe',
     loadComponent: () =>
       import('./components/pages/equipe/equipe').then(m => m.Equipe)
   },
   {
     path: 'chevaux',
+    title:'Nos chevaux, partenaires de soin',
     loadComponent: () =>
       import('./components/pages/chevaux/chevaux').then(m => m.Chevaux)
   },
   {
     path: 'bienfaits',
+    title:'Les bienfaits de l\'équithérapie',
     loadComponent: () =>
       import('./components/pages/bienfaits/bienfaits').then(m => m.Bienfaits)
   },
   {
     path: 'services',
+    title:'Nos services',
     loadComponent: () =>
       import('./components/pages/services/services').then(m => m.Services)
   },
   {
     path: 'experiences',
+    title:'Vos retours d\'expériences',
     loadComponent: () =>
       import('./components/pages/experiences/experiences').then(m => m.Experiences)
   },
   {
     path: 'projets',
+    title:'Nos projets coopératifs',
     loadComponent: () =>
       import('./components/pages/projets/projets').then(m => m.Projets)
   },
    {
     path: 'partenaires',
+    title:'Nos partenaires engagés',
     loadComponent: () =>
       import('./components/pages/partenaires/partenaires').then(m => m.Partenaires)
   },
   {
     path: 'contact',
+    title: 'Contactez-nous !',
     loadComponent: () =>
       import('./components/pages/contact/contact').then(m => m.Contact)
   },

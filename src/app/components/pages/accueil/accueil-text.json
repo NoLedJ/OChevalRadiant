@@ -1,0 +1,37 @@
+{
+  "banner": {
+    "title": "Connecter les cœurs grâce à l'équithérapie",
+    "subtitle": "Découvrez le pouvoir de guérison de la nature et des chevaux à Ô Cheval Radiant, où nous tissons des liens profonds entre l'humain et le vivant.",
+    "image_url": "/images/accueil/hero-header"
+  },
+  "equitherapie_section": {
+    "title": "Qu'est-ce que l'équithérapie ?",
+    "paragraph_01": "L'équithérapie est un soin psychique médiatisé via l’animal Cheval afin de soutenir et développer les dimensions psycho-corporelles. Peu importe les étapes à franchir, ce cadre thérapeutique offre une prise en charge multidimensionnelle, permettant d’accompagner les personnes sur les différents plans de leur vie afin de favoriser leurs épanouissements.",
+    "paragraph_02": "Chaque séance est adaptée en fonction des demandes, des besoins et des possibilités de chacun. L’équithérapeute créé du lien avec ce qui nous lie au Vivant pour que chaque être humain appréhende aux mieux la vie qui lui est offerte.",
+    "card": [
+      {
+        "id": 1,
+        "nom": "Guérison émotionnelle",
+        "info": "Développez la confiance et la conscience émotionnelle grâce à des interactions douces avec les chevaux dans un cadre bienveillant.",
+        "icon_url": "/icons/heart.png"
+      },
+      {
+        "id": 2,
+        "nom": "Lien social",
+        "info": "Renforcez vos capacités de communication et tissez des relations sincères au sein de notre communauté accueillante.",
+        "icon_url": "/icons/users.png"
+      },
+      {
+        "id": 3,
+        "nom": "Immersion en nature",
+        "info": "Reconnectez-vous au monde naturel et profitez de la présence apaisante de notre environnement rural.",
+        "icon_url": "/icons/leaf.png"
+      }
+    ]
+  },
+  "contact_section": {
+    "title": "Restez informés",
+    "paragraph_01": "Suivez notre aventure sur Facebook pour découvrir nos programmes, nos événements coopératifs et les moments merveilleux que nous partageons avec nos chevaux.",
+    "button_text": "Nous contacter"
+  }
+}

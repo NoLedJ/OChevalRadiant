@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { ProposalCardInterface } from './proposal-card.interface';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 
@@ -10,6 +10,6 @@ import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visibl
 })
 export class ProposalCard {
 
-  @Input() card!: ProposalCardInterface;
+  card = input<ProposalCardInterface>();
 
 }

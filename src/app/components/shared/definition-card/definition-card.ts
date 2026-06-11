@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { DefinitionCardInterface } from './definition-card.interface';
 import { StylizedIcon } from '../stylized-icon/stylized-icon';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
@@ -11,6 +11,6 @@ import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visibl
 })
 export class DefinitionCard {
 
-  @Input() card!: DefinitionCardInterface;
+  card = input<DefinitionCardInterface>();
 
 }

@@ -1,0 +1,52 @@
+{
+  "accueil": {
+    "id": 1,
+    "nom": "Accueil",
+    "routerLink": "accueil"
+  },
+  "a_propos": {
+    "id": 2,
+    "nom": "À Propos",
+    "routerLink": "a-propos"
+  },
+  "equipe": {
+    "id": 3,
+    "nom": "Équipe",
+    "routerLink": "equipe"
+  },
+  "chevaux": {
+    "id": 4,
+    "nom": "Chevaux",
+    "routerLink": "chevaux"
+  },
+  "bienfaits": {
+    "id": 5,
+    "nom": "Bienfaits",
+    "routerLink": "bienfaits"
+  },
+  "services": {
+    "id": 6,
+    "nom": "Services",
+    "routerLink": "services"
+  },
+  "experiences": {
+    "id": 7,
+    "nom": "Expériences",
+    "routerLink": "experiences"
+  },
+  "projets": {
+    "id": 8,
+    "nom": "Projets",
+    "routerLink": "projets"
+  },
+  "partenaires": {
+    "id": 9,
+    "nom": "Partenaires",
+    "routerLink": "partenaires"
+  },
+  "contact": {
+    "id": 10,
+    "nom": "Contact",
+    "routerLink": "contact"
+  }
+}

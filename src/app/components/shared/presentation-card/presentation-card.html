@@ -1,10 +1,10 @@
 <div class="content fade-in" animateOnVisible="visible">
   <div class="photo-content">
-    <img [src]="card.photo_url" alt="{{ card.nom }}" class="card-photo">
+    <img [src]="card()!.photo_url" alt="{{ card()!.nom }}" class="card-photo">
   </div>
   <div class="description-content">
-    <h3>{{ card.nom }}</h3>
-    <p class="role text-sm">{{ card.role }}</p>
-    <p class="info text-sm">{{ card.info }}</p>
+    <h3>{{ card()!.nom }}</h3>
+    <p class="role text-sm">{{ card()!.role }}</p>
+    <p class="info text-sm">{{ card()!.info }}</p>
   </div>
 </div>

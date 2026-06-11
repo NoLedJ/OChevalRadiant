@@ -1,32 +1,6 @@
 <ul class="main-container" [style.flex-direction]="popUpMenu() ? 'column' : 'row'">
-  <li class="nav-item">
-    <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/accueil']" routerLinkActive="route-active" (click)="openMenu.set(false)">Accueil</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/a-propos']" routerLinkActive="route-active" (click)="openMenu.set(false)">À Propos</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/equipe']" routerLinkActive="route-active" (click)="openMenu.set(false)">Équipe</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/chevaux']" routerLinkActive="route-active" (click)="openMenu.set(false)">Chevaux</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/bienfaits']" routerLinkActive="route-active" (click)="openMenu.set(false)">Bienfaits</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/services']" routerLinkActive="route-active" (click)="openMenu.set(false)">Services</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/experiences']" routerLinkActive="route-active" (click)="openMenu.set(false)">Expériences</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/projets']" routerLinkActive="route-active" (click)="openMenu.set(false)">Projets</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/partenaires']" routerLinkActive="route-active" (click)="openMenu.set(false)">Partenaires</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]="['/contact']" routerLinkActive="route-active" (click)="openMenu.set(false)">Contact</a>
-  </li>
-</ul>
+  @for(navlink of nav_items; track navlink.id ) {
+    <li class="nav-item">
+      <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]=navlink.routerLink routerLinkActive="route-active" (click)="openMenu.set(false)">{{ navlink.nom }}</a>
+    </li>
+  }

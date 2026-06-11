@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 
@@ -10,9 +10,9 @@ import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visibl
 })
 export class CTASection {
 
-  @Input() cta_title: string|null = null;
-  @Input() cta_text: string|null = null;
-  @Input() cta_question: string|null = null;
-  @Input() on_contact_page: boolean = false;
+  cta_title = input<string|null>(null);
+  cta_text = input<string|null>(null);
+  cta_question = input<string|null>(null);
+  on_contact_page = input<boolean>(false);
 
 }

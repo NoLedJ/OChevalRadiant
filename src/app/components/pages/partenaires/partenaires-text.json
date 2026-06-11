@@ -1,0 +1,12 @@
+{
+  "banner_section": {
+    "title": "Nos partenaires engagés",
+    "subtitle": "Nous collaborons avec des organisations et des individus engagés pour promouvoir notre mission et notre vision.",
+    "image_url": "images/partenaires/banner"
+  },
+  "cta_section" : {
+    "title": "Travailler ensemble",
+    "text": "Nous sommes toujours ouverts à de nouvelles collaborations, qu’elles soient ponctuelles ou régulières. Ensemble, nous pouvons imaginer des projets qui mettent en valeur le cheval, le lien humain et l’inclusion.",
+    "question": "Vous souhaitez devenir partenaire ?"
+  }
+}

@@ -3,7 +3,7 @@ import { FsLightbox } from "fslightbox-angular";
 import { CTASection } from '../../shared/cta-section/cta-section';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { BannerSection } from '../../shared/banner-section/banner-section';
-
+import import_a_propos_text_json from './a-propos-text.json';
 
 @Component({
   selector: 'app-a-propos',
@@ -18,13 +18,15 @@ import { BannerSection } from '../../shared/banner-section/banner-section';
 })
 export class APropos {
 
-  bannerTitle: string = "À propos d'Ô Cheval Radiant";
-  bannerSubtitle: string = "Créer des ponts entre les humains, la nature et le vivant.";
-  bannerImage: string = "/images/a-propos/banner";
+  a_propos_text = import_a_propos_text_json;
 
-  cta_title: string = "Découvrez-nous davantage";
-  cta_text: string = "Notre approche place la relation au cheval au cœur de chaque accompagnement. Au‑delà des mots, c’est une expérience qui se vit : une rencontre authentique, un moment suspendu où chacun peut se découvrir autrement. Le mieux pour comprendre ce que nous faisons est encore de venir le ressentir par vous‑même, au rythme des chevaux.";
-  cta_question: string = "Vous aimeriez en savoir plus sur nos accompagnements ?";
+  bannerTitle: string = this.a_propos_text.banner.title;
+  bannerSubtitle: string = this.a_propos_text.banner.subtitle;
+  bannerImage: string = this.a_propos_text.banner.image_url;
+
+  cta_title: string = this.a_propos_text.cta_section.title;
+  cta_text: string = this.a_propos_text.cta_section.text;
+  cta_question: string = this.a_propos_text.cta_section.question;
 
   nbOfPhotos = 3;
   toggler: boolean = false;
@@ -34,8 +36,8 @@ export class APropos {
 
   constructor() {
     for (let i = 1; i <= this.nbOfPhotos; i++) {
-      this.sources.push(`/images/a-propos/location0${i}.jpg`);
-      this.sources_thumbnail.push(`/images/a-propos/location0${i}-thumbnail.jpg`);
+      this.sources.push(`${this.a_propos_text.installations_section.photos_url}${i}.jpg`);
+      this.sources_thumbnail.push(`${this.a_propos_text.installations_section.photos_url}${i}-thumbnail.jpg`);
     }
   }
 

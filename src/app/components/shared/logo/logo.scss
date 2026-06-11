@@ -1,0 +1,32 @@
+.logo-font {
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.1rem;
+  letter-spacing: 0.02rem;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.logo-image, .footer-logo-image {
+  width: 4rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (min-width: 950px) {
+  .logo-image {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-image {
+    display: initial;
+  }
+}

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-stylized-icon',
@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class StylizedIcon {
 
-  @Input() icon_url!: string;
-  @Input() size: string = '3.5rem';
+  icon_url = input<string | null>();
+  size = input<string>('3.5rem');
 
 }
