@@ -1,3 +1,4 @@
+import import_partenaires_text_json from './partenaires-text.json';
 import { Component } from '@angular/core';
 import { CTASection } from '../../shared/cta-section/cta-section';
 import { BannerSection } from '../../shared/banner-section/banner-section';
@@ -10,12 +11,14 @@ import { BannerSection } from '../../shared/banner-section/banner-section';
 })
 export class Partenaires {
 
-  bannerTitle: string = "Nos partenaires engagés";
-  bannerSubtitle: string = "Nous collaborons avec des organisations et des individus engagés pour promouvoir notre mission et notre vision.";
-  bannerImage: string = "/images/partenaires/banner";
+  partenaires_text = import_partenaires_text_json;
 
-  cta_title: string = "Travailler ensemble";
-  cta_text: string = "Nous sommes toujours ouverts à de nouvelles collaborations, qu’elles soient ponctuelles ou régulières. Ensemble, nous pouvons imaginer des projets qui mettent en valeur le cheval, le lien humain et l’inclusion.";
-  cta_question: string = "Vous souhaitez devenir partenaire ?";
+  bannerTitle: string = this.partenaires_text.banner.title;
+  bannerSubtitle: string = this.partenaires_text.banner.subtitle;
+  bannerImage: string = this.partenaires_text.banner.image_url;
+
+  cta_title: string = this.partenaires_text.cta_section.title;
+  cta_text: string = this.partenaires_text.cta_section.text;
+  cta_question: string = this.partenaires_text.cta_section.question;
 
 }

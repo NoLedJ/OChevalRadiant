@@ -1,3 +1,4 @@
+import import_facebook_text_json from './facebook-text.json';
 import { Component, input } from '@angular/core';
 
 @Component({
@@ -8,7 +9,9 @@ import { Component, input } from '@angular/core';
 })
 export class FacebookButton {
 
-  text_button = input<string>("Suivez notre actualité");
+  facebook_text = import_facebook_text_json;
+
+  onContact = input<boolean>(false);
   width = input<string>("auto");
   display = input<string>("inherit");
   onFooter = input<boolean>(false);

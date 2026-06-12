@@ -1,13 +1,13 @@
 <section>
   <div class="text-section-content">
     <div class="title-text-content text-content fade-in" animateOnVisible="visible">
-      <h1>Contactez-nous !</h1>
-      <p class="title-subtitle">Nous serions ravis d'échanger avec vous. Que vous ayez des questions sur nos programmes, souhaitiez planifier une visite ou devenir bénévole, n'hésitez pas à nous contacter.</p>
+      <h1>{{ contact_text.contact_section.title }}</h1>
+      <p class="title-subtitle">{{ contact_text.contact_section.subtitle }}</p>
     </div>
     <div class="contact-content">
       <div class="contact-info fade-in-right" animateOnVisible="visible">
-        <h2>Coordonnées</h2>
-        @for (coordonnee of contacts.coordonnees; track coordonnee.id) {
+        <h2>{{ contact_text.coordonnees_section.title }}</h2>
+        @for (coordonnee of coordonnees_array; track coordonnee.id) {
           <div class="contact-card">
             <app-stylized-icon [icon_url]="coordonnee.icon_url" [size]="'3rem'"></app-stylized-icon>
             <div class="contact-card-text">
@@ -26,16 +26,16 @@
           </div>
         }
         <div class="facebook-card">
-          <h3>Suivez-nous sur Facebook</h3>
-          <p class="text-sm">Tenez-vous au courant de nos dernières actualités, événements et histoires de la ferme. Rejoignez notre communauté en ligne.</p>
-          <app-facebook-button [text_button]="'Visitez notre page Facebook'" [width]="'stretch'" [display]="'flex'"></app-facebook-button>
+          <h3>{{ contact_text.facebook_section.title }}</h3>
+          <p class="text-sm">{{ contact_text.facebook_section.paragraph_01 }}</p>
+          <app-facebook-button [onContact]="true" [width]="'stretch'" [display]="'flex'"></app-facebook-button>
         </div>
       </div>
       <div class="map-content fade-in-left" animateOnVisible="visible">
-        <h2>Où nous trouver ?</h2>
+        <h2>{{ contact_text.map_section.title }}</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4301.12967233051!2d3.7314095827493023!3d50.13369488196895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2630039f7b9e7%3A0xf4936306271fb5e4!2s%C3%94%20Cheval%20Radiant!5e0!3m2!1sfr!2sfr!4v1780377343467!5m2!1sfr!2sfr"
-          title="Carte de localisation de Ô Cheval Radiant"
+          [title]="contact_text.map_section.iframe_title"
           width="100%"
           height="350"
           style="border:0; border-radius: var(--radius);"

@@ -1,8 +1,7 @@
 {
   "facebook_button": {
-    "text": "Suivez notre actualité"
+    "initial": "Suivez notre actualité",
+    "contact": "Visitez notre page Facebook"
   },
-  "facebook_link" : {
-    "url": "https://www.facebook.com/ochevalradiant"
-  }
+  "facebook_link": "https://www.facebook.com/ochevalradiant"
 }

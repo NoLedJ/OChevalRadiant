@@ -1,7 +1,6 @@
+import import_bienfaits_text_json from './bienfaits-text.json';
 import { Component } from '@angular/core';
 import { CTASection } from '../../shared/cta-section/cta-section';
-import import_definition_card_json from './bienfaits-definition-card.json';
-import { DefinitionCardArrayInterface } from '../../shared/definition-card/definition-card.interface';
 import { DefinitionCard } from '../../shared/definition-card/definition-card';
 import { BannerSection } from "../../shared/banner-section/banner-section";
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
@@ -14,14 +13,14 @@ import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visibl
 })
 export class Bienfaits {
 
-  definitionCards: DefinitionCardArrayInterface = import_definition_card_json;
+  bienfaits_text = import_bienfaits_text_json;
 
-  bannerTitle: string = "Les bienfaits de l'équithérapie";
-  bannerSubtitle: string = "Une approche thérapeutique ancrée dans l’histoire et la relation au cheval.";
-  bannerImage: string = "/images/bienfaits/banner";
+  bannerTitle: string = this.bienfaits_text.banner.title;
+  bannerSubtitle: string = this.bienfaits_text.banner.subtitle;
+  bannerImage: string = this.bienfaits_text.banner.image_url;
 
-  cta_title: string = "Profitez des bienfaits du cheval";
-  cta_text: string = "L’équithérapie est une approche inclusive, adaptable et centrée sur la personne, quel que soit l’âge, le parcours ou la situation. Le cheval accompagne chacun dans un cheminement unique, respectueux et profondément humain.";
-  cta_question: string = "Vous souhaitez tenter l'expérience ?";
+  cta_title: string = this.bienfaits_text.cta_section.title;
+  cta_text: string = this.bienfaits_text.cta_section.text;
+  cta_question: string = this.bienfaits_text.cta_section.question;
 
 }

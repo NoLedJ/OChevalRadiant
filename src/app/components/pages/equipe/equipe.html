@@ -1,11 +1,11 @@
 <section>
   <div class="text-section-content">
     <div class="title-text-content text-content fade-in" animateOnVisible="visible">
-      <h1>Rencontrez notre équipe</h1>
-      <p class="title-subtitle">Nos professionnels dévoués travaillent ensemble pour créer un environnement accueillant où la guérison et l'épanouissement personnel peuvent prospérer.</p>
+      <h1>{{ equipe_text.equipe_section.title }}</h1>
+      <p class="title-subtitle">{{ equipe_text.equipe_section.subtitle }}</p>
     </div>
     <div class="presentation-cards-container">
-      @for (card of presentationCards.card; track card.id) {
+      @for (card of equipe_text.equipe_section.card; track card.id) {
         <app-presentation-card [card]="card"></app-presentation-card>
       }
     </div>

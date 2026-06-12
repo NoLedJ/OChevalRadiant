@@ -7,3 +7,13 @@ a {
 a:hover {
   background: hsl(var(--primary-variant) / 0.9);
 }
+
+.footer-button {
+  padding: 0;
+  background: none;
+  color: hsl(var(--primary-variant));
+  &:hover {
+    background: none;
+    color: hsl(var(--primary-variant)/0.7);
+  }
+}

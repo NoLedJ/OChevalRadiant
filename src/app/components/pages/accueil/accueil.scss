@@ -7,6 +7,9 @@
 .contact-button {
   gap: 0.5rem;
   background: hsl(var(--primary-text) / 0.4);
+  &:hover {
+    background: hsl(var(--primary-text) / 0.3);
+  }
 }
 
 @media (min-width: 768px) {

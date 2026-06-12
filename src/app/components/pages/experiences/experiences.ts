@@ -1,3 +1,4 @@
+import import_experiences_text_json from './experiences-text.json';
 import { Component } from '@angular/core';
 import { FsLightbox } from "fslightbox-angular";
 import { CTASection } from '../../shared/cta-section/cta-section';
@@ -11,9 +12,11 @@ import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visibl
 })
 export class Experiences {
 
-  cta_title: string = "Forgez votre propre expérience";
-  cta_text: string = "Les moments partagés ici ne sont qu’un aperçu de ce que chacun peut vivre auprès des chevaux. Rien ne remplace la richesse d’une rencontre personnelle, au rythme de vos émotions et de leur présence apaisante.";
-  cta_question: string = "Vous souhaitez devenir vous aussi l'un de nos participants ?";
+  experiences_text = import_experiences_text_json;
+
+  cta_title: string = this.experiences_text.cta_section.title;
+  cta_text: string = this.experiences_text.cta_section.text;
+  cta_question: string = this.experiences_text.cta_section.question;
 
   nbOfPhotos = 17;
   toggler: boolean = false;

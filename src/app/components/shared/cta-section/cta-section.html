@@ -3,9 +3,9 @@
     <h2>{{ cta_title() }}</h2>
     <p class="text-content-paragraph">{{ cta_text() }}</p>
     @if (on_contact_page()) {
-      <p class="text-content-paragraph">Nous avons hâte de vous rencontrer et de partager la beauté d'Ô Cheval Radiant avec vous.</p>
+      <p class="text-content-paragraph">{{ cta_section_text.contact_page.text }}</p>
     } @else {
-      <p class="text-content-paragraph">{{ cta_question() }} Contactez-nous via <a [routerLink]="['/contact']">notre page de contact</a> ou envoyez-nous un message sur <a href="https://www.facebook.com/OChevalRadiant" target="_blank" rel="noopener noreferrer">Facebook</a>.</p>
+      <p class="text-content-paragraph">{{ cta_question() }} {{ cta_section_text.other_pages.text_01 }} <a [routerLink]="['../'+ navigation_links.contact.routerLink]">{{ cta_section_text.other_pages.text_02 }}</a> {{ cta_section_text.other_pages.text_03 }} <a href="{{ facebook_text.facebook_link }}" target="_blank" rel="noopener noreferrer">{{ cta_section_text.other_pages.text_04 }}</a>.</p>
     }
   </div>
 </div>
