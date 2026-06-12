@@ -1,6 +1,6 @@
 import { Component, effect, input } from '@angular/core';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
-import { FacebookButton } from '../facebook-button/facebook-button';
+import { FacebookButton } from '../../shared/facebook-button/facebook-button';
 
 @Component({
   selector: 'app-banner-section',

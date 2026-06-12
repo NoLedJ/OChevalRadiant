@@ -1,11 +1,11 @@
 import import_accueil_text_json from './accueil-text.json';
-import import_navigation_link_json from '../../shared/navbar-items/navigation-link.json';
+import import_navigation_link_json from '../../layout/navbar-items/navigation-link.json';
 import { Component } from '@angular/core';
 import { FacebookButton } from "../../shared/facebook-button/facebook-button";
 import { DefinitionCard } from '../../shared/definition-card/definition-card';
 import { RouterLink } from '@angular/router';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
-import { BannerSection } from "../../shared/banner-section/banner-section";
+import { BannerSection } from '../../layout/banner-section/banner-section';
 
 @Component({
   selector: 'app-accueil',

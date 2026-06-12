@@ -1,5 +1,5 @@
 import { Component, model } from '@angular/core';
-import { NavbarItems } from "../../shared/navbar-items/navbar-items";
+import { NavbarItems } from "../../layout/navbar-items/navbar-items";
 
 @Component({
   selector: 'app-pop-up-menu',

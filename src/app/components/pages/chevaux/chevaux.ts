@@ -1,8 +1,8 @@
 import import_chevaux_text_json from './chevaux-text.json';
 import { Component } from '@angular/core';
 import { PresentationCard } from '../../shared/presentation-card/presentation-card';
-import { CTASection } from '../../shared/cta-section/cta-section';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
+import { CTASection } from '../../layout/cta-section/cta-section';
 
 @Component({
   selector: 'app-chevaux',

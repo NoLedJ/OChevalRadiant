@@ -1,18 +1,15 @@
 import import_a_propos_text_json from './a-propos-text.json';
 import { Component } from '@angular/core';
 import { FsLightbox } from "fslightbox-angular";
-import { CTASection } from '../../shared/cta-section/cta-section';
+
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
-import { BannerSection } from '../../shared/banner-section/banner-section';
+import { BannerSection } from '../../layout/banner-section/banner-section';
+import { CTASection } from '../../layout/cta-section/cta-section';
+
 
 @Component({
   selector: 'app-a-propos',
-  imports: [
-    FsLightbox,
-    BannerSection,
-    CTASection,
-    AnimateOnVisibleDirective
-  ],
+  imports: [FsLightbox, BannerSection, CTASection, AnimateOnVisibleDirective],
   templateUrl: './a-propos.html',
   styleUrl: './a-propos.scss',
 })

@@ -1,8 +1,8 @@
 import import_experiences_text_json from './experiences-text.json';
 import { Component } from '@angular/core';
 import { FsLightbox } from "fslightbox-angular";
-import { CTASection } from '../../shared/cta-section/cta-section';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
+import { CTASection } from '../../layout/cta-section/cta-section';
 
 @Component({
   selector: 'app-experiences',

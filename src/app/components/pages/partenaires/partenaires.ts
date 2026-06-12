@@ -1,7 +1,7 @@
 import import_partenaires_text_json from './partenaires-text.json';
 import { Component } from '@angular/core';
-import { CTASection } from '../../shared/cta-section/cta-section';
-import { BannerSection } from '../../shared/banner-section/banner-section';
+import { BannerSection } from '../../layout/banner-section/banner-section';
+import { CTASection } from '../../layout/cta-section/cta-section';
 
 @Component({
   selector: 'app-partenaires',

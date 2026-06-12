@@ -1,9 +1,9 @@
 import import_services_text_json from './services-text.json';
 import { Component } from '@angular/core';
 import { ProposalCard } from '../../shared/proposal-card/proposal-card';
-import { CTASection } from '../../shared/cta-section/cta-section';
-import { BannerSection } from '../../shared/banner-section/banner-section';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
+import { CTASection } from '../../layout/cta-section/cta-section';
+import { BannerSection } from '../../layout/banner-section/banner-section';
 
 @Component({
   selector: 'app-services',

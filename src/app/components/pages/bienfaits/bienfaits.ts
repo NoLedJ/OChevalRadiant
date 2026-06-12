@@ -1,9 +1,9 @@
 import import_bienfaits_text_json from './bienfaits-text.json';
 import { Component } from '@angular/core';
-import { CTASection } from '../../shared/cta-section/cta-section';
 import { DefinitionCard } from '../../shared/definition-card/definition-card';
-import { BannerSection } from "../../shared/banner-section/banner-section";
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
+import { CTASection } from '../../layout/cta-section/cta-section';
+import { BannerSection } from '../../layout/banner-section/banner-section';
 
 @Component({
   selector: 'app-bienfaits',

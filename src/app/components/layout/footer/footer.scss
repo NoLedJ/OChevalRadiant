@@ -60,9 +60,10 @@ a:hover {
 .contract-links-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 2rem;
   border-top: 1px solid hsl(var(--border));
+  gap: 2rem;
   & > p {
     color: hsl(var(--tertiary));
   }

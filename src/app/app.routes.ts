@@ -61,5 +61,11 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./components/pages/contact/contact').then(m => m.Contact)
   },
+  {
+    path: 'mentions-legales',
+    title: 'Mentions légales',
+    loadComponent: () =>
+      import('./components/pages/mentions-legales/mentions-legales').then(m => m.MentionsLegales)
+  },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' }
 ];

@@ -1,10 +1,10 @@
 import import_footer_text_json from './footer-text.json';
 import import_contact_text_json from '../../pages/contact/contact-text.json';
-import import_navigation_link_json from '../../shared/navbar-items/navigation-link.json';
+import import_navigation_link_json from '../../layout/navbar-items/navigation-link.json';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FacebookButton } from "../../shared/facebook-button/facebook-button";
-import { Logo } from '../../shared/logo/logo';
+import { Logo } from '../../layout/logo/logo';
 
 @Component({
   selector: 'app-footer',

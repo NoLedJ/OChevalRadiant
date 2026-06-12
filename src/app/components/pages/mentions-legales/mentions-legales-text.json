@@ -1,0 +1,58 @@
+{
+  "mentions_legales_section": {
+    "title": "Mentions légales"
+  },
+  "editeur": {
+    "title": "Éditeur du site",
+    "client_name": "Ô Cheval Radiant",
+    "client_statut": "Association loi 1901",
+    "client_address": "1 Chemin de la Rosière 59550 Maroilles FRANCE",
+    "client_phone": "06 63 45 71 73",
+    "client_mail": "ochevalradiant@gmail.com",
+    "client_siret": "908 202 781 00013",
+    "publication_manager": "Anatole LENNE"
+  },
+  "hebergeur": {
+    "title": "Hébergeur du site",
+    "hosting_name": "",
+    "hosting_address": "",
+    "hosting_url": ""
+  },
+  "propriete_intellectuelle": {
+    "title": "Propriété intellectuelle",
+    "paragraph_01": "L’ensemble du contenu présent sur ce site (textes, images, photographies, logos, éléments graphiques, structure du site) est protégé par le droit d’auteur.",
+    "paragraph_02": "Toute reproduction, représentation, modification ou diffusion, totale ou partielle, est interdite sans autorisation préalable.",
+    "paragraph_03": "Les photos présentes sur le site sont la propriété de l’association ou utilisées avec autorisation."
+  },
+  "donnees_personnelles": {
+    "title": "Données personnelles",
+    "paragraph_01": "Ce site ne collecte aucune donnée personnelle directe, car il ne comporte pas de formulaire de contact.",
+    "paragraph_02": "Seules des données techniques anonymisées peuvent être collectées pour assurer le bon fonctionnement du site (cookies essentiels, statistiques anonymes).",
+    "paragraph_03": "Pour plus d’informations, consultez notre politique de confidentialité."
+  },
+  "cookies": {
+    "title": "Cookies",
+    "paragraph_01": "Le site utilise uniquement :",
+    "paragraph_02": "des cookies strictement nécessaires à son fonctionnement",
+    "paragraph_03": "éventuellement des cookies de mesure d’audience anonymisés",
+    "paragraph_04": "Aucun cookie publicitaire n’est utilisé."
+  },
+  "limitation_responsabilite": {
+    "title": "Limitation de responsabilité",
+    "paragraph_01": "L’association s’efforce d’assurer l’exactitude et la mise à jour des informations diffusées sur le site.",
+    "paragraph_02": "Elle ne peut toutefois garantir l’absence d’erreurs ou d’omissions.",
+    "paragraph_03": "L’association ne peut être tenue responsable :",
+    "paragraph_04": "d’un mauvais usage du site",
+    "paragraph_05": "d’interruptions temporaires",
+    "paragraph_06": "de liens externes dont elle ne maîtrise pas le contenu"
+  },
+  "liens_externes": {
+    "title": "Liens externes",
+    "paragraph_01": "Le site peut contenir des liens vers des sites tiers.",
+    "paragraph_02": "L’association n’exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu ou fonctionnement."
+  },
+  "contact": {
+    "title": "Contact",
+    "paragraph_01": "Pour toute question concernant le site ou son contenu, veuillez consulter notre page de contact."
+  }
+}
