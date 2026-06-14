@@ -1,5 +1,7 @@
 <div class="content fade-in" animateOnVisible="visible">
-  <app-stylized-icon [icon_url]="card()!.icon_url"></app-stylized-icon>
-  <h3>{{ card()!.nom }}</h3>
+  <div class="title-content">
+    <app-stylized-icon [icon_url]="card()!.icon_url"></app-stylized-icon>
+    <h3>{{ card()!.nom }}</h3>
+  </div>
   <p>{{ card()!.info }}</p>
 </div>

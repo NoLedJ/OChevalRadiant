@@ -1,5 +1,5 @@
-<section class="banner-section" [style.height]="heroHeader() ? '100dvh' : '400px'">
-  <div class="image-container" [style.height]="heroHeader() ? '100dvh' : '400px'">
+<section class="banner-section" [style.height]="heroHeader() ? '100vh' : '400px'">
+  <div class="image-container" [style.height]="heroHeader() ? '100vh' : '400px'">
     <img
     srcset=
       "{{ banner_medium }} 768w,
@@ -10,8 +10,8 @@
     fill
     alt="La bannière de présentation de la page" />
   </div>
-  <div class="banner-backdrop-filter" [style.height]="heroHeader() ? '100dvh' : '400px'"></div>
-  <div class="banner-content fade-in" animateOnVisible="visible" [style.min-height]="heroHeader() ? '100dvh' : '400px'">
+  <div class="banner-backdrop-filter" [style.height]="heroHeader() ? '100vh' : '400px'"></div>
+  <div class="banner-content fade-in" animateOnVisible="visible" [style.min-height]="heroHeader() ? '100vh' : '400px'">
     <h1>{{ bannerTitle() }}</h1>
     <p class="banner-subtitle">{{ bannerSubtitle() }}</p>
     @if (heroHeader()) {

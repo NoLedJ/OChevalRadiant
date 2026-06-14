@@ -71,7 +71,12 @@ a:hover {
 
 .links {
   display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 1.5rem;
+  & > a {
+    text-align: right;
+  }
 }
 
 .developer-link {

@@ -1,11 +1,28 @@
 .content {
-  height: stretch;
+  height: auto;
   padding: 2rem;
   background-color: hsl(var(--card));
   border-radius: 1rem;
 }
 
+.title-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin: 0;
+}
+
 p {
   max-width: 65ch;
   text-align: left;
+}
+
+@media (min-width: 768px) {
+  .content {
+    height: stretch;
+  }
 }

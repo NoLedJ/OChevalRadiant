@@ -23,10 +23,11 @@ html {
   -webkit-tap-highlight-color: transparent;
   tab-size: 4;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  height: auto;
 }
 
 body {
-  height: 100dvh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -37,7 +38,6 @@ body {
   letter-spacing: 0.04rem;
   background-color: #f5f5f5;
   color: hsl(var(--primary-text));
-  overflow-x: clip;
 
   --primary: 120 25% 45%;
   --primary-variant: 106 23% 70%;
