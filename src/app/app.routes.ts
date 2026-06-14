@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: 'accueil',
-    title: 'Ô Cheval Radiant - Bienvenue sur notre site !',
+    title: 'Ô Cheval Radiant - Bienvenue !',
     loadComponent: () =>
       import('./components/pages/accueil/accueil').then(m => m.Accueil)
   },
@@ -66,6 +66,18 @@ export const routes: Routes = [
     title: 'Mentions légales',
     loadComponent: () =>
       import('./components/pages/mentions-legales/mentions-legales').then(m => m.MentionsLegales)
+  },
+  {
+    path: 'politique-confidentialite',
+    title: 'Politique de confidentialité',
+    loadComponent: () =>
+      import('./components/pages/politique-confidentialite/politique-confidentialite').then(m => m.PolitiqueConfidentialite)
+  },
+  {
+    path: 'conditions_utilisation',
+    title: 'Conditions d\'utilisation',
+    loadComponent: () =>
+      import('./components/pages/conditions-utilisation/conditions-utilisation').then(m => m.ConditionsUtilisation)
   },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' }
 ];

@@ -9,11 +9,11 @@
     "developer_text": "Conception et développement par",
     "developer_name": "Boris CLAUDE",
     "developer_link": "https://borisclaude.eu",
-    "legal_notices": "Mentions légales",
-    "legal_notices_routerlink": "",
-    "privacy_politic": "Politique de confidentialité",
-    "privacy_politic_routerlink": "",
-    "terms_of_use": "Conditions d'utilisation",
-    "terms_of_use_routerlink": ""
+    "mention_legales": "Mentions légales",
+    "mention_legales_routerlink": "",
+    "politique_confidentialite": "Politique de confidentialité",
+    "politique_confidentialite_routerlink": "",
+    "conditions_utilisation": "Conditions d'utilisation",
+    "conditions_utilisation_routerlink": ""
   }
 }

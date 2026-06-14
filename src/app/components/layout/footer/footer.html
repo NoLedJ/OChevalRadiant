@@ -37,9 +37,9 @@
       <br />{{ footer_text.contract_link_section.developer_text }} <a class="developer-link" [href]="footer_text.contract_link_section.developer_link" target="_blank" rel="noopener noreferrer">{{ footer_text.contract_link_section.developer_name }}</a>.
     </p>
     <div class="links">
-      <a class="text-sm" [routerLink]="['/mentions-legales']">{{ footer_text.contract_link_section.legal_notices }}</a>
-      <a class="text-sm" routerLink="#">{{ footer_text.contract_link_section.privacy_politic }}</a>
-      <a class="text-sm" routerLink="#">{{ footer_text.contract_link_section.terms_of_use }}</a>
+      <a class="text-sm" [routerLink]="['/mentions-legales']">{{ footer_text.contract_link_section.mention_legales }}</a>
+      <a class="text-sm" [routerLink]="['/politique-confidentialite']">{{ footer_text.contract_link_section.politique_confidentialite }}</a>
+      <a class="text-sm" [routerLink]="['/conditions_utilisation']">{{ footer_text.contract_link_section.conditions_utilisation }}</a>
     </div>
   </div>
 </footer>

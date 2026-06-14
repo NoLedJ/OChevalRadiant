@@ -1,0 +1,66 @@
+{
+  "conditions_utilisation_section": {
+    "title": "Conditions d’utilisation"
+  },
+  "objet_site": {
+    "title": "Objet du site",
+    "paragraph_01": "Le présent site a pour objectif de présenter l’association, ses activités, ses projets et ses informations pratiques.",
+    "paragraph_02": "L’accès au site implique l’acceptation pleine et entière des présentes conditions d’utilisation."
+  },
+  "acces_site": {
+    "title": "Accès au site",
+    "paragraph_01": "Le site est accessible gratuitement à tout utilisateur disposant d’un accès à Internet.",
+    "paragraph_02": "L’association ne peut être tenue responsable en cas :",
+    "list_01": "type de navigateur",
+    "list_02": "pages consultées",
+    "list_03": "durée de visite"
+  },
+  "utilisation_contenu": {
+    "title": "Utilisation du contenu",
+    "paragraph_01": "L’ensemble des contenus présents sur le site (textes, images, photographies, logos, éléments graphiques) est protégé par le droit d’auteur.",
+    "paragraph_02": "Il est interdit de :",
+    "list_01": "reproduire",
+    "list_02": "modifier",
+    "list_03": "diffuser",
+    "list_04": "exploiter tout ou partie du contenu",
+    "paragraph_03": "sans autorisation préalable de l’association."
+  },
+  "responsabilite_utilisateur": {
+    "title": "Responsabilité de l’utilisateur",
+    "paragraph_01": "L’utilisateur s’engage à :",
+    "list_01": "utiliser le site conformément à la loi",
+    "list_02": "ne pas tenter d’accéder de manière non autorisée aux systèmes du site",
+    "list_03":"ne pas perturber son bon fonctionnement",
+    "paragraph_02": "Tout usage frauduleux ou malveillant pourra entraîner des actions appropriées."
+  },
+  "liens_externes": {
+    "title": "Liens externes",
+    "paragraph_01": "Le site peut contenir des liens vers des sites tiers.",
+    "paragraph_02": "L’association n’exerce aucun contrôle sur ces sites et décline toute responsabilité quant à :",
+    "list_01": "leur contenu",
+    "list_02": "leur fonctionnement",
+    "list_03":"leurs pratiques en matière de données personnelles"
+  },
+  "donnees_personnelles": {
+    "title": "Données personnelles",
+    "paragraph_01": "Le site ne collecte aucune donnée personnelle directe, car il ne comporte pas de formulaire de contact.",
+    "paragraph_02": "Seules des données techniques anonymisées peuvent être collectées pour assurer le bon fonctionnement du site.",
+    "paragraph_03": "Pour plus d’informations, consultez notre politique de confidentialité."
+  },
+  "cookies": {
+    "title": "Cookies",
+    "paragraph_01": "Le site utilise uniquement :",
+    "list_01": "des cookies essentiels au fonctionnement",
+    "list_02": "éventuellement des cookies de mesure d’audience anonymisés",
+    "paragraph_02": "Aucun cookie publicitaire n’est utilisé."
+  },
+  "modification_conditions": {
+    "title": "Modification des conditions",
+    "paragraph_01": "L’association peut modifier les présentes conditions à tout moment.",
+    "paragraph_02": "La version en vigueur est celle publiée sur cette page."
+  },
+  "contact": {
+    "title": "Contact",
+    "paragraph_01": "Pour toute question concernant le site ou son utilisation, veuillez nous contacter via les informations de la page de contact ou celles inclus dans la première partie des mentions légales."
+  }
+}

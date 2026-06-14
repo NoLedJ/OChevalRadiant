@@ -1,7 +1,7 @@
 {
   "chevaux_section": {
     "title": "Nos chevaux, partenaires de soin",
-    "subtitle": "Les chevaux qui nous accompagnent jouent un rôle essentiel dans chaque séance. Chacun possède sa personnalité, sa sensibilité et sa manière unique d’entrer en relation avec les participants. Découvrez ceux qui rendent l’équithérapie possible au sein d'Ô Cheval Radiant.",
+    "subtitle": "Les chevaux qui nous accompagnent jouent un rôle essentiel dans chaque séance. Chacun possède sa personnalité, sa sensibilité et sa manière unique d’entrer en relation avec les participants. Découvrez ceux qui rendent l’équithérapie possible au sein d'« Ô Cheval Radiant ».",
     "card": [
       {
         "id": 1,
@@ -48,7 +48,7 @@
       {
         "id": 8,
         "nom": "Hall Black",
-        "info": "???",
+        "info": "Hall Black est un cheval Licorne facilitant l'accès à un travail fusionnel permettant de ne faire qu'un avec le Cheval.",
         "photo_url": "/images/chevaux/hall-black.jpg"
       }
     ]

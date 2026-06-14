@@ -1,0 +1,81 @@
+{
+  "politique_confidentialite_section": {
+    "title": "Politique de confidentialité"
+  },
+  "responsable_traitement": {
+    "title": "Responsable du traitement",
+    "paragraph_01": "L’association est responsable du traitement des données collectées sur ce site.",
+    "paragraph_02": "Les informations de contact figurent dans les mentions légales ou la page de contact."  },
+  "donnees_collectees": {
+    "title": "Données collectées",
+    "paragraph_01": "Ce site ne collecte aucune donnée personnelle directe, car il ne comporte pas de formulaire de contact ni de zone de saisie d’informations.",
+    "donnees_collectees_automatiquement": {
+      "title": "Données collectées automatiquement",
+      "paragraph_01": "Pour assurer le bon fonctionnement du site, certaines données techniques peuvent être collectées automatiquement :",
+      "list_01": "type de navigateur",
+      "list_02": "pages consultées",
+      "list_03": "durée de visite",
+      "list_04": "données de navigation anonymisées",
+      "list_05": "cookies strictement nécessaires",
+      "paragraph_02": "Aucune donnée permettant d’identifier directement un visiteur n’est enregistrée."
+    }
+  },
+  "finalite_collecte": {
+    "title": "Propriété intellectuelle",
+    "paragraph_01": "Les données techniques collectées servent uniquement à :",
+    "list_01": "assurer le fonctionnement du site",
+    "list_02": "améliorer la navigation et la sécurité",
+    "list_03": "produire des statistiques anonymes",
+    "paragraph_02": "Aucune donnée n’est utilisée à des fins commerciales."
+  },
+  "base_legale_traitement": {
+    "title": "Base légale du traitement",
+    "paragraph_01": "Le traitement repose sur :",
+    "list_01": "notre intérêt légitime à assurer la sécurité et le bon fonctionnement du site",
+    "list_02": "votre consentement, si des cookies non essentiels sont utilisés (ce qui n’est pas le cas actuellement)"
+  },
+  "duree_conservation": {
+    "title": "Durée de conservation",
+    "paragraph_01": "Les données techniques anonymisées sont conservées pour une durée limitée, strictement nécessaire à l’analyse du fonctionnement du site."
+  },
+  "destinataire_donnees": {
+    "title": "Destinataires des données",
+    "paragraph_01": "Les données sont accessibles uniquement :",
+    "list_01": "à l’hébergeur du site",
+    "list_02": "aux administrateurs techniques",
+    "paragraph_02": "Aucun transfert hors Union européenne n’est effectué."
+  },
+  "droits": {
+    "title": "Vos droits",
+    "paragraph_01": "Conformément au RGPD, vous disposez des droits suivants :",
+    "list_01": "droit d’accès",
+    "list_02": "droit d’opposition",
+    "list_03": "droit à l’effacement",
+    "list_04": "droit à la limitation du traitement",
+    "paragraph_02": "Pour exercer vos droits, vous pouvez nous contacter via les informations de contact disponibles dans les mention légales ou notre page de contact."
+  },
+  "cookies": {
+    "title": "Cookies",
+    "paragraph_01": "Le site utilise uniquement :",
+    "list_01": "des cookies essentiels au fonctionnement",
+    "list_02": "éventuellement des cookies de mesure d’audience anonymisés",
+    "paragraph_02": "Si des outils tiers sont ajoutés ultérieurement (ex : statistiques avancées), une bannière de consentement sera mise en place."
+  },
+  "securite": {
+    "title": "Sécurité",
+    "paragraph_01": "Nous mettons en œuvre des mesures techniques et organisationnelles pour protéger les données contre :",
+    "list_01": "l’accès non autorisé",
+    "list_02": "la perte",
+    "list_03": "la modification",
+    "list_04": "la divulgation"
+  },
+  "modifications_politique": {
+    "title": "Modifications de la politique",
+    "paragraph_01": "Cette politique peut être mise à jour en fonction de l’évolution du site ou de la réglementation.",
+    "paragraph_02": "La version la plus récente est toujours disponible sur cette page."
+  },
+  "contact": {
+    "title": "Contact",
+    "paragraph_01": "Pour toute question relative à la protection des données, veuillez nous contacter via les informations de la page de contact ou celles inclus dans la première partie des mentions légales."
+  }
+}
