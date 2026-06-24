@@ -2,7 +2,7 @@
   <div class="text-section-content">
     <div class="title-text-content text-content fade-in" animateOnVisible="visible">
       <h1>{{ chevaux_text.chevaux_section.title }}</h1>
-      <p class="title-subtitle">{{ chevaux_text.chevaux_section.subtitle }}</p>
+      <p class="title-subtitle" [innerHTML]="chevaux_text.chevaux_section.subtitle | safeHtml"></p>
     </div>
     <div class="presentation-cards-container">
       @for (card of chevaux_text.chevaux_section.card; track card.id) {

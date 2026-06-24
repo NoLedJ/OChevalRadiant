@@ -3,10 +3,12 @@ import { Component } from '@angular/core';
 import { FsLightbox } from "fslightbox-angular";
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { CTASection } from '../../layout/cta-section/cta-section';
+import { FlipCard } from '../../shared/flip-card/flip-card';
+import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
 
 @Component({
   selector: 'app-experiences',
-  imports: [FsLightbox, CTASection, AnimateOnVisibleDirective],
+  imports: [FsLightbox, CTASection, AnimateOnVisibleDirective, FlipCard, SafeHtmlPipe],
   templateUrl: './experiences.html',
   styleUrl: './experiences.scss',
 })

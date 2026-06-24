@@ -6,7 +6,6 @@ import { Directive, ElementRef, input, OnInit, OnDestroy } from '@angular/core';
 export class AnimateOnVisibleDirective implements OnInit, OnDestroy {
 
   animateOnVisible = input<string>('visible');
-  threshold = input<number>(0.05);
 
   private observer?: IntersectionObserver;
 
@@ -21,8 +20,7 @@ export class AnimateOnVisibleDirective implements OnInit, OnDestroy {
             this.observer?.unobserve(this.el.nativeElement);
           }
         });
-      },
-      { threshold: this.threshold() }
+      }
     );
 
     this.observer.observe(this.el.nativeElement);

@@ -1,7 +1,18 @@
 <app-banner-section
   [bannerTitle]="bannerTitle"
   [bannerSubtitle]="bannerSubtitle"
-  [bannerImage]="bannerImage"></app-banner-section>
+  [bannerImage]="bannerImage">
+</app-banner-section>
+@for (section of projets_text.main_sections; track section.id) {
+  <section>
+      <div class="storytelling-text-content fade-in" animateOnVisible="visible">
+        <h2>{{ section.title }}</h2>
+        @for (paragraph of section.paragraphs; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+      </div>
+  </section>
+}
 <section>
   <app-cta-section [cta_title]="cta_title" [cta_text]="cta_text" [cta_question]="cta_question"></app-cta-section>
 </section>

@@ -1,7 +1,7 @@
 {
   "banner": {
     "title": "Connecter les cœurs grâce à l'équithérapie",
-    "subtitle": "Découvrez le pouvoir de guérison de la nature et des chevaux à « Ô Cheval Radiant », où nous tissons des liens profonds entre l'humain et le vivant.",
+    "subtitle": "Découvrez les liens profonds entre l'Homme et le Cheval via l'association <span class='insecable'>« Ô Cheval Radiant »</span>.",
     "image_url": "/images/accueil/hero-header"
   },
   "equitherapie_section": {
@@ -12,13 +12,13 @@
       {
         "id": 1,
         "nom": "Guérison émotionnelle",
-        "info": "Développez la confiance et la conscience émotionnelle grâce à des interactions douces avec les chevaux dans un cadre bienveillant.",
+        "info": "Développez la confiance et la conscience émotionnelle grâce à des interactions douces avec les chevaux dans un cadre ouvert.",
         "icon_url": "/icons/heart.png"
       },
       {
         "id": 2,
         "nom": "Lien social",
-        "info": "Renforcez vos capacités de communication et tissez des relations sincères au sein de notre communauté accueillante.",
+        "info": "Renforcez vos capacités de communication bienveillante pour co-construire ensemble le monde de demain.",
         "icon_url": "/icons/users.png"
       },
       {
@@ -31,7 +31,7 @@
   },
   "contact_section": {
     "title": "Restez informés",
-    "paragraph_01": "Suivez notre aventure sur Facebook pour découvrir nos programmes, nos événements coopératifs et les moments merveilleux que nous partageons avec nos chevaux.",
+    "paragraph_01": "Suivez notre aventure sur Facebook pour en apprendre d'avantage sur nos activités, nos projets en lien avec les partenaires chevaux mais aussi la construction d'un projet commun.",
     "button_text": "Nous contacter"
   }
 }

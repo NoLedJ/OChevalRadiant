@@ -1,0 +1,24 @@
+<div class="flip-card" (click)="toggleFlip()" (keydown.enter)="toggleFlip()">
+  <div class="flip-card-inner" [class.flipped]="isFlipped">
+    <div class="flip-card-front fly-card">
+      <span class="quote quote-first">“</span>
+      <div class="front-card-text-content">
+        <p [innerHTML]="card().light_version | safeHtml"></p>
+        <p class="signature">{{ card().signature }}</p>
+      </div>
+      <span class="quote quote-last">”</span>
+      <p class="flip-cta text-sm">Cliquez pour voir le texte complet</p>
+    </div>
+    <div class="flip-card-back fly-card">
+      <span class="quote quote-first quote-back">“</span>
+      <div class="back-card-text-content" #flipCard>
+        @for (paragraph of card().paragraphs; track $index) {
+          <p [innerHTML]="paragraph | safeHtml"></p>
+        }
+        <p class="signature">{{ card().signature }}</p>
+      </div>
+      <span class="quote quote-last quote-back">”</span>
+      <p class="flip-cta text-sm">Cliquez pour voir le résumé</p>
+    </div>
+  </div>
+</div>

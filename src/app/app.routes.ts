@@ -32,10 +32,10 @@ export const routes: Routes = [
       import('./components/pages/bienfaits/bienfaits').then(m => m.Bienfaits)
   },
   {
-    path: 'services',
-    title:'Nos services',
+    path: 'accompagnements',
+    title:'Nos accompagnements',
     loadComponent: () =>
-      import('./components/pages/services/services').then(m => m.Services)
+      import('./components/pages/accompagnements/accompagnements').then(m => m.Accompagnements)
   },
   {
     path: 'experiences',

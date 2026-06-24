@@ -1,0 +1,100 @@
+.flip-card {
+  height: 480px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: stretch;
+  backface-visibility: hidden;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  padding: 2rem;
+  & > div {
+    height: 100%;
+  }
+}
+
+.flip-card-front {
+  background: hsl(var(--card));
+}
+
+.quote-first {
+  top: 1rem;
+  right: 1rem;
+}
+
+.quote-last {
+  align-self: end;
+  top: 2rem;
+}
+
+.quote-back {
+  color: hsl(var(--card));
+  opacity: 0.6;
+}
+
+.flip-card-back {
+  background: hsl(var(--primary-variant)/0.2);
+  transform: rotateY(180deg);
+}
+
+.front-card-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & > p {
+    padding-bottom: 0;
+  }
+}
+
+.back-card-text-content {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--primary-variant)) transparent;
+}
+
+p {
+  font-style: italic;
+  padding-bottom: 2rem;
+}
+
+.signature {
+  align-self: flex-end;
+  text-align: right;
+  padding-bottom: 0;
+  padding-right: 0.1rem;
+}
+
+.flip-cta {
+  font-style: normal;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  align-self: center;
+  color: hsl(var(--primary-variant));
+  &:hover {
+    color: hsl(var(--primary));
+  }
+}
+
+.flip-card-back > .flip-cta {
+  color: hsl(var(--primary-text)/0.7);
+  &:hover {
+    color: hsl(var(--primary-text));
+  }
+}

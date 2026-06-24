@@ -24,10 +24,10 @@
     "nom": "Bienfaits",
     "routerLink": "bienfaits"
   },
-  "services": {
+  "accompagnements": {
     "id": 6,
-    "nom": "Services",
-    "routerLink": "services"
+    "nom": "Accompagnements",
+    "routerLink": "accompagnements"
   },
   "experiences": {
     "id": 7,

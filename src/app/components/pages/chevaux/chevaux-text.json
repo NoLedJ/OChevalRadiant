@@ -1,7 +1,7 @@
 {
   "chevaux_section": {
     "title": "Nos chevaux, partenaires de soin",
-    "subtitle": "Les chevaux qui nous accompagnent jouent un rôle essentiel dans chaque séance. Chacun possède sa personnalité, sa sensibilité et sa manière unique d’entrer en relation avec les participants. Découvrez ceux qui rendent l’équithérapie possible au sein d'« Ô Cheval Radiant ».",
+    "subtitle": "Les chevaux qui nous accompagnent jouent un rôle essentiel dans chaque séance. Chacun possède sa personnalité, sa sensibilité et sa manière unique d’entrer en relation avec les participants. Découvrez ceux qui rendent l’équithérapie possible au sein d'<span class='insecable'>« Ô Cheval Radiant »</span>.",
     "card": [
       {
         "id": 1,
@@ -36,7 +36,7 @@
       {
         "id": 6,
         "nom": "Norton",
-        "info": "Double poney d’origine arabe, il nous a éte confié par l'association des Chamborans dont j’en suis le président.",
+        "info": "Double poney d’origine arabe, il nous a éte confié par l'association des Chamborans dont Anatole en est également le président.",
         "photo_url": "/images/chevaux/norton.jpg"
       },
       {
@@ -54,7 +54,7 @@
     ]
   },
   "president_section": {
-    "title": "Le mot du président",
+    "title": "Le mot du fondateur",
     "paragraph_01": "Les partenaires chevaux sont pour la plupart nés sur place. Leur présence me fascine. Ils m’ont appris à grandir à leur présence et celle-ci m’apaise et m’inspire puissance tranquille et liberté.",
     "paragraph_02": "La plupart sont originaires d’Amérique du Nord, de race « Paint » et nés au domicile. Ils sont dociles, porteurs, généreux et possèdent \"un bon pied\".",
     "paragraph_03": "Ils évoluent en troupeau dans un milieu naturel afin d’être au plus près des besoins nécessaires à un bon mental au cheval."

@@ -6,12 +6,12 @@
   <div class="text-section-content">
     <div class="text-content">
       <div class="fade-in" animateOnVisible="visible">
-        <h2>{{ services_text.proposition_section.title }}</h2>
-        <p class="text-content-paragraph">{{ services_text.proposition_section.paragraph_01 }}</p>
+        <h2>{{ accompagnements_text.proposition_section.title }}</h2>
+        <p class="text-content-paragraph">{{ accompagnements_text.proposition_section.paragraph_01 }}</p>
       </div>
     </div>
     <div class="proposal-cards-container">
-      @for (card of services_text.proposition_section.card; track card.id) {
+      @for (card of accompagnements_text.proposition_section.card; track card.id) {
         <app-proposal-card [card]="card"></app-proposal-card>
       }
     </div>
@@ -20,10 +20,10 @@
 <section>
   <div class="text-section-content">
     <div class="storytelling-text-content fade-in" animateOnVisible="visible">
-      <h2>{{ services_text.deroulement_section.title }}</h2>
-      <p>{{ services_text.deroulement_section.paragraph_01 }}</p>
-      <p>{{ services_text.deroulement_section.paragraph_02 }}</p>
-      <p>{{ services_text.deroulement_section.paragraph_03 }}</p>
+      <h2>{{ accompagnements_text.deroulement_section.title }}</h2>
+      <p>{{ accompagnements_text.deroulement_section.paragraph_01 }}</p>
+      <p>{{ accompagnements_text.deroulement_section.paragraph_02 }}</p>
+      <p>{{ accompagnements_text.deroulement_section.paragraph_03 }}</p>
     </div>
   </div>
 </section>

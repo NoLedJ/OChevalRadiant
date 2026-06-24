@@ -11,6 +11,30 @@
     </div>
   </div>
 </section>
+<section id="inscription">
+  <div class="text-section-content">
+    <div class="text-content">
+      <div class="fade-in" animateOnVisible="visible">
+        <h2>{{ equipe_text.adhesion_section.title }}</h2>
+        <p class="title-subtitle">{{ equipe_text.adhesion_section.subtitle_01 }}</p>
+        <p class="text-content-paragraph">{{ equipe_text.adhesion_section.paragraph_01 }}</p>
+      </div>
+    </div>
+    <div class="proposal-cards-container">
+      @for (card of equipe_text.adhesion_section.card; track card.id) {
+        <app-proposal-card [card]="card"></app-proposal-card>
+      }
+    </div>
+    <div class="fade-in" animateOnVisible="visible">
+      <div class="text-content">
+        <p class="title-subcontent text-xl">{{ equipe_text.adhesion_section.subtitle_02 }}</p>
+        <p class="text-content-paragraph">{{ equipe_text.adhesion_section.paragraph_02 }}</p>
+        <p class="text-content-paragraph">{{ equipe_text.adhesion_section.paragraph_03 }}</p>
+        <p class="text-content-paragraph">{{ equipe_text.adhesion_section.paragraph_04 }}</p>
+      </div>
+    </div>
+  </div>
+</section>
 <section>
   <app-cta-section [cta_title]="cta_title" [cta_text]="cta_text" [cta_question]="cta_question"></app-cta-section>
 </section>

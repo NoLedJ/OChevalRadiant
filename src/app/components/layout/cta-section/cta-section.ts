@@ -4,10 +4,11 @@ import import_facebook_text_json from '../../shared/facebook-button/facebook-tex
 import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
+import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
 
 @Component({
   selector: 'app-cta-section',
-  imports: [RouterLink, AnimateOnVisibleDirective],
+  imports: [RouterLink, AnimateOnVisibleDirective, SafeHtmlPipe],
   templateUrl: './cta-section.html',
   styleUrl: './cta-section.scss',
 })
@@ -17,9 +18,9 @@ export class CTASection {
   navigation_links = import_navigation_link_json;
   facebook_text = import_facebook_text_json;
 
-  cta_title = input<string|null>(null);
-  cta_text = input<string|null>(null);
-  cta_question = input<string|null>(null);
+  cta_title = input<string>("");
+  cta_text = input<string>("");
+  cta_question = input<string>("");
   on_contact_page = input<boolean>(false);
 
 }

@@ -7,35 +7,89 @@
         "id": 1,
         "nom": "Anatole Lenne",
         "role": "Président & Fondateur",
-        "info": "Fondateur et président de l’association « Ô Cheval Radiant », Anatole porte ce projet né d’un rêve d’enfance et nourri par une conviction profonde : le cheval est un partenaire de transformation et de résilience. Son parcours, riche d’expériences dans l’enseignement des activités physiques adaptées et l’accompagnement de publics variés — de l’Éducation nationale aux structures médico‑sociales — a façonné sa vision d’un lien Homme‑Cheval comme ressource essentielle. Persévérant, engagé et guidé par le sens du vivant, Anatole œuvre aujourd’hui à faire de l’équithérapie un espace d’ancrage, de mouvement et d’ouverture pour chacun.",
+        "info": "Fondateur et président de l’association <span class='insecable'>« Ô Cheval Radiant »</span>, Anatole porte ce projet né d’un rêve d’enfance et nourri par une conviction profonde : le cheval est un partenaire de transformation et de résilience. Son parcours, riche d’expériences dans l’enseignement des activités physiques adaptées et l’accompagnement de publics variés — de l’Éducation nationale aux structures médico‑sociales — a façonné sa vision d’un lien Homme‑Cheval comme ressource essentielle. Persévérant, engagé et guidé par le sens du vivant, Anatole œuvre aujourd’hui à faire de l’équithérapie un espace d’ancrage, de mouvement et d’ouverture pour chacun.",
         "photo_url": "/images/equipe/profil_director.jpg"
       },
       {
         "id": 2,
         "nom": "Guenièvre Lenne",
         "role": "Secrétaire",
-        "info": "Portée par les valeurs du vivre ensemble et de l’intelligence partagée, Guenièvre est secrétaire de l’Association « Ô cheval Radiant » ainsi que de l’association « NIOFAR ». Définie comme une force tranquille persévérante et dynamique, Guenièvre investit le développement de projet avec la volonté de réfléchir collectivement. Éducatrice spécialisée de profession, elle sait se monter forte de proposition, pragmatique et organisée.",
+        "info": "Portée par les valeurs du vivre ensemble et de l’intelligence partagée, Guenièvre est secrétaire de l’Association <span class='insecable'>« Ô Cheval Radiant »</span> ainsi que de l’association « NIOFAR ». Définie comme une force tranquille persévérante et dynamique, Guenièvre investit le développement de projet avec la volonté de réfléchir collectivement. Éducatrice spécialisée de profession, elle sait se monter forte de proposition, pragmatique et organisée.",
         "photo_url": "/images/equipe/profil_secretary.jpg"
       },
       {
         "id": 3,
         "nom": "Laetitia Samain",
         "role": "Bénévole",
-        "info": "Animée par le lien au vivant et par la richesse des rencontres humaines et animales, Laetitia est bénévole au sein de l’association « Ô Cheval Radiant » depuis avril 2024. Monitrice éducatrice et monitrice d’attelage en tourisme équestre, elle met au service de l’association ses compétences équestres et son expérience de l’accompagnement des personnes en situation de handicap. Présence calme, engagée et structurante, elle contribue à l'association avec efficacité et bienveillance.",
+        "info": "Animée par le lien au vivant et par la richesse des rencontres humaines et animales, Laetitia est bénévole au sein de l’association <span class='insecable'>« Ô Cheval Radiant »</span> depuis avril 2024. Monitrice éducatrice et monitrice d’attelage en tourisme équestre, elle met au service de l’association ses compétences équestres et son expérience de l’accompagnement des personnes en situation de handicap. Présence calme, engagée et structurante, elle contribue à l'association avec efficacité et bienveillance.",
         "photo_url": "/images/equipe/profil_volunteer01.jpg"
       },
       {
         "id": 4,
         "nom": "Lina Lanzetta",
         "role": "Bénévole",
-        "info": "Guidée par des valeurs fortes de vivre‑ensemble, de nature et de solidarité, Lina rejoint régulièrement « Ô Cheval Radiant » pour contribuer au développement de ce beau projet. Ce lieu, tout comme les êtres vivants qui l’habitent, ouvre à un univers sensible et profondément humain, dont il est toujours difficile de se détacher. Présence engagée et attentive, Lina trouve ici un espace qui donne pleinement sens à ses convictions.",
+        "info": "Guidée par des valeurs fortes de vivre‑ensemble, de nature et de solidarité, Lina rejoint régulièrement <span class='insecable'>« Ô Cheval Radiant »</span> pour contribuer au développement de ce beau projet. Ce lieu, tout comme les êtres vivants qui l’habitent, ouvre à un univers sensible et profondément humain, dont il est toujours difficile de se détacher. Présence engagée et attentive, Lina trouve ici un espace qui donne pleinement sens à ses convictions.",
+        "photo_url": ""
+      },
+      {
+        "id": 5,
+        "nom": "Christina Sulmon",
+        "role": "Bénévole",
+        "info": "Passionnée par le bien‑être animal, Christina s’investit au sein de <span class='insecable'>« Ô Cheval Radiant »</span> avec bienveillance et engagement. Son projet de toilettage canin et félin itinérant reflète son attachement profond au respect du vivant. Aux côtés des chevaux, elle trouve un espace de partage et d’apprentissage, où elle peut contribuer à des actions porteuses de sens tout en restant active malgré certaines difficultés physiques.",
         "photo_url": ""
       }
     ]
   },
+  "adhesion_section": {
+    "title": "Adhésions & Soutiens",
+    "subtitle_01": "Rejoindre l’association et contribuer à son développement",
+    "paragraph_01": "L’association « Ô Cheval Radiant » s’appuie sur une communauté ouverte, solidaire et engagée. Chaque personne peut apporter sa pierre à l’édifice, selon ses envies, ses compétences et ses possibilités. Nos adhésions reflètent cette diversité et permettent à chacun de participer à la vie de l’association.",
+    "card": [
+      {
+        "id": 1,
+        "nom": "Adhérent bénévole actif",
+        "info_title1": "Pour qui :",
+        "info1": "Personnes souhaitant s’impliquer dans la vie quotidienne de l’association.",
+        "info_title2": "Participation :",
+        "info2": "Adhésion symbolique de 2 €",
+        "info__list": "Ce que cela permet :",
+        "info_list": "participer aux chantiers participatifs/aider aux soins des animaux/contribuer à l’accueil, à l’entretien des espaces/prendre part aux événements annuels/proposer et porter des projets en lien avec les valeurs de l’association",
+        "info_title3": "Esprit :",
+        "info3": "Un engagement basé sur le partage, la coopération et la montée en compétences de chacun."
+      },
+      {
+        "id": 2,
+        "nom": "Adhérent bénéficiaire / utilisateur",
+        "info_title1": "Pour qui :",
+        "info1": "Personnes participant aux activités thérapeutiques, randonnées, ateliers ou accompagnements proposés par l’association.",
+        "info_title2": "Participation :",
+        "info2": "Adhésion annuelle de 15 €",
+        "info_title_list": "Ce que cela permet :",
+        "info_list": "soutenir le fonctionnement de l’association/participer aux activités dans un cadre sécurisé et bienveillant/contribuer à la pérennité des projets éducatifs, sociaux et thérapeutiques",
+        "info_title3": "Esprit :",
+        "info3": "Une adhésion qui renforce le lien entre l’association et ses bénéficiaires."
+      },
+      {
+        "id": 3,
+        "nom": "Adhérent bienfaiteur",
+        "info_title1": "Pour qui :",
+        "info1": "Personnes souhaitant soutenir l’association de manière plus large.",
+        "info_title2": "Participation :",
+        "info2": "Don libre, en numéraire ou en matériel",
+        "info_title_list": "Ce que cela permet :",
+        "info_list": "tous les dons sont déductibles des impôts via un CERFA fourni par l’association/possibilité de soutenir des projets précis (parcours sensoriel, tiny house, accueil de groupes, bien‑être animal…)",
+        "info_title3": "Esprit :",
+        "info3": "Un soutien précieux pour développer les infrastructures, améliorer l’accueil et renforcer l’impact social du projet."
+      }
+    ],
+    "subtitle_02": "Pourquoi adhérer ?",
+    "paragraph_02": "Nous sommes une association qui se veut ouverte et dans l'acceptation de tous, peu importe les différences culturelles et sociales. Nous œuvrons pour le bien commun et chaque bénévole peut devenir porteur d'un projet en lien avec les valeurs de l'association.",
+    "paragraph_03": "Notre association est un endroit au large potentiel où chacun peut mettre la pierre à l'édifice et poser des graines.",
+    "paragraph_04": "Bienvenue dans une oasis parmi d’autres, un espace où le vivre‑ensemble, la nature et la solidarité prennent forme chaque jour."
+  },
   "cta_section" : {
     "title": "Rejoignez notre équipe de bénévoles",
-    "text": "Nous sommes toujours à la recherche de personnes passionnées qui souhaitent contribuer à notre mission. Que vous ayez de l'expérience avec les chevaux ou simplement l'envie d'aider, vous avez votre place à « Ô Cheval Radiant ».",
+    "text": "Nous sommes toujours à la recherche de personnes voulant œuvrer pour le bien commun. Que vous ayez de l'expérience avec les chevaux ou que vous souhaitez en acquérir, que vous ayez l'envie d'aider, venez découvrir l'association <span class='insecable'>« Ô Cheval Radiant »</span>.",
     "question": "Vous souhaitez devenir bénévole ?"
   }
 }

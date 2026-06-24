@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 import { PresentationCard } from '../../shared/presentation-card/presentation-card';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { CTASection } from '../../layout/cta-section/cta-section';
+import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
 
 @Component({
   selector: 'app-chevaux',
-  imports: [PresentationCard, CTASection, AnimateOnVisibleDirective],
+  imports: [PresentationCard, CTASection, AnimateOnVisibleDirective, SafeHtmlPipe],
   templateUrl: './chevaux.html',
   styleUrl: './chevaux.scss',
 })

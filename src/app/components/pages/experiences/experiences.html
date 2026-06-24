@@ -2,14 +2,14 @@
   <div class="text-section-content">
     <div class="title-text-content text-content fade-in" animateOnVisible="visible">
       <h1>{{ experiences_text.equipe_section.title }}</h1>
-      <p class="title-subtitle">{{ experiences_text.equipe_section.subtitle }}</p>
+      <p class="title-subtitle" [innerHTML]="experiences_text.equipe_section.subtitle | safeHtml"></p>
     </div>
     <div class="photos-container">
       @for(photo of sources_thumbnail; track $index) {
         <img
           src="{{ photo }}"
           alt="Experience n°{{ $index + 1 }}"
-          class="experience-photo fade-in"
+          class="experience-photo fade-in zoom"
           animateOnVisible="visible"
           (click)="openLightbox($index)"
           (keydown.enter)="openLightbox($index)"
@@ -17,6 +17,18 @@
       }
     </div>
     <fslightbox	[toggler]="toggler"	[sources]="sources" [slide]="slide" />
+  </div>
+</section>
+<section>
+  <div class="text-section-content">
+    <div class="title-text-content text-content fade-in" animateOnVisible="visible">
+      <h2>{{ experiences_text.temoignage_section.title }}</h2>
+    </div>
+    <div class="flip-cards-container fade-in" animateOnVisible="visible">
+      @for (card of experiences_text.temoignage_section.temoignages; track card.id) {
+        <app-flip-card [card]="card"></app-flip-card>
+      }
+    </div>
   </div>
 </section>
 <section>

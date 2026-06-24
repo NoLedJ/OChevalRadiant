@@ -1,18 +1,23 @@
+import import_navigation_links_json from '../navbar-items/navigation-link.json';
 import { Component, effect, input } from '@angular/core';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { FacebookButton } from '../../shared/facebook-button/facebook-button';
+import { RouterLink } from '@angular/router';
+import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
 
 @Component({
   selector: 'app-banner-section',
-  imports: [FacebookButton, AnimateOnVisibleDirective],
+  imports: [FacebookButton, AnimateOnVisibleDirective, RouterLink, SafeHtmlPipe],
   templateUrl: './banner-section.html',
   styleUrl: './banner-section.scss',
 })
 export class BannerSection {
 
-  bannerImage = input<string>();
-  bannerTitle = input<string>();
-  bannerSubtitle = input<string>();
+  navigation_links = import_navigation_links_json;
+
+  bannerImage = input<string>("");
+  bannerTitle = input<string>("");
+  bannerSubtitle = input<string>("");
   heroHeader = input<boolean>(false);
 
   banner_2xl = "";

@@ -2,10 +2,11 @@ import import_projets_text_json from './projets-text.json';
 import { Component } from '@angular/core';
 import { BannerSection } from '../../layout/banner-section/banner-section';
 import { CTASection } from '../../layout/cta-section/cta-section';
+import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 
 @Component({
   selector: 'app-projets',
-  imports: [CTASection, BannerSection],
+  imports: [CTASection, BannerSection, AnimateOnVisibleDirective],
   templateUrl: './projets.html',
   styleUrl: './projets.scss',
 })

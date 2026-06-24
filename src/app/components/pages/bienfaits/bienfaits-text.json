@@ -1,72 +1,139 @@
 {
   "banner": {
-    "title": "Les bienfaits de l'équithérapie",
-    "subtitle": "Une approche thérapeutique ancrée dans l’histoire et la relation au cheval.",
+    "title": "Les bienfaits de l'équithérapie et du partenaire Cheval",
+    "subtitle": "Une approche thérapeutique ancrée dans l’Histoire et la relation au cheval.",
     "image_url": "/images/bienfaits/banner"
   },
-  "passe_section": {
-    "title": "Notre passé nous enseigne",
-    "paragraph_01": "L’homme ne serait pas là où il est sans le cheval. Cet animal intrigue, passionne, soigne. Déjà à l’époque de la Grèce antique, les médecins prônaient la pratique du cheval comme « un remède bon pour le corps et l’esprit ».",
-    "paragraph_02": "Encore plus loin dans le temps, dans les grottes de Lascaux, les peintures murales représentées les chevaux différemment des autres animaux. Certaines cultures comme les vikings, sacrifiaient un cheval pour mettre le défunt à l’intérieur et ainsi permettre le passage vers l’au-delà. Le cheval est lié à l’Homme et contribue à l’élever aujourd’hui et demain de plus belle, ceci grâce aux liens si particuliers qu’il éveille."
-  },
-  "symbolique_section": {
-    "title": "Symbolique : Tout un monde - Un levier motivationnel car évocateur d’émotion collective",
-    "paragraph_01": "Le cheval comme un médiateur thérapeutique permet une approche tout en douceur respectant des codes de communication intuitives, innée à chaque être vivant. Cette communication est universelle et permet de s’adapter à toute situation. En favorisant la communication universelle reliant corps et esprit, la prise de conscience de soi, des autres permet de rester centrer, ancrer, lucide pour favoriser l’observation du subtil, de ce qui est juste là.",
-    "paragraph_02": "Elle offre un cadre thérapeutique ouvert unique. Cette approche avant tout sensoriel se vit et puisque toute évolution se fait dans le corps : passons par le corps pour élever nos plans de conscience. Cette dimension sensorielle si particulière avec le cheval vivant dans une nature en mouvement. Cet appel à tendre vers ce qui nous est offert mouvement, à la force, à la beauté, à la chaleur corporelle, au son vibratoire des sabots, du foin qui craque sous la dent contribuent à nous happer dans des instants hors du temps, propice au bien-être d'être là et faisant parti d’un tout.",
-    "paragraph_03": "Par exemple, avec les personnes atteintes du trouble du spectre autistique, les sensations corporelles ressenties (proprioception kinesthésique) lors de la monte permettent d’observer un véritable changement. Le fait de se sentir porter et en déséquilibre va permettre à la personne de se recentrer sur soi pour mieux interagir face à l’environnement."
-
-  },
-  "bienfaits_section": {
-    "title": "Les bienfaits de l'équithérapie",
-    "paragraph_01": "Le contact avec les chevaux offre des avantages thérapeutiques uniques pour un bien-être global.",
-    "card": [
-      {
-        "id": 1,
-        "nom": "Favoriser l'estime de soi",
-        "info": "La relation avec le cheval offre un espace sécurisant où chacun peut expérimenter la réussite, développer sa confiance et renforcer une image de soi plus positive et stable.",
-        "icon_url": "/icons/self.png"
-      },
-      {
-        "id": 2,
-        "nom": "Développer les capacités motrices, cognitives et sensorielles",
-        "info": "Les interactions avec le cheval stimulent la motricité globale, l’attention, la coordination et la perception sensorielle, grâce à un environnement vivant, riche et engageant.",
-        "icon_url": "/icons/brain.png"
-      },
-      {
-        "id": 3,
-        "nom": "Favoriser le bien-être et la détente",
-        "info": "Le contact avec le cheval et le cadre naturel apaisant permettent de relâcher les tensions, de diminuer le stress et de retrouver un état de calme profond.",
-        "icon_url": "/icons/flower.png"
-      },
-      {
-        "id": 4,
-        "nom": "Améliorer la communication verbale et non-verbale",
-        "info": "Le cheval, très sensible aux signaux corporels, encourage une communication plus claire, authentique et consciente, tout en renforçant l’expression verbale et la compréhension mutuelle.",
-        "icon_url": "/icons/handshake.png"
-      },
-      {
-        "id": 5,
-        "nom": "Favoriser une réhabilitation psycho-sociale",
-        "info": "L’équithérapie soutient la reconstruction des liens sociaux, la reprise de repères relationnels et la capacité à interagir sereinement avec les autres, dans un cadre bienveillant et structurant.",
-        "icon_url": "/icons/together.png"
-      },
-      {
-        "id": 6,
-        "nom": "Renforcer le lien à soi et à l’environnement",
-        "info": "La présence du cheval et le cadre naturel invitent à ralentir, à se recentrer et à développer une conscience plus fine de soi et de ce qui nous entoure. Cette expérience favorise l’ancrage, l’équilibre intérieur et une meilleure connexion au vivant.",
-        "icon_url": "/icons/nature.png"
-      }
-    ]
-  },
-  "miroir_section": {
-    "title": "Un miroir émotionnel",
-    "paragraph_01": "Le cheval possède une sensibilité lui permettant de détecter le moindre changement émotionnel afin de survivre en tant qu’animal prédaté. L’expression de ses ressentis, émotions permettraient de sauver bien des situations. Chacun réagissant différemment face aux interactions en fonction de ses propres peurs qu’il serait bon de s’exprimer de manière bienveillante en référence à la CNV.",
-    "paragraph_02": "Le cheval permet ce dépassement de soi car il vous voit et vous révèle. Cette capacité à ressentir les émotions fait partie de son ADN, le cheval agit comme un miroir émotionnel. Il peut détecter le stress, l’anxiété, l’intention, la fréquence mieux que nous grâce à des capteurs sensoriels très développés. Cet effet miroir permet des prises de conscience permettant d’accéder à des spirales vertueuses.  Le cheval, être de la nature ne peut pas mentir, juger … l’animal ne fait qu’interagir sur ce qu’il ressent dans l’interaction que propose la personne ce qui rend beaucoup plus percutant ce que l’on peut observer dans des situations où nous travaillons avec des chevaux en liberté (Méthode EAGALA).",
-    "paragraph_03": "De plus, Il interagit avec l’humain sans préjugés, permettant aux jeunes de se sentir acceptés et compris. Cette dimension non verbale est essentielle pour de nombreuses personnes qui ont du mal à s’exprimer verbalement ou à communiquer leurs émotions."
-  },
+  "main_sections": [
+   {
+      "id": 1,
+      "title": "Retour historique évocateur",
+      "paragraphs": [
+        "Nous connaissons la phrase du philosophe et chef militaire de la Grèce antique Xénophon faisant référence à la médiation équine : « le cheval est un bon maître, non seulement pour le corps mais aussi pour l’esprit et le cœur ».",
+        "Encore plus loin dans le temps, dans les grottes de Lascaux, les peintures murales représentées les Chevaux différemment des autres animaux. De tous temps Homme et Cheval vivent une relation particulière. L’Homme ne serait pas là sans le Cheval. Il a permis de nourrir l’âme, de parcourir des espaces."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Une symbolique fantastique ?",
+      "paragraphs": [
+        "Ce lien spécifique au voyage, à l’introspection, à l’éveil spirituel se retrouve dans de nombreuses cultures et notamment dans la mythologie nordique. Sleipnir, le cheval à huit jambes d’Odin, traverse les mondes et franchit les frontières entre les vivants et les dieux. Chez les Vikings, on sacrifiait un cheval pour mettre le défunt à l’intérieur et ainsi faciliter le passage de l’âme vers d’autres mondes. Le cheval est donc un passeur qui permet la connexion entre nos individualités et qui nous relie à plus grand. Cet animal intrigue, passionne, traverse l’Homme. Aurions-nous peur de comprendre le Cheval afin de nous libérer de toute frontière ?"
+      ],
+      "enseignement": [
+        "Entrer dans un monde où tout devient possible",
+        "Vivre l’instant présent grâce au sensoriel",
+        "Favoriser la curiosité, l’éveil, le sentiment de dépassement",
+        "Favoriser l’émerveillement, le bien-être",
+        "Permettre le lâcher prise"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Avant tout un être social",
+      "paragraphs": [
+        "Les chevaux ont besoin de leurs congénères pour vibrer à l’unisson. Chaque équidé dans un groupe est à sa place selon un rôle établi. Cette harmonisation, cette paix est possible grâce à des codes de communication. Ces codes permettent aussi à l’Homme de communiquer avec le cheval et ensuite de mieux communiquer dans les relations humaines. L’équilibre se trouve dans la mise en mouvement. Le cheval comme un médiateur permet de retrouver une communication intuitive qui est celle du cœur.",
+        "En favorisant la communication du cœur, la prise de conscience de soi et des autres permet de rester centrer, ancrer, lucide favorisant l’épanouissement."
+      ],
+      "enseignement": [
+        "Développer l’assertivité",
+        "Ressentir l’ancrage pour se relier aux autres",
+        "Développer des capacités de communication intuitive",
+        "Parler cheval pour établir un sentiment de confiance"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Une sensibilité qui fait aussi sa force",
+      "paragraphs": [
+        "En tant qu’herbivore, le cheval est un animal prédaté. Cette prédisposition détermine une hypersensibilité lui permettant de survivre. Cette capacité à capter les émotions permet aussi à l‘Homme d’identifier et peut-être de comprendre ses émotions. Le cheval, véritable éponge émotionnelle, permet ce dépassement de soi car il vous voit et vous révèle. Cette capacité à ressentir les émotions fait partie de son archétype, le cheval agit comme un miroir émotionnel. Il peut détecter le stress, l’anxiété, l’intention, les fréquences bien mieux que l’Homme grâce à des capteurs sensoriels très développés."
+      ],
+      "enseignement": [
+        "Entrer dans un monde où tout devient possible",
+        "Vivre l’instant présent grâce au sensoriel",
+        "Favoriser la curiosité, l’éveil, le sentiment de dépassement",
+        "Favoriser l’émerveillement, le bien-être",
+        "Permettre le lâcher prise"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Un être de la Nature favorisant un levier motivationnel pour se sentir contenu dans l’accompagnement",
+      "paragraphs": [
+        "Le cheval, être de la Nature ne ment pas, ne juge pas, facilitant le plaisir à être là et de passer à l’action. Le cheval interagit en fonction de ce qu’il ressent et reflète les appréhensions, les doutes, ...  Cet effet miroir permet des prises de conscience favorisant un changement.  La personne sera plus à même de recevoir et d’intégrer les messages dans un cadre ouvert en lien avec la Nature, le Vivant qui est là pour nous donner, nous aider à cheminer dans notre quête du bonheur. Ce travail thérapeutique est proposé lors de séance en liberté où nous essayons d’aider la personne à comprendre les mécanismes qui se jouent et trouver les clés du bien-être.",
+        "Le cheval dans la nature offre une infinie approche sensori-motrice. Ce cadre thérapeutique ouvert est unique à chaque instant, et puisque toute évolution se fait à travers le corps : Vibrons, créons pour mieux ressentir ce qui nous lie.",
+        "Cet appel à tendre vers ce qui nous est offert, cette force tranquille, naturelle, cette beauté résiliente, sa chaleur, son odeur réconfortante, la vibration du rythme des sabots, le son du foin qui craque sous la dent contribuent à nous happer pour se reconnecter à soi, à ce qui fait sens.",
+        "Par exemple, avec les personnes atteintes du trouble du spectre autistique, les sensations corporelles ressenties (proprioception kinesthésique) lors de la monte permettent d’observer un véritable changement. Le fait de se sentir porter et en déséquilibre va permettre à la personne de se recentrer pour mieux interagir face à l’environnement."
+      ],
+      "enseignement": [
+        "Des clés accessibles en observant ce que nous partage l’animal Cheval"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Une source de développement affectif",
+      "paragraphs": [
+        "Le cheval permet de se sentir vivre. Personne ne reste indifférent, encore plus quand nous partageons des moments incroyables avec lui : ressentir, franchir, se surpasser, être avec ce partenaire particulier même dans les moments difficiles permet de partager des moments forts, uniques créant une relation fusionnelle, inspirante. Cette mise en mouvement permet à l’Homme de voir plus loin, plus grand grâce à l’empathie et la gratitude partagées ensemble."
+      ],
+      "enseignement": [
+        "Trouver les ressources d’un cadre contenant"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "L’hippothérapie",
+      "paragraphs": [
+        "Cette approche permet un travail rééducatif. En position assise sur le dos du cheval en mouvement, le corps apprend à trouver les clés du contrôle postural grâce aux influx neuronales envoyer lors des déséquilibres. La marche du cheval étant semblable à celle de l’Homme, cette thérapie équine permet d’avoir des résultats très efficients sur les maintiens posturaux."
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Les bienfaits de l'équithérapie",
+      "paragraphs": [
+        "Le contact avec les Chevaux offre des avantages thérapeutiques uniques pour un bien-être global."
+      ],
+      "card": [
+        {
+          "id": 1,
+          "nom": "Favoriser l'estime de soi",
+          "info": "La relation avec le cheval offre un espace sécurisant où chacun peut expérimenter la réussite, développer sa confiance et renforcer une image de soi plus positive et stable.",
+          "icon_url": "/icons/self.png"
+        },
+        {
+          "id": 2,
+          "nom": "Développer les capacités motrices, cognitives et sensorielles",
+          "info": "Les interactions avec le cheval stimulent la motricité globale, l’attention, la coordination et la perception sensorielle, grâce à un environnement vivant, riche et engageant.",
+          "icon_url": "/icons/brain.png"
+        },
+        {
+          "id": 3,
+          "nom": "Favoriser le bien-être et la détente",
+          "info": "Le contact avec le cheval et le cadre naturel apaisant permettent de relâcher les tensions, de diminuer le stress et de retrouver un état de calme profond.",
+          "icon_url": "/icons/flower.png"
+        },
+        {
+          "id": 4,
+          "nom": "Améliorer la communication verbale et non-verbale",
+          "info": "Le cheval, très sensible aux signaux corporels, encourage une communication plus claire, authentique et consciente, tout en renforçant l’expression verbale et la compréhension mutuelle.",
+          "icon_url": "/icons/handshake.png"
+        },
+        {
+          "id": 5,
+          "nom": "Favoriser une réhabilitation psycho-sociale",
+          "info": "L’équithérapie soutient la reconstruction des liens sociaux, la reprise de repères relationnels et la capacité à interagir sereinement avec les autres, dans un cadre bienveillant et structurant.",
+          "icon_url": "/icons/together.png"
+        },
+        {
+          "id": 6,
+          "nom": "Renforcer le lien à soi et à l’environnement",
+          "info": "La présence du cheval et le cadre naturel invitent à ralentir, à se recentrer et à développer une conscience plus fine de soi et de ce qui nous entoure. Cette expérience favorise l’ancrage, l’équilibre intérieur et une meilleure connexion au vivant.",
+          "icon_url": "/icons/nature.png"
+        }
+      ]
+    }
+  ],
   "cta_section" : {
     "title": "Profitez des bienfaits du cheval",
-    "text": "L’équithérapie est une approche inclusive, adaptable et centrée sur la personne, quel que soit l’âge, le parcours ou la situation. Le cheval accompagne chacun dans un cheminement unique, respectueux et profondément humain.",
+    "text": "L’équithérapie est une approche inclusive, adaptable et centrée sur la personne, quel que soit l’âge, le parcours ou la situation. Le Cheval accompagne chacun dans un cheminement unique, respectueux et profondément humain.",
     "question": "Vous souhaitez tenter l'expérience ?"
   }
 }

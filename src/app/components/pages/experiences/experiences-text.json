@@ -1,7 +1,32 @@
 {
   "equipe_section": {
     "title": "Vos retours d'expériences",
-    "subtitle": "Voyages, émotions et moments partagés à « Ô Cheval Radiant »."
+    "subtitle": "Voyages, émotions et moments partagés à <span class='insecable'>« Ô Cheval Radiant »</span>."
+  },
+  "temoignage_section" : {
+    "title": "Vos propres mots :",
+    "temoignages": [
+      {
+        "id": 1,
+        "light_version": "Notre fille Lou-Ann a commencé les séances il y a plus de deux ans et demi. Jeune fille autiste profonde, celles-ci lui auront été vraiment bénéfiques dans la vie de tous les jours. [...] Merci à l’association <span class='insecable'>« Ô Cheval Radiant »</span>, merci à Anatole, nous n'aurions pas pu espérer mieux pour notre fille qui s’épanouit de jour en jour.",
+        "paragraphs": [
+          "Notre fille Lou-Ann a commencé les séances il y a plus de deux ans et demi. Jeune fille autiste profonde, celles-ci lui auront été vraiment bénéfiques dans la vie de tous les jours. Patience et ténacité font partie des nombreuses qualités d’Anatole prenant en compte le bien-être de l’enfant mais tout autant celui des parents, en ayant des buts communs et de réels objectifs d’apprentissage. ",
+          "Jeune fille solitaire, nous arrivons désormais à la faire participer à des séances de groupe. Cela n’est plus seulement une thérapie mais aussi une vraie petite communauté, sans oublier tous les intervenants dont Anatole a su s’entourer et qui apportent aussi leur pierre à l’édifice.",
+          "Merci à l’association <span class='insecable'>« Ô Cheval Radiant »</span>, merci à Anatole, nous n'aurions pas pu espérer mieux pour notre fille qui s’épanouit de jour en jour."
+        ],
+        "signature": "Les parents de Lou-Ann"
+      },
+      {
+        "id": 2,
+        "light_version": "Anatole, l’équithérapeute et propriétaire de ce lieu nous a accueilli avec une bienveillance et une chaleur humaine que l’on retrouve rarement de nos jours. [...] Avec les chevaux, ce sont des moments de reconnexion avec soi-même. Je ressentais la liberté, la fierté, le courage, une force, le respect envers moi-même. Je revis. ",
+        "paragraphs": [
+          "Une association m’a proposé à moi et à d’autres femmes une séance de découverte d’équithérapie. On pensait monter des chevaux. Je ressentais la peur, même si j’avais déjà fait du cheval dans mon enfance. Nous sommes arrivées dans le centre d’équithérapie <span class='insecable'>« Ô Cheval Radiant »</span> à Maroilles. Quand je suis descendue du véhicule, j’ai tout de suite ressenti une paix intérieure. Anatole, l’équithérapeute et propriétaire de ce lieu nous a accueilli avec une bienveillance et une chaleur humaine que l’on retrouve rarement de nos jours. Il nous a présenté deux chevaux : Alpagosse et Blacky.",
+          "Anatole nous donnait des exercices à faire avec les chevaux pour atteindre un but. Mais quel but ? Il ne nous forçait pas. On allait à notre rythme. Il nous encourageait. Je ne ressentais aucune frustration face à l’échec. Je travaillais mon estime et ma confiance en moi sans m’en rendre compte. A travers ces jeux, Anatole nous laissait trouver des solutions. Avec les chevaux, ce sont des moments de reconnexion avec soi-même. Je ressentais la liberté, la fierté, le courage, une force, le respect envers moi-même. Je revis. Je ne suis pas près d’oublier cette séance d’équithérapie, le lieu, les chevaux et Anatole. C’est une personne passionnée, rigoureuse dans son travail, à l’écoute, respectueuse envers son public et ses chevaux.",
+          "Aujourd'hui, je suis devenue bénévole de l’association et je crée des bracelets en crin."
+        ],
+        "signature":"Laurence"
+      }
+    ]
   },
   "cta_section" : {
     "title": "Forgez votre propre expérience",

@@ -1,45 +1,44 @@
 <app-banner-section
   [bannerTitle]="bannerTitle"
   [bannerSubtitle]="bannerSubtitle"
-  [bannerImage]="bannerImage"></app-banner-section>
-<section>
-  <div class="storytelling-text-content fade-in" animateOnVisible="visible">
-    <h2>{{ bienfaits_text.passe_section.title }}</h2>
-    <p>{{ bienfaits_text.passe_section.paragraph_01 }}</p>
-    <p>{{ bienfaits_text.passe_section.paragraph_02 }}</p>
-  </div>
-</section>
-<section>
-  <div class="storytelling-text-content fade-in" animateOnVisible="visible">
-    <h2>{{ bienfaits_text.symbolique_section.title }}</h2>
-    <p>{{ bienfaits_text.symbolique_section.paragraph_01 }}</p>
-    <p>{{ bienfaits_text.symbolique_section.paragraph_02 }}</p>
-    <p>{{ bienfaits_text.symbolique_section.paragraph_03 }}</p>
-  </div>
-</section>
-<section>
-  <div class="text-section-content">
-    <div class="text-content">
-      <div class="fade-in" animateOnVisible="visible">
-        <h2>{{ bienfaits_text.bienfaits_section.title }}</h2>
-        <p class="text-content-paragraph">{{ bienfaits_text.bienfaits_section.paragraph_01 }}</p>
+  [bannerImage]="bannerImage">
+</app-banner-section>
+@for (section of bienfaits_text.main_sections; track section.id) {
+  <section>
+    @if (section.card) {
+      <div class="text-section-content">
+        <div class="text-content">
+          <div class="fade-in" animateOnVisible="visible">
+            <h2>{{ section.title }}</h2>
+            @for (paragraph of section.paragraphs; track $index) {
+              <p class="text-content-paragraph">{{ paragraph }}</p>
+            }
+            <div class="definition-cards-container">
+              @for (card of section.card; track card.id) {
+                <app-definition-card [card]="card"></app-definition-card>
+              }
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="definition-cards-container">
-        @for (card of bienfaits_text.bienfaits_section.card; track card.id) {
-          <app-definition-card [card]="card"></app-definition-card>
+    } @else {
+      <div class="storytelling-text-content fade-in" animateOnVisible="visible">
+        <h2>{{ section.title }}</h2>
+        @for (paragraph of section.paragraphs; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+        @if(section.enseignement) {
+          <p class="enseignement font-weight-bold">Enseignements tirés :</p>
+          <ul>
+            @for (enseignement of section.enseignement; track $index) {
+              <li>{{ enseignement }}</li>
+            }
+          </ul>
         }
       </div>
-    </div>
-  </div>
-</section>
-<section>
-  <div class="storytelling-text-content fade-in" animateOnVisible="visible">
-    <h2>{{ bienfaits_text.miroir_section.title }}</h2>
-    <p>{{ bienfaits_text.miroir_section.paragraph_01 }}</p>
-    <p>{{ bienfaits_text.miroir_section.paragraph_02 }}</p>
-    <p>{{ bienfaits_text.miroir_section.paragraph_03 }}</p>
-  </div>
-</section>
+    }
+  </section>
+}
 <section>
   <app-cta-section [cta_title]="cta_title" [cta_text]="cta_text" [cta_question]="cta_question"></app-cta-section>
 </section>

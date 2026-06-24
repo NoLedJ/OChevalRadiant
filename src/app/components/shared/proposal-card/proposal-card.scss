@@ -1,3 +1,7 @@
+.card {
+  height: stretch;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -5,7 +9,6 @@
   background-color: hsl(var(--card));
   border: 1px solid hsl(var(--border));
   border-radius: var(--radius);
-  box-shadow: 1px 1px 1px hsl(var(--shadow));
 }
 
 .nom {
@@ -15,7 +18,18 @@
   padding: 1.5rem;
 }
 
+.title {
+  font-weight: 600;
+  padding: 0 1.5rem;
+}
+
 .info {
   padding: 1.5rem;
   padding-top: 0;
+}
+
+ul {
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
 }

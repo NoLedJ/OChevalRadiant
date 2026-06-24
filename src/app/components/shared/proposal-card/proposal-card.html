@@ -1,6 +1,19 @@
-<div class="content fade-in" animateOnVisible="visible">
-  <p class="nom text-xl">{{ card()!.nom }}</p>
-  <p class="info">{{ card()!.info1 }}</p>
-  <p class="info">{{ card()!.info2 }}</p>
-  <p class="info">{{ card()!.info3 }}</p>
+<div class="card fade-in" animateOnVisible="visible">
+  <div class="content fly-card">
+    <p class="nom text-xl">{{ card()!.nom }}</p>
+    <p class="title">{{ card()!.info_title1 }}</p>
+    <p class="info">{{ card()!.info1 }}</p>
+    <p class="title">{{ card()!.info_title2 }}</p>
+    <p class="info">{{ card()!.info2 }}</p>
+    <p class="title">{{ card()!.info_title_list }}</p>
+    @if (infos_list()) {
+      <ul>
+      @for (info of infos_list(); track $index) {
+        <li>{{ info }}</li>
+      }
+    </ul>
+    }
+    <p class="title">{{ card()!.info_title3 }}</p>
+    <p class="info">{{ card()!.info3 }}</p>
+  </div>
 </div>

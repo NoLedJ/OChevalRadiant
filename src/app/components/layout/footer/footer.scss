@@ -31,6 +31,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  color: hsl(var(--tertiary));
 }
 
 li {
@@ -47,10 +48,6 @@ li > svg {
 
 li > svg:first-child {
   margin-top: 0.125rem;
-}
-
-a {
-  color: hsl(var(--primary-variant));
 }
 
 a:hover {
@@ -77,10 +74,6 @@ a:hover {
   & > a {
     text-align: right;
   }
-}
-
-.developer-link {
-  font-weight: 600;
 }
 
 @media (min-width: 640px) {

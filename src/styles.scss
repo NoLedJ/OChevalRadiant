@@ -18,7 +18,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   font-variation-settings: normal;
   -webkit-tap-highlight-color: transparent;
   tab-size: 4;
@@ -48,17 +47,17 @@ body {
   --tertiary-text: 0 0% 100%;
   --card: 40 25% 99%;
   --border: 40 12% 85%;
-  --shadow: 0 0% 78%;
+  --shadow: 0 0% 70%;
   --menu: 40, 20%, 97%;
   --radius: 0.75rem;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, ul {
   margin: 0;
   text-wrap: pretty;
 }
 
-p {
+p, ul {
   font-family: "DMSans", sans-serif;
   font-size: 1rem;
   color: hsl(var(--secondary-text));
@@ -96,7 +95,7 @@ h3 {
 }
 
 a, .menu-button, .close {
-  color: hsl(var(--primary));
+  color: hsl(var(--primary-variant));
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;
@@ -186,6 +185,17 @@ section {
   margin: 0 auto 2rem auto;
 }
 
+.quote {
+  position: relative;
+  z-index: 10;
+  font-family: Georgia, serif;
+  font-weight: 600;
+  font-style: italic;
+  color: hsl(var(--primary-text));
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.625rem;
@@ -196,8 +206,30 @@ section {
   line-height: 1.75rem;
 }
 
+.font-weight-bold {
+  font-weight: 600;
+}
+
 .insecable {
   white-space: nowrap;
+}
+
+.fly-card {
+  box-shadow: 2px 2px 6px hsl(var(--shadow));
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 7px 7px 15px hsl(var(--shadow));
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.zoom {
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transform: scale(1.03);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .fade-in {
@@ -222,7 +254,6 @@ section {
   opacity: 1;
   transform: translateY(0) translateX(0);
 }
-
 
 @media (min-width: 640px) {
   .banner-content {

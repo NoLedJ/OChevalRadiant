@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 import { PresentationCard } from '../../shared/presentation-card/presentation-card';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { CTASection } from '../../layout/cta-section/cta-section';
+import { ProposalCard } from '../../shared/proposal-card/proposal-card';
 
 @Component({
   selector: 'app-equipe',
-  imports: [PresentationCard, CTASection, AnimateOnVisibleDirective],
+  imports: [PresentationCard, CTASection, AnimateOnVisibleDirective, ProposalCard],
   templateUrl: './equipe.html',
   styleUrl: './equipe.scss',
 })

@@ -4,6 +4,17 @@
     "subtitle": "Des initiatives construites ensemble, autour du cheval et du lien humain.",
     "image_url": "images/projets/banner"
   },
+  "main_sections": [
+   {
+      "id": 1,
+      "title": "Pourquoi les projets coopératifs ?",
+      "paragraphs": [
+        "L’association évolue aujourd’hui vers une dynamique plus collective, portée par l’envie de partager, de créer ensemble et de renforcer le soutien autour du lieu et des animaux. De nombreux bénévoles s’impliquent désormais de manière régulière, témoignant de l’élan commun qui se construit.",
+        "Avec le groupe actuel, une première étape a été de recentrer les efforts autour de l’activité d’équithérapie, qui accueille différents publics depuis 2021 et constitue le cœur du projet associatif.",
+        "Les projets coopératifs s’inscrivent dans cette volonté d’avancer ensemble, de mutualiser les forces et de faire vivre un véritable esprit de communauté."
+      ]
+    }
+  ],
   "cta_section" : {
     "title": "Se retrouver ensemble",
     "text": "Nous sommes toujours ouverts aux collaborations qui mettent en valeur le cheval, le lien humain et l’inclusion. Que vous soyez une structure, une association, une école ou un groupe, nous pouvons imaginer ensemble un projet adapté à vos besoins.",

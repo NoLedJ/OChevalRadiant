@@ -5,11 +5,13 @@ import { FsLightbox } from "fslightbox-angular";
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { BannerSection } from '../../layout/banner-section/banner-section';
 import { CTASection } from '../../layout/cta-section/cta-section';
+import { Router } from '@angular/router';
+import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
 
 
 @Component({
   selector: 'app-a-propos',
-  imports: [FsLightbox, BannerSection, CTASection, AnimateOnVisibleDirective],
+  imports: [FsLightbox, BannerSection, CTASection, AnimateOnVisibleDirective, SafeHtmlPipe],
   templateUrl: './a-propos.html',
   styleUrl: './a-propos.scss',
 })
@@ -25,16 +27,28 @@ export class APropos {
   cta_text: string = this.a_propos_text.cta_section.text;
   cta_question: string = this.a_propos_text.cta_section.question;
 
-  nbOfPhotos = 3;
+  nbOfPhotos = 7;
   toggler: boolean = false;
   sources: string[] = [];
   sources_thumbnail: string[] = [];
   slide: number = 0;
 
-  constructor() {
+  constructor(private readonly router: Router) {
     for (let i = 1; i <= this.nbOfPhotos; i++) {
       this.sources.push(`${this.a_propos_text.installations_section.photos_url}${i}.jpg`);
       this.sources_thumbnail.push(`${this.a_propos_text.installations_section.photos_url}${i}-thumbnail.jpg`);
+    }
+  }
+
+  onHtmlClick(event: Event) {
+    const target = event.target as HTMLElement;
+
+    if (target.tagName === 'A') {
+      event.preventDefault();
+      const url = target.getAttribute('href');
+      if (url) {
+        this.router.navigateByUrl(url);
+      }
     }
   }
 
