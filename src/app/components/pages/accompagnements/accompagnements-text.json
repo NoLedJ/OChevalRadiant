@@ -42,8 +42,15 @@
     "paragraph_02": "Nous pouvons ainsi être amenés à travailler avec le cheval dans toutes sortes de contextes et d’activités autour du cheval : découvrir le cheval ou le poney, son matériel et son environnement, le toiletter, communiquer avec le cheval en liberté, jouer ou interagir avec un cheval tenu en longe, observer les chevaux au pré, se relaxer allongé sur le dos du cheval, réaliser des parcours, imaginer et jouer une histoire, nourrir et soigner les chevaux, atteler…",
     "paragraph_03": "Chaque situation est unique et nous composons pour que l’activité proposée soit adaptée, évaluable en fonction des objectifs fixés."
   },
+  "studio": {
+    "title": "Location du studio",
+    "paragraph_01": "Pour celles et ceux qui souhaitent vivre pleinement l’ambiance du lieu, il est possible de louer un petit studio au sein de l’association.",
+    "paragraph_02": "Cet espace offre l’occasion de séjourner au plus près de la ferme, de partager le quotidien des animaux et de s’imprégner du rythme apaisant des chevaux. La location permet de profiter d’un cadre naturel, calme et ressourçant, tout en découvrant la vie de l’association de l’intérieur.",
+    "paragraph_03": "Une manière unique de se reconnecter, de prendre le temps et de vivre une expérience immersive au cœur du vivant.",
+    "image_url": "/images/accompagnements/studio01"
+  },
   "cta_section" : {
     "title": "Prêt à commencer ?",
-    "text": "Contactez-nous pour en savoir plus sur nos services, planifier une visite ou réserver votre première séance. Nous avons hâte de vous accueillir à <span class='insecable'>« Ô Cheval Radiant »</span>."
+    "text": "Contactez-nous pour en savoir plus sur nos accompagnements et services, planifier une visite ou réserver votre première séance. Nous avons hâte de vous accueillir à <span class='insecable'>« Ô Cheval Radiant »</span>."
   }
 }

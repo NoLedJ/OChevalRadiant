@@ -13,11 +13,46 @@
         "Avec le groupe actuel, une première étape a été de recentrer les efforts autour de l’activité d’équithérapie, qui accueille différents publics depuis 2021 et constitue le cœur du projet associatif.",
         "Les projets coopératifs s’inscrivent dans cette volonté d’avancer ensemble, de mutualiser les forces et de faire vivre un véritable esprit de communauté."
       ]
+    },
+    {
+      "id": 2,
+      "title": "Les chantiers participatifs : poser les bases du vivre‑ensemble",
+      "paragraphs": [
+        "Pour amorcer cette dynamique collective, l’association a lancé un premier chantier participatif, ouvert à toutes les personnes souhaitant contribuer à la vie du lieu.",
+        "Ces journées ont permis de poser les fondations d’un véritable vivre‑ensemble, en cultivant la cohésion, l’intelligence collective et le plaisir d’agir ensemble.",
+        "À travers ces temps partagés, chacun a pu découvrir le fonctionnement du lieu, participer à son aménagement et contribuer à préparer les futurs projets ouverts au public.",
+        "Ces chantiers marquent la première étape d’un mouvement plus large : faire de l’association un espace où l’on construit ensemble, où chaque geste compte, et où chacun peut trouver sa place."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Grandir ensemble : un espace de partage et de soutien mutuel",
+      "paragraphs": [
+        "Notre engagement va bien au‑delà des séances d’équithérapie individuelles.",
+        "Nous souhaitons créer un espace où chacun peut se rassembler, partager ses expériences, se sentir soutenu et s’impliquer à son rythme.",
+        "À travers nos initiatives de co‑collectif et nos projets communautaires, nous cherchons à sensibiliser à l’importance du vivant, à renforcer les liens humains et à permettre à chacun de grandir dans un cadre bienveillant et respectueux.",
+        "Ces projets coopératifs sont pensés comme des expériences à vivre, où l’on apprend ensemble, où l’on crée du sens, et où l’on tisse des relations durables autour des chevaux, de la nature et du soin porté au lieu."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Un temps fort : les Portes Ouvertes",
+      "paragraphs": [
+        "Chaque année, l’association organise une journée Portes Ouvertes, moment privilégié pour découvrir :",
+        "Cet événement est l’occasion de faire connaître l’association, de partager nos valeurs, et de rassembler habitants, bénévoles, familles et partenaires autour d’une journée conviviale et festive."
+      ],
+      "lists": [
+        "le lieu et ses projets thérapeutiques",
+        "l’équithérapie à travers des séances découvertes",
+        "des activités accessibles à tous : balade en calèche, mandalas, jeux, parcours sensoriel",
+        "des partenaires engagés autour du vivant",
+        "une soirée concerts pour prolonger la rencontre"
+      ]
     }
   ],
   "cta_section" : {
-    "title": "Se retrouver ensemble",
-    "text": "Nous sommes toujours ouverts aux collaborations qui mettent en valeur le cheval, le lien humain et l’inclusion. Que vous soyez une structure, une association, une école ou un groupe, nous pouvons imaginer ensemble un projet adapté à vos besoins.",
+    "title": "Une dynamique qui se construit pas à pas",
+    "text": "Entre chantiers participatifs, projets coopératifs et événements ouverts à tous, l’association avance vers une vision commune : faire du lieu un espace vivant, collectif, ouvert, où chacun peut contribuer et s’épanouir.",
     "question": "Envie de partager un projet avec nous ?"
   }
 }

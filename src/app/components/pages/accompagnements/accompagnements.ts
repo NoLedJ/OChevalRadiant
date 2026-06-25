@@ -4,14 +4,17 @@ import { CTASection } from '../../layout/cta-section/cta-section';
 import { ProposalCard } from '../../shared/proposal-card/proposal-card';
 import import_accompagnements_text_json from './accompagnements-text.json';
 import { Component } from '@angular/core';
+import { FsLightbox } from "fslightbox-angular";
 
 @Component({
   selector: 'app-accompagnements',
-  imports: [ProposalCard, CTASection, BannerSection, AnimateOnVisibleDirective],
+  imports: [ProposalCard, CTASection, BannerSection, AnimateOnVisibleDirective, FsLightbox],
   templateUrl: './accompagnements.html',
   styleUrl: './accompagnements.scss',
 })
 export class Accompagnements {
+
+  toggler: boolean = false;
 
   accompagnements_text  = import_accompagnements_text_json;
 
@@ -21,5 +24,9 @@ export class Accompagnements {
 
   cta_title: string = this.accompagnements_text.cta_section.title;
   cta_text: string = this.accompagnements_text.cta_section.text;
+
+  openLightbox(): void {
+    this.toggler = !this.toggler;
+  }
 
 }

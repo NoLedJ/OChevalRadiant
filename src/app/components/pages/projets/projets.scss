@@ -1,0 +1,21 @@
+.photos-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  & > img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .photos-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

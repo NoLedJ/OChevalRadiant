@@ -28,5 +28,24 @@
   </div>
 </section>
 <section>
+  <div class="text-section-content fade-in" animateOnVisible="visible">
+    <div class="text-content">
+      <h2>{{ accompagnements_text.studio.title }}</h2>
+      <p class="text-content-paragraph">{{ accompagnements_text.studio.paragraph_01 }}</p>
+      <p class="text-content-paragraph">{{ accompagnements_text.studio.paragraph_02 }}</p>
+      <p class="text-content-paragraph">{{ accompagnements_text.studio.paragraph_03 }}</p>
+    </div>
+    <div class="photos-container fade-in" animateOnVisible="visible">
+      <img
+        [src]="`${this.accompagnements_text.studio.image_url}-thumbnail.jpg`"
+        class="fly-card"
+        alt="studio"
+        (click)="openLightbox()"
+        (keydown.enter)="openLightbox()">
+    </div>
+    <fslightbox	[toggler]="toggler"	[sources]="[`${this.accompagnements_text.studio.image_url}.jpg`]" />
+  </div>
+</section>
+<section>
   <app-cta-section [cta_title]="cta_title" [cta_text]="cta_text"></app-cta-section>
 </section>
