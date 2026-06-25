@@ -10,7 +10,7 @@
         <p class="text-content-paragraph">{{ accompagnements_text.proposition_section.paragraph_01 }}</p>
       </div>
     </div>
-    <div class="proposal-cards-container">
+    <div class="cards-container proposal-cards-container">
       @for (card of accompagnements_text.proposition_section.card; track card.id) {
         <app-proposal-card [card]="card"></app-proposal-card>
       }

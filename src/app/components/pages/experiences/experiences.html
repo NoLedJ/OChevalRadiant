@@ -24,7 +24,7 @@
     <div class="title-text-content text-content fade-in" animateOnVisible="visible">
       <h2>{{ experiences_text.temoignage_section.title }}</h2>
     </div>
-    <div class="flip-cards-container fade-in" animateOnVisible="visible">
+    <div class="cards-container fade-in" animateOnVisible="visible">
       @for (card of experiences_text.temoignage_section.temoignages; track card.id) {
         <app-flip-card [card]="card"></app-flip-card>
       }

@@ -10,7 +10,7 @@
       <p class="text-content-paragraph">{{ accueil_text.equitherapie_section.paragraph_01 }}</p>
       <p class="text-content-paragraph">{{ accueil_text.equitherapie_section.paragraph_02 }}</p>
     </div>
-    <div class="definition-cards-container">
+    <div class="cards-container">
       @for (card of accueil_text.equitherapie_section.card; track card.id) {
         <app-definition-card [card]="card"></app-definition-card>
       }

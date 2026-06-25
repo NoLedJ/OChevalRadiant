@@ -13,7 +13,7 @@
             @for (paragraph of section.paragraphs; track $index) {
               <p class="text-content-paragraph">{{ paragraph }}</p>
             }
-            <div class="definition-cards-container">
+            <div class="cards-container">
               @for (card of section.card; track card.id) {
                 <app-definition-card [card]="card"></app-definition-card>
               }

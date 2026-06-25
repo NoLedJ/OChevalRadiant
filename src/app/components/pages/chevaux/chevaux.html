@@ -4,7 +4,7 @@
       <h1>{{ chevaux_text.chevaux_section.title }}</h1>
       <p class="title-subtitle" [innerHTML]="chevaux_text.chevaux_section.subtitle | safeHtml"></p>
     </div>
-    <div class="presentation-cards-container">
+    <div class="cards-container">
       @for (card of chevaux_text.chevaux_section.card; track card.id) {
         <app-presentation-card [card]="card"></app-presentation-card>
       }
@@ -13,12 +13,10 @@
 </section>
 <section>
   <div class="storytelling-text-content fade-in" animateOnVisible="visible">
-    <span class="quote quote-first">“</span>
     <h2>{{ chevaux_text.president_section.title }}</h2>
     <p>{{ chevaux_text.president_section.paragraph_01 }}</p>
     <p>{{ chevaux_text.president_section.paragraph_02 }}</p>
     <p>{{ chevaux_text.president_section.paragraph_03 }}</p>
-    <span class="quote quote-last">”</span>
   </div>
 </section>
 <section>

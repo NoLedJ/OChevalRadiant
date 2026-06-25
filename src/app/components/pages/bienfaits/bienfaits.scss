@@ -2,16 +2,13 @@
   margin-top: 1rem;
 }
 
-.definition-cards-container {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0px, 1fr));
-  gap: 2rem;
+.cards-container {
   max-width: 64rem;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  .definition-cards-container {
+  .cards-container {
     grid-template-columns: repeat(2, minmax(0px, 1fr));
   }
 }

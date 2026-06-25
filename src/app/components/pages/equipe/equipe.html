@@ -4,7 +4,7 @@
       <h1>{{ equipe_text.equipe_section.title }}</h1>
       <p class="title-subtitle">{{ equipe_text.equipe_section.subtitle }}</p>
     </div>
-    <div class="presentation-cards-container">
+    <div class="cards-container">
       @for (card of equipe_text.equipe_section.card; track card.id) {
         <app-presentation-card [card]="card"></app-presentation-card>
       }
@@ -20,7 +20,7 @@
         <p class="text-content-paragraph">{{ equipe_text.adhesion_section.paragraph_01 }}</p>
       </div>
     </div>
-    <div class="proposal-cards-container">
+    <div class="cards-container proposal-cards-container">
       @for (card of equipe_text.adhesion_section.card; track card.id) {
         <app-proposal-card [card]="card"></app-proposal-card>
       }
