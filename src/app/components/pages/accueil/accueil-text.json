@@ -1,13 +1,13 @@
 {
   "banner": {
     "title": "Connecter les cœurs grâce à l'équithérapie",
-    "subtitle": "Découvrez les liens profonds entre l'Homme et le Cheval via l'association <span class='insecable'>« Ô Cheval Radiant »</span>.",
+    "subtitle": "Découvrez les liens profonds entre l'Homme et le Cheval avec l'association <span class='insecable'>« Ô Cheval Radiant »</span>.",
     "image_url": "/images/accueil/hero-header"
   },
   "equitherapie_section": {
     "title": "Qu'est-ce que l'équithérapie ?",
-    "paragraph_01": "L'équithérapie est un soin psychique médiatisé via l’animal Cheval afin de soutenir et développer les dimensions psycho-corporelles. Peu importe les étapes à franchir, ce cadre thérapeutique offre une prise en charge multidimensionnelle, permettant d’accompagner les personnes sur les différents plans de leur vie afin de favoriser leurs épanouissements.",
-    "paragraph_02": "Chaque séance est adaptée en fonction des demandes, des besoins et des possibilités de chacun. L’équithérapeute créé du lien avec ce qui nous lie au Vivant pour que chaque être humain appréhende aux mieux la vie qui lui est offerte.",
+    "paragraph_01": "L'équithérapie est un soin psychique médiatisé par le cheval afin de soutenir et développer les dimensions psycho-corporelles. Peu importe les étapes à franchir, ce cadre thérapeutique offre une prise en charge multidimensionnelle, permettant d’accompagner les personnes sur les différents plans de leur vie afin de favoriser leurs épanouissements.",
+    "paragraph_02": "Chaque séance est adaptée en fonction des demandes, des besoins et des possibilités de chacun. L’équithérapeute créé du lien avec ce qui nous lie au vivant pour que chaque être humain appréhende aux mieux la vie qui lui est offerte.",
     "card": [
       {
         "id": 1,
@@ -24,14 +24,14 @@
       {
         "id": 3,
         "nom": "Immersion en nature",
-        "info": "Reconnectez-vous au monde naturel et profitez de la présence apaisante de notre environnement rural.",
+        "info": "Reconnectez-vous au vivant dans un environnement naturel propice au ressourcement.",
         "icon_url": "/icons/leaf.png"
       }
     ]
   },
   "contact_section": {
     "title": "Restez informés",
-    "paragraph_01": "Suivez notre aventure sur Facebook pour en apprendre d'avantage sur nos activités, nos projets en lien avec les partenaires chevaux mais aussi la construction d'un projet commun.",
+    "paragraph_01": "Suivez notre aventure sur Facebook pour en apprendre d'avantage sur nos activités, nos projets en lien avec les partenaires chevaux et aussi la co-création d'un oasis favorisant le vivre ensemble.",
     "button_text": "Nous contacter"
   }
 }

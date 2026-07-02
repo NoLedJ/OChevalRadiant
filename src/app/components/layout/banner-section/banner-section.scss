@@ -35,6 +35,9 @@ img {
   background: #ffffff1a;
   border: 1px solid #ffffff4d;
   backdrop-filter: blur(4px);
+  &:hover {
+    color: hsl(var(--tertiary-text));
+  }
 }
 
 .about-button:hover {

@@ -7,50 +7,50 @@
   <section>
     <div class="storytelling-text-content fade-in" animateOnVisible="visible">
       <h2>{{ section.title }}</h2>
-      @if (section.lists) {
-        <p>{{ section.paragraphs[0] }}</p>
-        <ul>
-          @for (list of section.lists; track $index) {
-            <li>{{ list }}</li>
+      <div class="projets-content">
+        @if (section.photos && section.photos.length == 1) {
+          <div class="photo-content">
+            <img
+              [src]="`${section.photos[0].photos_url}-thumbnail.jpg`"
+              alt="{{ section.title }}"
+              class="projets-photo fly-card"
+              (click)="openLightbox(section.photos[0].id)"
+              (keydown.enter)="openLightbox(section.photos[0].id)" />
+          </div>
+        }
+        <div>
+          @if (section.lists) {
+            <p>{{ section.paragraphs[0] }}</p>
+            <ul>
+              @for (list of section.lists; track $index) {
+                <li>{{ list }}</li>
+              }
+            </ul>
+            <p>{{ section.paragraphs[1] }}</p>
+          } @else {
+            @for (paragraph of section.paragraphs; let first = $first, last = $last; track $index) {
+              <p (click)="onHtmlClick($event)" (keydown.enter)="onHtmlClick($event)" [innerHTML]="paragraph | safeHtml"></p>
+            }
+            @if (section.photos && section.photos.length > 1) {
+              <div class="photos-container fade-in" animateOnVisible="visible">
+                @for(photo of section.photos; track $index) {
+                  <img
+                    [src]="`${photo.photos_url}-thumbnail.jpg`"
+                    alt="{{ section.title }} - {{ $index + 1 }}"
+                    class="zoom shadow"
+                    (click)="openLightbox(photo.id)"
+                    (keydown.enter)="openLightbox(photo.id)"
+                  >
+                }
+              </div>
+            }
           }
-        </ul>
-        <p>{{ section.paragraphs[1] }}</p>
-      } @else {
-        @for (paragraph of section.paragraphs; let first = $first, last = $last; track $index) {
-          <p>{{ paragraph }}</p>
-        }
-        @if (section.id == 2) {
-          <div class="photos-container fade-in" animateOnVisible="visible">
-            @for(photo of sources_chantier_thumbnail; track $index) {
-              <img
-                src="{{ photo }}"
-                alt="Les chantiers participatifs - {{ $index + 1 }}"
-                class="experience-photo zoom shadow"
-                (click)="openLightbox($index, 'chantier')"
-                (keydown.enter)="openLightbox($index, 'chantier')"
-              >
-            }
-          </div>
-          <fslightbox	[toggler]="toggler_chantier"	[sources]="sources_chantier" [slide]="slide_chantier" />
-        }
-        @if (section.id == 3) {
-          <div class="photos-container fade-in" animateOnVisible="visible">
-            @for(photo of sources_espace_thumbnail; track $index) {
-              <img
-                src="{{ photo }}"
-                alt="Les espaces collectifs - {{ $index + 1 }}"
-                class="experience-photo zoom shadow"
-                (click)="openLightbox($index, 'espace')"
-                (keydown.enter)="openLightbox($index, 'espace')"
-              >
-            }
-          </div>
-          <fslightbox	[toggler]="toggler_espace"	[sources]="sources_espace" [slide]="slide_espace" />
-        }
-      }
+        </div>
+      </div>
     </div>
   </section>
 }
 <section>
   <app-cta-section [cta_title]="cta_title" [cta_text]="cta_text" [cta_question]="cta_question"></app-cta-section>
 </section>
+<fslightbox	[toggler]="toggler"	[sources]="sources" [slide]="slide" />

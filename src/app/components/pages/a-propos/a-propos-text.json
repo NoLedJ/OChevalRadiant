@@ -1,38 +1,52 @@
 {
   "banner": {
     "title": "À propos d'« Ô Cheval Radiant »",
-    "subtitle": "Créer des ponts entre les humains, la nature et le vivant.",
+    "subtitle": "Tisser des liens entre les Hommes par le Cheval.",
     "image_url": "/images/a-propos/banner"
   },
   "histoire_section": {
     "title": "Notre histoire",
-    "paragraph_01": "Située au cœur du parc Naturel de l’Avesnois à Maroilles, à proximité de la forêt de Mormal, l’association <span class='insecable'>« Ô Cheval Radiant »</span> a été fondé par Anatole Lenne afin de créer un espace ressource permettant aux personnes le désirant de se reconnecter avec la nature par une approche thérapeutique complémentaire : l’équithérapie.",
+    "paragraph_01": "Située au cœur du parc Naturel de l’Avesnois à Maroilles, à proximité de la forêt de Mormal, l’association <span class='insecable'>« Ô Cheval Radiant »</span> a été fondé par Anatole Lenne afin de créer un espace ressource permettant aux personnes le désirant de se reconnecter à la nature par une approche thérapeutique complémentaire : l’équithérapie.",
     "retrospection": {
       "title": "La création de l'association racontée par le fondateur : du rêve de môme...",
-      "paragraph_01": "Ce projet est né avant tout d’un rêve d’enfant qui voulait un cheval... je devais pressentir que cet animal est libérateur. J’ai eu la chance d’avoir ce cheval à 11 ans alors que nous n’avions aucune connaissance. Je suis tombé des dizaines de fois avec toujours les mêmes espoirs. Le cheval, école de la Vie, m’a appris la résilience, m’a permis de trouver les ressources énergétiques nécessaires pour avancer dans mon cheminement.",
-      "paragraph_02": "Au fur et à mesure des années, <a href='/chevaux'>le troupeau s’agrandit</a>."
+      "paragraph_01": "\"Ce projet est né avant tout d’un rêve d’enfant qui voulait un cheval... Était-ce le pressentiment que cet animal est libérateur ? J’ai eu la chance d’avoir ce cheval à 11 ans alors que nous n’avions aucune connaissance. Je suis tombé des dizaines de fois avec toujours la même volonté : recommencer, comprendre, apprendre, ... Le cheval école m’a construit en forgeant ma résilience. Il m’a permis de trouver les ressources nécessaires pour avancer dans mon cheminement.",
+      "paragraph_02": "Au fur et à mesure des années, <a href='/chevaux'>le troupeau s’agrandit</a>.\""
     },
     "parcours_pro": {
       "title": "... au parcours professionnel",
-      "paragraph_01": "C’est en quittant en 2006 le Master 2 prévention rééducation santé à Liévin, que le projet d’ouvrir un centre de remise en forme à la ferme né. Pourtant, il a fallu 15 ans pour ouvrir le centre d’équithérapie. Pendant ces années mes expérience transcendantes m’ont permis d’acquérir de nombreuses expériences professionnelles dans le domaine de l’enseignement des Activités physique et sportives adaptées.",
-      "paragraph_02": "J’ai commencé à travailler d’abord pour l’éducation Nationale en classe relais puis comme professeur d’EPS au Lycée, en milieu pénitencier, à l’hôpital (addictologie, médico-diététique, MAS) en EHPAD unité fermé (Mémoire Alzheimer), SESSAD, ITEP.",
-      "paragraph_03": "Ma difficulté lors des différents accompagnements a été de mettre en mouvement certaines personnes. Le corps était pour eux synonyme de traumatismes, avec d’autres il était difficile d’établir une communication. Dès lors, le Cheval s’est révélé et est devenu une évidence, un soutien pour faciliter la mise en mouvement et permettre à l’Homme de rester ancrer.",
-      "paragraph_04": "Aujourd’hui, en tant que fondateur et équithérapeute de l’association <span class='insecable'>« Ô Cheval Radiant »</span> créée en novembre 2019, les différentes expériences humaines que j’ai eu la chance de vivre m'ont convaincu que les liens Homme et Cheval sont des ressources riches et essentielles pour nous accompagner dans nos cheminements. Le cheval à des qualités intrinsèques qui permettent à l’Homme de se voir, de se comprendre, de se dévoiler à lui-même et ainsi trouver une paix intérieure où chacun aurait sa place."
+      "paragraph_01": "\"C’est en quittant en 2006 le Master 2 prévention rééducation santé à Liévin, que le projet d’ouvrir un centre de remise en forme à la ferme né. Pourtant, il a fallu 15 ans pour ouvrir le centre d’équithérapie. Pendant ces années mes expériences transcendantes m’ont permis d’acquérir de nombreuses expériences professionnelles dans le domaine de l’enseignement des Activités physiques adaptées.",
+      "paragraph_02": "J’ai commencé à travailler d’abord pour l’éducation Nationale en classe relais puis comme professeur d’EPS au Lycée, en milieu pénitencier, à l’hôpital (addictologie, médico-diététique, MAS) en EHPAD unité fermé (Mémoire Alzheimer), au SESSAD (Service d’Éducation Spéciale et de Soins À Domicile) et au DITEP (Dispositifs d'instituts thérapeutiques, éducatifs et pédagogiques).",
+      "paragraph_03": "Ma difficulté lors des différents accompagnements a été de mettre en mouvement les personnes. Le corps était pour eux synonyme de souffrances, avec d’autres il était difficile d’établir un lien, un échange. Dès lors, le Cheval s’est révélé et est devenu une évidence, un soutien pour faciliter la mise en mouvement et permettre à l’Homme de s'ancrer.",
+      "paragraph_04": "Aujourd’hui, en tant que fondateur et équithérapeute de l’association <span class='insecable'>« Ô Cheval Radiant »</span> créée en novembre 2019, les différentes expériences humaines que j’ai eu la chance de vivre m'ont convaincu que les liens Homme et Cheval sont des ressources riches et essentielles pour nous accompagner dans nos cheminements. Le cheval à des qualités intrinsèques qui permettent à l’Homme de se voir, de se comprendre, de se dévoiler à lui-même et ainsi trouver une paix intérieure où chacun aurait sa place.\""
     }
   },
   "vision_section": {
     "title": "Notre vision",
-    "paragraph_01": "À « Ô Cheval Radiant », nous imaginons un monde où le lien entre les humains et la nature est valorisé et nourri. Nous croyons qu'en cultivant ces relations avec les chevaux et notre environnement, nous aidons les individus à découvrir leur force intérieure et à bâtir des communautés plus solidaires. Notre engagement va au-delà des séances de thérapie individuelles. Nous voulons créer un espace où chacun peut se rassembler, partager ses expériences et se soutenir mutuellement. À travers nos initiatives de co-collectif et nos projets collaboratifs, nous souhaitons sensibiliser à l'importance du respect du vivant.",
-    "paragraph_02": "Nous considérons notre rôle comme celui de facilitateurs de transformation—aidant chacun à se reconnecter à lui-même, aux autres et à la terre. Chaque interaction avec nos chevaux est une opportunité de croissance, de guérison et de découverte."
+    "paragraph_01": "À « Ô Cheval Radiant », nous imaginons un monde où le lien entre les humains et la nature est valorisé et nourri. Nous croyons qu'en cultivant ces relations avec les chevaux et notre environnement, nous aidons les individus à découvrir leur force intérieure et à bâtir des communautés plus solidaires. Nous voulons créer un espace où chacun peut se rassembler, partager ses expériences et se soutenir mutuellement.",
+    "paragraph_02": "Nous considérons notre rôle comme celui de facilitateurs de transformation aidant chacun à se reconnecter à lui-même, aux autres et à la terre. Chaque interaction avec nos chevaux est une opportunité de croissance, de guérison et de découverte."
   },
   "installations_section": {
     "title": "Nos installations",
-    "paragraph_01": "Nos installations à Maroilles offrent un cadre naturel et paisible pour tous nos programmes. Nous entretenons des écuries dans la ferme familiale, des espaces de pratique sécurisés et des lieux confortables pour les activités de groupe et la réflexion.",
+    "paragraph_01": "Nos installations situées dans la ferme familiale à Maroilles offrent un environnement naturel favorisant le bien-être. Les aménagements réalisés en majorité par les bénévoles permettent d'améliorer les espaces.",
+    "paragraph_02": "Nous avons :",
+    "list": [
+      "Deux paddocks avec des pâtures environnantes",
+      "Une carrière de 30m sur 13m",
+      "Quelques boxes",
+      "Une salle de pansage avec sellerie",
+      "Du matériel pédagogique spécifique aux différents accompagnements (surfaix, code couleur pour repérage dans les installations, rênes sensorielles, montoires, ...)",
+      "Une salle d'accueil avec cuisine pour permettre des séminaires, formations, accueil de groupe et évènements",
+      "Un carport adjacent",
+      "Une zone de stockage",
+      "Un parcours sensoriel",
+      "Des toilettes sèches",
+      "...et bien d'autres aménagements à venir"
+    ],
     "photos_url": "/images/a-propos/location0"
   },
   "cta_section" : {
     "title": "Découvrez-nous davantage",
-    "text": "Notre approche place la relation au cheval au cœur de chaque accompagnement. Au‑delà des mots, c’est une expérience qui se vit : une rencontre authentique, un moment suspendu où chacun peut se découvrir autrement. Le mieux pour comprendre ce que nous faisons est encore de venir le ressentir par vous‑même, au rythme des chevaux.",
+    "text": "Notre approche place la relation avec le cheval au cœur des accompagnements. Au‑delà des mots, c’est une expérience qui se vit : une rencontre authentique, un moment suspendu où chacun peut se découvrir autrement. Le mieux pour comprendre ce que nous faisons est de venir le ressentir, au rythme des chevaux.",
     "question": "Vous aimeriez en savoir plus sur nos accompagnements ?"
   }
 }

@@ -1,3 +1,22 @@
+.projets-content {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column-reverse;
+  text-align: justify;
+}
+
+.photo-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.projets-photo {
+  width: 80%;
+  border-radius: var(--radius);
+}
+
 .photos-container {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -10,11 +29,35 @@
     border-radius: var(--radius);
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    cursor: pointer;
+  }
+}
+
+.decouverte-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  & img {
+    width: 80%;
+    border-radius: var(--radius);
   }
 }
 
 @media (min-width: 768px) {
+  .projets-content {
+    flex-direction: row;
+  }
+
+  .photo-content {
+    width: 50%;
+    min-width: 13rem;
+    max-width: 13rem;
+  }
+
+  .projets-photo {
+    width: 100%;
+  }
+
   .photos-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

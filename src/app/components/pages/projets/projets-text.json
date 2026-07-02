@@ -1,41 +1,112 @@
 {
   "banner": {
-    "title": "Nos projets coopératifs",
-    "subtitle": "Des initiatives construites ensemble, autour du cheval et du lien humain.",
+    "title": "Des projets qui rassemblent",
+    "subtitle": "Des projets autour du cheval, du vivant, pour unir, créer.",
     "image_url": "images/projets/banner"
   },
   "main_sections": [
    {
       "id": 1,
-      "title": "Pourquoi les projets coopératifs ?",
+      "title": "Pourquoi des projets coopératifs ?",
       "paragraphs": [
-        "L’association évolue aujourd’hui vers une dynamique plus collective, portée par l’envie de partager, de créer ensemble et de renforcer le soutien autour du lieu et des animaux. De nombreux bénévoles s’impliquent désormais de manière régulière, témoignant de l’élan commun qui se construit.",
-        "Avec le groupe actuel, une première étape a été de recentrer les efforts autour de l’activité d’équithérapie, qui accueille différents publics depuis 2021 et constitue le cœur du projet associatif.",
+        "L’association évolue aujourd’hui vers une dynamique collective, portée par l’envie de renforcer le soutien autour de valeurs communes. De plus en plus de bénévoles s’impliquent de manière régulière, témoignant de l’élan commun qui se construit.",
+        "Une première étape a été d'initier <a href='partenaires'>les chantiers participatifs</a> autour de l’activité d’équithérapie pour accueillir les différents publics.",
         "Les projets coopératifs s’inscrivent dans cette volonté d’avancer ensemble, de mutualiser les forces et de faire vivre un véritable esprit de communauté."
       ]
     },
     {
       "id": 2,
-      "title": "Les chantiers participatifs : poser les bases du vivre‑ensemble",
+      "title": "Activités Physiques Sportives Adaptées (APSA)",
       "paragraphs": [
-        "Pour amorcer cette dynamique collective, l’association a lancé un premier chantier participatif, ouvert à toutes les personnes souhaitant contribuer à la vie du lieu.",
-        "Ces journées ont permis de poser les fondations d’un véritable vivre‑ensemble, en cultivant la cohésion, l’intelligence collective et le plaisir d’agir ensemble.",
-        "À travers ces temps partagés, chacun a pu découvrir le fonctionnement du lieu, participer à son aménagement et contribuer à préparer les futurs projets ouverts au public.",
-        "Ces chantiers marquent la première étape d’un mouvement plus large : faire de l’association un espace où l’on construit ensemble, où chaque geste compte, et où chacun peut trouver sa place."
+        "Les Activités Physiques Sportives Adaptées permettent d’accompagner différents publics dans le maintien et le développement de leurs habiletés motrices et sociales.",
+        "En tant qu’enseignant APSA, Anatole Lenne, le fondateur de l'association, propose des programmes personnalisés, construits en fonction des besoins et des objectifs de chacun.",
+        "Les séances peuvent être individuelles ou collectives, et s’adressent à toute personne souhaitant progresser, retrouver confiance ou simplement bouger dans un cadre bienveillant."
       ]
     },
     {
       "id": 3,
-      "title": "Grandir ensemble : un espace de partage et de soutien mutuel",
+      "title": "Ferme pédagogique",
       "paragraphs": [
-        "Notre engagement va bien au‑delà des séances d’équithérapie individuelles.",
-        "Nous souhaitons créer un espace où chacun peut se rassembler, partager ses expériences, se sentir soutenu et s’impliquer à son rythme.",
-        "À travers nos initiatives de co‑collectif et nos projets communautaires, nous cherchons à sensibiliser à l’importance du vivant, à renforcer les liens humains et à permettre à chacun de grandir dans un cadre bienveillant et respectueux.",
-        "Ces projets coopératifs sont pensés comme des expériences à vivre, où l’on apprend ensemble, où l’on crée du sens, et où l’on tisse des relations durables autour des chevaux, de la nature et du soin porté au lieu."
+        "La ferme pédagogique enrichit les espaces du lieu et offre une véritable immersion au cœur du vivant.",
+        "Moutons, canards, pintades, dindes, lapins, chats et chiens participent à la découverte sensorielle et éducative du site.",
+        "Ces animaux permettent d’aborder la relation au vivant, la responsabilité, l’observation et le respect de l’environnement dans un cadre simple et accessible à tous."
+      ],
+      "photos": [
+        {
+          "id": 1,
+          "photos_url": "/images/projets/poussins"
+        }
       ]
     },
     {
       "id": 4,
+      "title": "Projet Gaïa – Citoyen du monde",
+      "paragraphs": [
+        "Pour l’association, le vivant est au cœur des intentions. Nous avons développé des projets en accord avec la Nature grâce à un parcours sensoriel se structurant autour des 4 éléments.",
+        "Dans ce cadre, nous avons mis en place un potager en permaculture pour le respect des sols et favoriser la diversité des apports nutritionnels aux plantes.",
+        "Nous produisons aussi sur place du jus de pomme, du cidre, du miel, de la confiture, de l'huile de noix, de la soupe d’ortie, des œufs, ..."
+      ],
+      "photos": [
+        {
+          "id": 2,
+          "photos_url": "/images/projets/gaia01"
+        },
+        {
+          "id": 3,
+          "photos_url": "/images/projets/gaia02"
+        },
+        {
+          "id": 4,
+          "photos_url": "/images/projets/gaia03"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Mise en valeur des productions",
+      "paragraphs": [
+        "Les produits issus du potager et des récoltes peuvent être transformés directement dans la cuisine aménagée du lieu.",
+        "Ils sont ensuite stockés dans nos locaux et mis en valeur dans une petite boutique toujours plus fournie.",
+        "Cette démarche permet de partager les richesses du lieu, de valoriser le travail collectif et de proposer des produits simples, naturels et locaux."
+      ],
+      "photos": [
+        {
+          "id": 5,
+          "photos_url": "/images/projets/boutique"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Artisanat",
+      "paragraphs": [
+        "L'association essaie de valoriser autrement la présence des chevaux et de créer des objets uniques, porteurs de sens et de lien avec la confection de porte‑clés et de bracelets en crin de cheval.",
+        "Ces créations témoignent de l’attachement au vivant et de la volonté de transmettre une part du lieu à travers des réalisations faites main."
+      ],
+      "photos": [
+        {
+          "id": 6,
+          "photos_url": "/images/projets/artisanat"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Partir à la découverte d'un territoire",
+      "paragraphs": [
+        "Nous proposons des itinéraires bucoliques en famille ou en entreprise, en lien avec des acteurs locaux engagés pour la biodiversité.",
+        "Ces sorties permettent de parcourir la forêt de Mormal (la plus grande forêt au Nord de Paris) et les zones humides de l'Avesnois, de découvrir la faune et la flore, dont 200 espèces végétales comestibles et médicinales, et de vivre des expériences authentiques comme la visite d’un rucher.",
+        "Créer votre itinéraire à la carte grâce aux connexions qui nous permettent d’aller plus loin."
+      ],
+      "photos": [
+        {
+          "id": 7,
+          "photos_url": "/images/projets/decouverte-territoire"
+        }
+      ]
+    },
+    {
+      "id": 8,
       "title": "Un temps fort : les Portes Ouvertes",
       "paragraphs": [
         "Chaque année, l’association organise une journée Portes Ouvertes, moment privilégié pour découvrir :",
@@ -47,6 +118,12 @@
         "des activités accessibles à tous : balade en calèche, mandalas, jeux, parcours sensoriel",
         "des partenaires engagés autour du vivant",
         "une soirée concerts pour prolonger la rencontre"
+      ],
+      "photos": [
+        {
+          "id": 8,
+          "photos_url": "/images/projets/portes-ouvertes"
+        }
       ]
     }
   ],

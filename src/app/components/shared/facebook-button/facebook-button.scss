@@ -6,6 +6,7 @@ a {
 
 a:hover {
   background: hsl(var(--primary-variant) / 0.9);
+  color: hsl(var(--tertiary-text));
 }
 
 .footer-button {

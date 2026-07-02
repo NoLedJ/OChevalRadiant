@@ -6,7 +6,7 @@
   },
   "proposition_section": {
     "title": "Ce que nous proposons",
-    "paragraph_01": "À « Ô Cheval Radiant », nous offrons une gamme de services thérapeutiques qui exploitent le pouvoir de guérison des chevaux. Nos programmes répondent à divers besoins, du cheminement individuel au renforcement communautaire.",
+    "paragraph_01": "À « Ô Cheval Radiant », nous répondons à nos besoins, du cheminement individuel au renforcement collectif.",
     "card": [
       {
         "id": 1,
@@ -45,12 +45,12 @@
   "studio": {
     "title": "Location du studio",
     "paragraph_01": "Pour celles et ceux qui souhaitent vivre pleinement l’ambiance du lieu, il est possible de louer un petit studio au sein de l’association.",
-    "paragraph_02": "Cet espace offre l’occasion de séjourner au plus près de la ferme, de partager le quotidien des animaux et de s’imprégner du rythme apaisant des chevaux. La location permet de profiter d’un cadre naturel, calme et ressourçant, tout en découvrant la vie de l’association de l’intérieur.",
+    "paragraph_02": "Cet espace offre l’occasion de séjourner au plus près de la ferme, de partager le quotidien des animaux et de s’imprégner du rythme apaisant des chevaux. La location permet de profiter d’un cadre naturel, calme et ressourçant, tout en découvrant la vie associative de l’intérieur.",
     "paragraph_03": "Une manière unique de se reconnecter, de prendre le temps et de vivre une expérience immersive au cœur du vivant.",
-    "image_url": "/images/accompagnements/studio01"
+    "photos_url": "/images/accompagnements/studio0"
   },
   "cta_section" : {
     "title": "Prêt à commencer ?",
-    "text": "Contactez-nous pour en savoir plus sur nos accompagnements et services, planifier une visite ou réserver votre première séance. Nous avons hâte de vous accueillir à <span class='insecable'>« Ô Cheval Radiant »</span>."
+    "text": "Contactez-nous pour en savoir plus sur nos accompagnements et services, planifier une visite ou réserver votre séjour. Nous avons hâte de vous accueillir à <span class='insecable'>« Ô Cheval Radiant »</span>."
   }
 }

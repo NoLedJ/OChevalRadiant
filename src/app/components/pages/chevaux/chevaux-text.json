@@ -6,7 +6,7 @@
       {
         "id": 1,
         "nom": "Pineta",
-        "info": "La doyenne du troupeau...c’est la première à être né à la maison il y a 23 ans et elle a mis un poulain au monde il y a 16 ans.",
+        "info": "La doyenne du troupeau... C’est la première à être né à la maison il y a 23 ans et elle a mis un poulain au monde il y a 16 ans.",
         "photo_url": "/images/chevaux/pineta.jpg"
       },
       {
@@ -48,16 +48,16 @@
       {
         "id": 8,
         "nom": "Hall Black",
-        "info": "Hall Black est un cheval Licorne facilitant l'accès à un travail fusionnel permettant de ne faire qu'un avec le Cheval.",
+        "info": "Hall Black est un cheval \"Licorne\" facilitant l'accès à un travail multi-dimensionnel pour ne faire qu'un.",
         "photo_url": "/images/chevaux/hall-black.jpg"
       }
     ]
   },
   "president_section": {
     "title": "Le mot du fondateur",
-    "paragraph_01": "Les partenaires chevaux sont pour la plupart nés sur place. Leur présence me fascine. Ils m’ont appris à grandir à leur présence et celle-ci m’apaise et m’inspire puissance tranquille et liberté.",
-    "paragraph_02": "La plupart sont originaires d’Amérique du Nord, de race « Paint » et nés au domicile. Ils sont dociles, porteurs, généreux et possèdent \"un bon pied\".",
-    "paragraph_03": "Ils évoluent en troupeau dans un milieu naturel afin d’être au plus près des besoins nécessaires à un bon mental au cheval."
+    "paragraph_01": "\"La présence des chevaux m’a permis de gagner en confiance et de franchir les paliers d’un rêve que je réalise aujourd’hui. Plus je partage avec eux, plus je ressens à quel point ils sont nécessaires à notre bien‑être.\"",
+    "paragraph_02": "\"Les huit chevaux sont très différents, même s’ils ont pour la plupart des origines communes (Paint, trotteur, Limousin). Ils sont tous nés de la première jument que j’ai éduquée à 14 ans. Ils sont dociles, porteurs, généreux, en demande et possèdent « un bon pied ».\"",
+    "paragraph_03": "\"Ils évoluent en troupeau dans un milieu préservé (Natura 2000) afin d'être au plus près de leurs besoins et de donner ainsi toutes leurs puissances à nos côtés.\""
 
   },
   "cta_section" : {

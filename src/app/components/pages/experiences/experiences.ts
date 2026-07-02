@@ -20,7 +20,7 @@ export class Experiences {
   cta_text: string = this.experiences_text.cta_section.text;
   cta_question: string = this.experiences_text.cta_section.question;
 
-  nbOfPhotos = 17;
+  nbOfPhotos = 14;
   toggler: boolean = false;
   sources: string[] = [];
   sources_thumbnail: string[] = [];

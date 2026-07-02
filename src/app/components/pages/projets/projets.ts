@@ -4,10 +4,12 @@ import { BannerSection } from '../../layout/banner-section/banner-section';
 import { CTASection } from '../../layout/cta-section/cta-section';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { FsLightbox } from "fslightbox-angular";
+import { Router } from '@angular/router';
+import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
 
 @Component({
   selector: 'app-projets',
-  imports: [CTASection, BannerSection, AnimateOnVisibleDirective, FsLightbox],
+  imports: [CTASection, BannerSection, AnimateOnVisibleDirective, FsLightbox, SafeHtmlPipe],
   templateUrl: './projets.html',
   styleUrl: './projets.scss',
 })
@@ -23,34 +25,35 @@ export class Projets {
   cta_text: string = this.projets_text.cta_section.text;
   cta_question: string = this.projets_text.cta_section.question;
 
-  nbOfPhotos = 3;
-  toggler_chantier: boolean = false;
-  toggler_espace: boolean = false;
-  sources_chantier: string[] = [];
-  sources_espace: string[] = [];
-  sources_chantier_thumbnail: string[] = [];
-  sources_espace_thumbnail: string[] = [];
-  slide_chantier: number = 0;
-  slide_espace: number = 0;
+  toggler: boolean = false;
+  sources: string[] = [];
+  slide: number = 0;
 
-  constructor() {
-    for (let i = 1; i <= this.nbOfPhotos; i++) {
-      this.sources_chantier.push(`/images/projets/chantier0${i}.jpg`);
-      this.sources_espace.push(`/images/projets/espace0${i}.jpg`);
-      this.sources_chantier_thumbnail.push(`/images/projets/chantier0${i}-thumbnail.jpg`);
-      this.sources_espace_thumbnail.push(`/images/projets/espace0${i}-thumbnail.jpg`);
+  constructor(private readonly router: Router){
+    this.projets_text.main_sections.forEach(section => {
+      if (section.photos) {
+        section.photos.forEach(photo => {
+          this.sources.push(`${photo.photos_url}.jpg`);
+        });
+      }
+    });
+  }
+
+  onHtmlClick(event: Event) {
+    const target = event.target as HTMLElement;
+
+    if (target.tagName === 'A') {
+      event.preventDefault();
+      const url = target.getAttribute('href');
+      if (url) {
+        this.router.navigateByUrl(url);
+      }
     }
   }
 
-  openLightbox(index: number, typePhotos: string): void {
-    if (typePhotos == "chantier") {
-      this.slide_chantier = index + 1;
-      this.toggler_chantier = !this.toggler_chantier;
-    }
-    if (typePhotos == "espace") {
-      this.slide_espace = index + 1;
-      this.toggler_espace = !this.toggler_espace;
-    }
+  openLightbox(sectionId: number): void {
+    this.slide = sectionId;
+    this.toggler = !this.toggler;
   }
 
 }

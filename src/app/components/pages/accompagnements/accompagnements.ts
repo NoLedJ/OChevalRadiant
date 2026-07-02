@@ -14,8 +14,6 @@ import { FsLightbox } from "fslightbox-angular";
 })
 export class Accompagnements {
 
-  toggler: boolean = false;
-
   accompagnements_text  = import_accompagnements_text_json;
 
   bannerTitle: string = this.accompagnements_text.banner.title;
@@ -25,7 +23,21 @@ export class Accompagnements {
   cta_title: string = this.accompagnements_text.cta_section.title;
   cta_text: string = this.accompagnements_text.cta_section.text;
 
-  openLightbox(): void {
+  nbOfPhotos = 4;
+  toggler: boolean = false;
+  sources: string[] = [];
+  sources_thumbnail: string[] = [];
+  slide: number = 0;
+
+  constructor() {
+    for (let i = 1; i <= this.nbOfPhotos; i++) {
+      this.sources.push(`${this.accompagnements_text.studio.photos_url}${i}.jpg`);
+      this.sources_thumbnail.push(`${this.accompagnements_text.studio.photos_url}${i}-thumbnail.jpg`);
+    }
+  }
+
+  openLightbox(index: number): void {
+    this.slide = index + 1;
     this.toggler = !this.toggler;
   }
 

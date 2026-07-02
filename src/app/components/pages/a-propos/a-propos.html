@@ -3,49 +3,51 @@
   [bannerSubtitle]="bannerSubtitle"
   [bannerImage]="bannerImage"></app-banner-section>
 <section>
-  <div class="storytelling-text-content">
-    <div class="fade-in" animateOnVisible="visible">
-      <h2>{{ a_propos_text.histoire_section.title }}</h2>
-      <p [innerHTML]="a_propos_text.histoire_section.paragraph_01 | safeHtml"></p>
-    </div>
-    <div class="fade-in" animateOnVisible="visible">
-      <h3>{{ a_propos_text.histoire_section.retrospection.title }}</h3>
-      <p>{{ a_propos_text.histoire_section.retrospection.paragraph_01 }}</p>
-      <p (click)="onHtmlClick($event)" (keydown.enter)="onHtmlClick($event)" [innerHTML]="a_propos_text.histoire_section.retrospection.paragraph_02 | safeHtml"></p>
-    </div>
-    <div class="fade-in" animateOnVisible="visible">
-      <h3>{{ a_propos_text.histoire_section.parcours_pro.title }}</h3>
-      <p>{{ a_propos_text.histoire_section.parcours_pro.paragraph_01 }}</p>
-      <p>{{ a_propos_text.histoire_section.parcours_pro.paragraph_02 }}</p>
-      <p>{{ a_propos_text.histoire_section.parcours_pro.paragraph_03 }}</p>
-      <p [innerHTML]="a_propos_text.histoire_section.parcours_pro.paragraph_04 | safeHtml"></p>
-    </div>
+  <div class="storytelling-text-content fade-in" animateOnVisible="visible">
+    <h2>{{ a_propos_text.histoire_section.title }}</h2>
+    <p [innerHTML]="a_propos_text.histoire_section.paragraph_01 | safeHtml"></p>
+  </div>
+  <div class="storytelling-text-content fade-in" animateOnVisible="visible">
+    <h3>{{ a_propos_text.histoire_section.retrospection.title }}</h3>
+    <p>{{ a_propos_text.histoire_section.retrospection.paragraph_01 }}</p>
+    <p (click)="onHtmlClick($event)" (keydown.enter)="onHtmlClick($event)" [innerHTML]="a_propos_text.histoire_section.retrospection.paragraph_02 | safeHtml"></p>
+  </div>
+  <div class="storytelling-text-content fade-in" animateOnVisible="visible">
+    <h3>{{ a_propos_text.histoire_section.parcours_pro.title }}</h3>
+    <p>{{ a_propos_text.histoire_section.parcours_pro.paragraph_01 }}</p>
+    <p>{{ a_propos_text.histoire_section.parcours_pro.paragraph_02 }}</p>
+    <p>{{ a_propos_text.histoire_section.parcours_pro.paragraph_03 }}</p>
+    <p [innerHTML]="a_propos_text.histoire_section.parcours_pro.paragraph_04 | safeHtml"></p>
   </div>
 </section>
 <section>
   <div class="text-section-content fade-in" animateOnVisible="visible">
-    <div class="text-content">
+    <div class="storytelling-text-content">
       <h2>{{ a_propos_text.installations_section.title }}</h2>
-      <p class="text-content-paragraph">{{ a_propos_text.installations_section.paragraph_01 }}</p>
+      <p>{{ a_propos_text.installations_section.paragraph_01 }}</p>
+      <p>{{ a_propos_text.installations_section.paragraph_02 }}</p>
+      <ul>
+        @for(item of a_propos_text.installations_section.list; track $index) {
+          <li>{{ item }}</li>
+        }
+      </ul>
     </div>
     <div class="carousel fade-in" animateOnVisible="visible">
-      <div class="location-photos-container">
+      <div class="carousel-photos-container">
         @for(photo of sources_thumbnail; track $index) {
           <img
             src="{{ photo }}"
             alt="Les installations - {{ $index + 1 }}"
-            class="experience-photo"
             (click)="openLightbox($index)"
             (keydown.enter)="openLightbox($index)"
           >
         }
       </div>
-      <div aria-hidden class="location-photos-container">
+      <div aria-hidden class="carousel-photos-container">
         @for(photo of sources_thumbnail; track $index) {
           <img
             src="{{ photo }}"
             alt="Les installations - {{ $index + 1 }}"
-            class="experience-photo"
             (click)="openLightbox($index)"
             (keydown.enter)="openLightbox($index)"
           >

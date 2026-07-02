@@ -1,9 +1,37 @@
 {
   "banner": {
-    "title": "Nos partenaires engagés",
+    "title": "Nos partenaires",
     "subtitle": "Nous collaborons avec des organisations et des individus engagés pour promouvoir notre mission et notre vision.",
     "image_url": "images/partenaires/banner"
   },
+  "main_sections": [
+    {
+      "id": 1,
+      "title": "Association Niofar",
+      "presentations": [
+        {
+          "id": 1,
+          "title": "Les chantiers participatifs : poser les bases du vivre‑ensemble",
+          "paragraphs": [
+            "<a href='https://www.facebook.com/p/Association-Niofar-100080855611864/' target='_blank' rel='noopener noreferrer'>Nofiar</a> est une association qui réfléchit à comment mieux vivre ensemble. L'objectif est de créer un écolieu dans l'Avesnois à travers la promotion de l'habitat reversible et de développer des actions respectueuses de l'humain et de l'environnement.",
+            "Avec l'<a href='https://www.facebook.com/p/Association-Niofar-100080855611864/' target='_blank' rel='noopener noreferrer'>association Nofiar</a>, « Ô Cheval Radiant » a lancé un planning de différents chantiers participatifs ouvert à toutes les personnes souhaitant contribuer à l'émergence de ce lieu dans le but d'obtenir l'ERP (Établissement Recevant du Public).",
+            "Ces journées ont permis de poser les fondations d’un véritable vivre‑ensemble, en cultivant la cohésion, l'intelligence collective et le plaisir d’agir ensemble.",
+            "À travers ces temps partagés, chacun a pu découvrir le fonctionnement du lieu, participer à son aménagement et contribuer à préparer de futurs projets coopératifs.",
+            "Ces chantiers marquent la première étape d’un mouvement plus large : faire de l’association un espace où l’on construit ensemble, où chaque geste compte, et où chacun peut trouver sa place."
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Un espace de partage et de soutien mutuel pour grandir ensemble",
+          "paragraphs": [
+            "Nous souhaitons créer un espace où chacun peut se rassembler, partager ses expériences, se sentir soutenu et s’impliquer à son rythme.",
+            "À travers ces initiatives, nous cherchons à sensibiliser à l’importance du vivant, à renforcer les liens humains et à permettre à chacun de grandir dans un cadre bienveillant et respectueux.",
+            "Ces projets coopératifs sont pensés comme des expériences à vivre, où l’on apprend ensemble, où l’on donne du sens, et où l’on tisse des relations sincères dans un environnement propice à la découverte de soi et des autres."
+          ]
+        }
+      ]
+    }
+  ],
   "cta_section" : {
     "title": "Travailler ensemble",
     "text": "Nous sommes toujours ouverts à de nouvelles collaborations, qu’elles soient ponctuelles ou régulières. Ensemble, nous pouvons imaginer des projets qui mettent en valeur le cheval, le lien humain et l’inclusion.",

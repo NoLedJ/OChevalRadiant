@@ -3,6 +3,7 @@
   background: hsl(var(--primary-text) / 0.4);
   &:hover {
     background: hsl(var(--primary-text) / 0.3);
+    color: hsl(var(--tertiary-text));
   }
 }
 
