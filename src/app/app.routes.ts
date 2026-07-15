@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: 'accueil',
-    title: 'Ô Cheval Radiant - Bienvenue !',
+    title: 'Ô Cheval Radiant - Association d\'équithérapie et projets coopératifs à Maroilles',
     loadComponent: () =>
       import('./components/pages/accueil/accueil').then(m => m.Accueil)
   },
