@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { Accueil } from './components/pages/accueil/accueil';
 
 export const routes: Routes = [
   {
@@ -79,5 +80,5 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./components/pages/conditions-utilisation/conditions-utilisation').then(m => m.ConditionsUtilisation)
   },
-  { path: '', redirectTo: 'accueil', pathMatch: 'full' }
+  { path: '**', component: Accueil }
 ];

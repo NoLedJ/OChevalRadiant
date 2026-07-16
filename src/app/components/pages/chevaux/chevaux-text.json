@@ -7,49 +7,49 @@
         "id": 1,
         "nom": "Pineta",
         "info": "La doyenne du troupeau... C’est la première à être né à la maison il y a 23 ans et elle a mis un poulain au monde il y a 16 ans.",
-        "photo_url": "/images/chevaux/pineta.jpg"
+        "photo_url": "/images/chevaux/pineta.webp"
       },
       {
         "id": 2,
         "nom": "Akoune « namatata »",
         "info": "Le choix du prénom va avec la philosophie de son caractère : il représente la force tranquille et nous aimerions lui trouver une belle calèche pour l’attelage.",
-        "photo_url": "/images/chevaux/akoune.jpg"
+        "photo_url": "/images/chevaux/akoune.webp"
       },
       {
         "id": 3,
         "nom": "Alpagosse",
         "info": "Né la même année et frère de Pineta, tonton de Akoune et fils de Gitane et d’Hugo. Il est d’une sensibilité incroyable et le garant du troupeau.",
-        "photo_url": "/images/chevaux/alpagosse.jpg"
+        "photo_url": "/images/chevaux/alpagosse.webp"
       },
       {
         "id": 4,
         "nom": "Blacky",
         "info": "Shetland très sensible également. Il facilite un travail intergénérationnel car il tire une petite calèche que l'on nous prête gracieusement.",
-        "photo_url": "/images/chevaux/blacky.jpg"
+        "photo_url": "/images/chevaux/blacky.webp"
       },
       {
         "id": 5,
         "nom": "Canella",
         "info": "Shetland comme il se doit. Elle nous provient de l’association Équilibre à Preux au Bois.",
-        "photo_url": "/images/chevaux/canella.jpg"
+        "photo_url": "/images/chevaux/canella.webp"
       },
       {
         "id": 6,
         "nom": "Norton",
         "info": "Double poney d’origine arabe, il nous a éte confié par l'association des Chamborans dont Anatole en est également le président.",
-        "photo_url": "/images/chevaux/norton.jpg"
+        "photo_url": "/images/chevaux/norton.webp"
       },
       {
         "id": 7,
         "nom": "Olaf",
         "info": "Premier cheval de l’association. C'est un poulain de deux ans prêt à prendre bientôt la relève.",
-        "photo_url": "/images/chevaux/olaf.jpg"
+        "photo_url": "/images/chevaux/olaf.webp"
       },
       {
         "id": 8,
         "nom": "Hall Black",
         "info": "Hall Black est un cheval \"Licorne\" facilitant l'accès à un travail multi-dimensionnel pour ne faire qu'un.",
-        "photo_url": "/images/chevaux/hall-black.jpg"
+        "photo_url": "/images/chevaux/hall-black.webp"
       }
     ]
   },

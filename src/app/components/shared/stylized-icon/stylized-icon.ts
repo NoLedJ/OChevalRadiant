@@ -1,10 +1,11 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-stylized-icon',
   imports: [],
   templateUrl: './stylized-icon.html',
   styleUrl: './stylized-icon.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class StylizedIcon {
 

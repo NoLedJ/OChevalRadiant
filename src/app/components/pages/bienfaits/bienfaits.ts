@@ -1,5 +1,5 @@
 import import_bienfaits_text_json from './bienfaits-text.json';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { DefinitionCard } from '../../shared/definition-card/definition-card';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { CTASection } from '../../layout/cta-section/cta-section';
@@ -10,6 +10,7 @@ import { BannerSection } from '../../layout/banner-section/banner-section';
   imports: [CTASection, DefinitionCard, BannerSection, AnimateOnVisibleDirective],
   templateUrl: './bienfaits.html',
   styleUrl: './bienfaits.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Bienfaits {
 

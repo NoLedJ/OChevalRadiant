@@ -11,7 +11,7 @@
         @if (section.photos && section.photos.length == 1) {
           <div class="photo-content">
             <img
-              [src]="`${section.photos[0].photos_url}-thumbnail.jpg`"
+              [src]="`${section.photos[0].photos_url}-thumbnail.webp`"
               alt="{{ section.title }}"
               class="projets-photo fly-card"
               (click)="openLightbox(section.photos[0].id)"
@@ -35,7 +35,7 @@
               <div class="photos-container fade-in" animateOnVisible="visible">
                 @for(photo of section.photos; track $index) {
                   <img
-                    [src]="`${photo.photos_url}-thumbnail.jpg`"
+                    [src]="`${photo.photos_url}-thumbnail.webp`"
                     alt="{{ section.title }} - {{ $index + 1 }}"
                     class="zoom shadow"
                     (click)="openLightbox(photo.id)"

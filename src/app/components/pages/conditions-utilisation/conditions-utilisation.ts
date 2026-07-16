@@ -1,11 +1,12 @@
 import import_conditions_utilisation_text_json from './conditions-utilisation-text.json';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-conditions-utilisation',
   imports: [],
   templateUrl: './conditions-utilisation.html',
   styleUrl: './conditions-utilisation.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ConditionsUtilisation {
 

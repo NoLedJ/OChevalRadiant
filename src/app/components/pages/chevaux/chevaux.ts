@@ -1,5 +1,5 @@
 import import_chevaux_text_json from './chevaux-text.json';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PresentationCard } from '../../shared/presentation-card/presentation-card';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { CTASection } from '../../layout/cta-section/cta-section';
@@ -10,6 +10,7 @@ import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
   imports: [PresentationCard, CTASection, AnimateOnVisibleDirective, SafeHtmlPipe],
   templateUrl: './chevaux.html',
   styleUrl: './chevaux.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Chevaux {
 

@@ -1,4 +1,4 @@
-import { Component, input, model } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, model } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import import_navigation_links_json from './navigation-link.json';
 
@@ -7,6 +7,7 @@ import import_navigation_links_json from './navigation-link.json';
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './navbar-items.html',
   styleUrl: './navbar-items.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavbarItems {
 

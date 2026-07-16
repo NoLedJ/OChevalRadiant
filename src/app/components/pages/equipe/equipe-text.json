@@ -8,42 +8,42 @@
         "nom": "Anatole Lenne",
         "role": "Président & Fondateur",
         "info": "Fondateur et président de l’association <span class='insecable'>« Ô Cheval Radiant »</span>, Anatole porte ce projet né d’un rêve d’enfance et nourri par une conviction profonde : le cheval est un partenaire de transformation et de résilience. Son parcours, riche d’expériences dans l’enseignement des activités physiques adaptées et l’accompagnement de publics variés — de l’Éducation nationale aux structures médico‑sociales — a façonné sa vision d’un lien Homme‑Cheval comme ressource essentielle. Persévérant, engagé et guidé par le sens du vivant, Anatole œuvre aujourd’hui à faire de l’équithérapie un espace d’ancrage, de mouvement et d’ouverture pour chacun.",
-        "photo_url": "/images/equipe/profil_director.jpg"
+        "photo_url": "/images/equipe/profil_director.webp"
       },
       {
         "id": 2,
         "nom": "Guenièvre Lenne",
         "role": "Secrétaire",
         "info": "Portée par les valeurs du vivre ensemble et de l’intelligence partagée, Guenièvre est secrétaire de l’Association <span class='insecable'>« Ô Cheval Radiant »</span> ainsi que de l’association « NIOFAR ». Définie comme une force tranquille persévérante et dynamique, Guenièvre investit le développement de projet avec la volonté de réfléchir collectivement. Éducatrice spécialisée de profession, elle sait se monter forte de proposition, pragmatique et organisée.",
-        "photo_url": "/images/equipe/profil_secretary.jpg"
+        "photo_url": "/images/equipe/profil_secretary.webp"
       },
       {
         "id": 3,
         "nom": "Laetitia Samain",
         "role": "Bénévole",
         "info": "Animée par le lien au vivant et par la richesse des rencontres humaines et animales, Laetitia est bénévole au sein de l’association <span class='insecable'>« Ô Cheval Radiant »</span> depuis avril 2024. Monitrice éducatrice et monitrice d’attelage en tourisme équestre, elle met au service de l’association ses compétences équestres et son expérience de l’accompagnement des personnes en situation de handicap. Présence calme, engagée et structurante, elle contribue à l'association avec efficacité et bienveillance.",
-        "photo_url": "/images/equipe/profil_volunteer01.jpg"
+        "photo_url": "/images/equipe/profil_volunteer01.webp"
       },
       {
         "id": 4,
         "nom": "Lina Lanzetta",
         "role": "Bénévole",
         "info": "Guidée par des valeurs fortes de vivre‑ensemble, de nature et de solidarité, Lina rejoint régulièrement <span class='insecable'>« Ô Cheval Radiant »</span> pour contribuer au développement de ce beau projet. Ce lieu, tout comme les êtres vivants qui l’habitent, ouvre à un univers sensible et profondément humain, dont il est toujours difficile de se détacher. Présence engagée et attentive, Lina trouve ici un espace qui donne pleinement sens à ses convictions.",
-        "photo_url": "/images/equipe/profil_volunteer04.jpg"
+        "photo_url": "/images/equipe/profil_volunteer04.webp"
       },
       {
         "id": 5,
         "nom": "Christina Sulmon",
         "role": "Bénévole",
         "info": "Passionnée par le bien‑être animal, Christina s’investit au sein de <span class='insecable'>« Ô Cheval Radiant »</span> avec bienveillance et engagement. Son projet de toilettage canin et félin itinérant reflète son attachement profond au respect du vivant. Aux côtés des chevaux, elle trouve un espace de partage et d’apprentissage, où elle peut contribuer à des actions porteuses de sens tout en restant active malgré certaines difficultés physiques.",
-        "photo_url": "/images/equipe/profil_volunteer02.jpg"
+        "photo_url": "/images/equipe/profil_volunteer02.webp"
       },
       {
         "id": 6,
         "nom": "Hélène Delebarre",
         "role": "Bénévole & Thérapeute énergéticienne",
         "info": "Hélène accompagne des personnes depuis de nombreuses années, dans la randonnée équestre, la formation et l’accompagnement social. Son parcours s’est construit au contact des chevaux, médiateurs essentiels dans son approche. Aujourd’hui thérapeute énergéticienne, elle poursuit son engagement pour le vivant à travers <a href='https://energies-connexions-animales.com' target='_blank' rel='noopener noreferrer'>Hélène et les Énergies</a>, où elle accompagne humains et animaux par les soins énergétiques et la communication animale. Convaincue de la force du lien avec les chevaux, Hélène s’est engagée au sein d’<span class='insecable'>« Ô Cheval Radiant »</span>, un lieu dont elle partage les valeurs et l’élan collectif.",
-        "photo_url": "/images/equipe/profil_volunteer03.jpg"
+        "photo_url": "/images/equipe/profil_volunteer03.webp"
       }
     ]
   },

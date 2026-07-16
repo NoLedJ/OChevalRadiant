@@ -1,6 +1,6 @@
 import import_accueil_text_json from './accueil-text.json';
 import import_navigation_link_json from '../../layout/navbar-items/navigation-link.json';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FacebookButton } from "../../shared/facebook-button/facebook-button";
 import { DefinitionCard } from '../../shared/definition-card/definition-card';
 import { RouterLink } from '@angular/router';
@@ -12,6 +12,7 @@ import { BannerSection } from '../../layout/banner-section/banner-section';
   imports: [FacebookButton, DefinitionCard, RouterLink, AnimateOnVisibleDirective, BannerSection],
   templateUrl: './accueil.html',
   styleUrl: './accueil.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Accueil {
 

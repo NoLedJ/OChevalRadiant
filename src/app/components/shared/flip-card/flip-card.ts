@@ -1,4 +1,4 @@
-import { Component, ElementRef, input, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, input, ViewChild } from '@angular/core';
 import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
 
 @Component({
@@ -6,6 +6,7 @@ import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
   imports: [SafeHtmlPipe],
   templateUrl: './flip-card.html',
   styleUrl: './flip-card.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FlipCard {
 

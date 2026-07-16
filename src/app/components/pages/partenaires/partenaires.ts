@@ -1,5 +1,5 @@
 import import_partenaires_text_json from './partenaires-text.json';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { BannerSection } from '../../layout/banner-section/banner-section';
 import { CTASection } from '../../layout/cta-section/cta-section';
 import { FsLightbox } from "fslightbox-angular";
@@ -11,6 +11,7 @@ import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
   imports: [CTASection, BannerSection, FsLightbox, AnimateOnVisibleDirective, SafeHtmlPipe],
   templateUrl: './partenaires.html',
   styleUrl: './partenaires.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Partenaires {
 
@@ -36,10 +37,10 @@ export class Partenaires {
 
   constructor() {
     for (let i = 1; i <= this.nbOfPhotos; i++) {
-      this.sources_chantier.push(`/images/partenaires/chantier0${i}.jpg`);
-      this.sources_espace.push(`/images/partenaires/espace0${i}.jpg`);
-      this.sources_chantier_thumbnail.push(`/images/partenaires/chantier0${i}-thumbnail.jpg`);
-      this.sources_espace_thumbnail.push(`/images/partenaires/espace0${i}-thumbnail.jpg`);
+      this.sources_chantier.push(`/images/partenaires/chantier0${i}.webp`);
+      this.sources_espace.push(`/images/partenaires/espace0${i}.webp`);
+      this.sources_chantier_thumbnail.push(`/images/partenaires/chantier0${i}-thumbnail.webp`);
+      this.sources_espace_thumbnail.push(`/images/partenaires/espace0${i}-thumbnail.webp`);
     }
   }
 

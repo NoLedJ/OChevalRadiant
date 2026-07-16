@@ -1,5 +1,5 @@
 import import_equipe_text_json from './equipe-text.json';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PresentationCard } from '../../shared/presentation-card/presentation-card';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { CTASection } from '../../layout/cta-section/cta-section';
@@ -10,6 +10,7 @@ import { ProposalCard } from '../../shared/proposal-card/proposal-card';
   imports: [PresentationCard, CTASection, AnimateOnVisibleDirective, ProposalCard],
   templateUrl: './equipe.html',
   styleUrl: './equipe.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Equipe {
 

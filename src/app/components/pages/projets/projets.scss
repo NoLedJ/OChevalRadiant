@@ -32,15 +32,8 @@
   }
 }
 
-.decouverte-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  & img {
-    width: 80%;
-    border-radius: var(--radius);
-  }
+img {
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

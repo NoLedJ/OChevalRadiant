@@ -1,5 +1,5 @@
 import import_a_propos_text_json from './a-propos-text.json';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FsLightbox } from "fslightbox-angular";
 
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
@@ -14,6 +14,7 @@ import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
   imports: [FsLightbox, BannerSection, CTASection, AnimateOnVisibleDirective, SafeHtmlPipe],
   templateUrl: './a-propos.html',
   styleUrl: './a-propos.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class APropos {
 
@@ -35,8 +36,8 @@ export class APropos {
 
   constructor(private readonly router: Router) {
     for (let i = 1; i <= this.nbOfPhotos; i++) {
-      this.sources.push(`${this.a_propos_text.installations_section.photos_url}${i}.jpg`);
-      this.sources_thumbnail.push(`${this.a_propos_text.installations_section.photos_url}${i}-thumbnail.jpg`);
+      this.sources.push(`${this.a_propos_text.installations_section.photos_url}${i}.webp`);
+      this.sources_thumbnail.push(`${this.a_propos_text.installations_section.photos_url}${i}-thumbnail.webp`);
     }
   }
 

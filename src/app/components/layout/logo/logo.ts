@@ -1,5 +1,5 @@
 import import_navigation_links_json from '../navbar-items/navigation-link.json';
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,6 +7,7 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   templateUrl: './logo.html',
   styleUrl: './logo.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Logo {
 

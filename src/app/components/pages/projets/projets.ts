@@ -1,5 +1,5 @@
 import import_projets_text_json from './projets-text.json';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { BannerSection } from '../../layout/banner-section/banner-section';
 import { CTASection } from '../../layout/cta-section/cta-section';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
@@ -12,6 +12,7 @@ import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
   imports: [CTASection, BannerSection, AnimateOnVisibleDirective, FsLightbox, SafeHtmlPipe],
   templateUrl: './projets.html',
   styleUrl: './projets.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Projets {
 
@@ -33,7 +34,7 @@ export class Projets {
     this.projets_text.main_sections.forEach(section => {
       if (section.photos) {
         section.photos.forEach(photo => {
-          this.sources.push(`${photo.photos_url}.jpg`);
+          this.sources.push(`${photo.photos_url}.webp`);
         });
       }
     });

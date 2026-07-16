@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { PresentationCardInterface } from './presentation-card.interface';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
@@ -8,6 +8,7 @@ import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
   imports: [AnimateOnVisibleDirective, SafeHtmlPipe],
   templateUrl: './presentation-card.html',
   styleUrl: './presentation-card.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PresentationCard {
 

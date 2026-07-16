@@ -1,7 +1,7 @@
 import import_cta_section_text_json from './cta-section-text.json';
 import import_navigation_link_json from '../../layout/navbar-items/navigation-link.json';
 import import_facebook_text_json from '../../shared/facebook-button/facebook-text.json';
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
@@ -11,6 +11,7 @@ import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
   imports: [RouterLink, AnimateOnVisibleDirective, SafeHtmlPipe],
   templateUrl: './cta-section.html',
   styleUrl: './cta-section.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CTASection {
 

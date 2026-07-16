@@ -3,7 +3,7 @@ import { BannerSection } from '../../layout/banner-section/banner-section';
 import { CTASection } from '../../layout/cta-section/cta-section';
 import { ProposalCard } from '../../shared/proposal-card/proposal-card';
 import import_accompagnements_text_json from './accompagnements-text.json';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FsLightbox } from "fslightbox-angular";
 
 @Component({
@@ -11,6 +11,7 @@ import { FsLightbox } from "fslightbox-angular";
   imports: [ProposalCard, CTASection, BannerSection, AnimateOnVisibleDirective, FsLightbox],
   templateUrl: './accompagnements.html',
   styleUrl: './accompagnements.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Accompagnements {
 
@@ -31,8 +32,8 @@ export class Accompagnements {
 
   constructor() {
     for (let i = 1; i <= this.nbOfPhotos; i++) {
-      this.sources.push(`${this.accompagnements_text.studio.photos_url}${i}.jpg`);
-      this.sources_thumbnail.push(`${this.accompagnements_text.studio.photos_url}${i}-thumbnail.jpg`);
+      this.sources.push(`${this.accompagnements_text.studio.photos_url}${i}.webp`);
+      this.sources_thumbnail.push(`${this.accompagnements_text.studio.photos_url}${i}-thumbnail.webp`);
     }
   }
 

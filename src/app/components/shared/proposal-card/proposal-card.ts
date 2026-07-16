@@ -1,4 +1,4 @@
-import { Component, computed, effect, input, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, input, signal } from '@angular/core';
 import { ProposalCardInterface } from './proposal-card.interface';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 
@@ -7,6 +7,7 @@ import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visibl
   imports: [AnimateOnVisibleDirective],
   templateUrl: './proposal-card.html',
   styleUrl: './proposal-card.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProposalCard {
 
