@@ -1,6 +1,6 @@
 .contact-content {
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 3rem;
   max-width: 72rem;
   margin: 0 auto;

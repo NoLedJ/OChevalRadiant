@@ -1,6 +1,6 @@
 .photos-container {
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
   margin: 0 auto;
   margin-top: 2rem;
