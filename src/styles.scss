@@ -40,13 +40,15 @@ body {
   background-color: #f5f5f5;
   color: hsl(var(--primary-text));
 
-  --primary: 120 25% 45%;
-  --primary-variant: 106 23% 70%;
+  --primary: 120 25% 35%;
+  --primary-variant: 104 11% 43%;
   --secondary: 40 37% 97%;
   --tertiary: 39 50% 90%;
   --primary-text: 29 31% 42%;
   --secondary-text: 0 0% 40%;
   --tertiary-text: 0 0% 100%;
+  --footer-link: 100 100% 92%;
+  --footer-text: 60 100% 96%;
   --card: 40 25% 99%;
   --border: 40 12% 85%;
   --shadow: 0 0% 70%;
@@ -97,9 +99,8 @@ h3 {
 }
 
 a, .menu-button, .close {
-  color: hsl(var(--primary-variant));
+  color: hsl(var(--primary));
   font-weight: 500;
-  text-decoration: none;
   cursor: pointer;
   animation-duration: 0.2s;
   transition-duration: 0.2s;
@@ -108,7 +109,7 @@ a, .menu-button, .close {
 }
 
 a:hover {
-  color: hsl(var(--primary));
+  color: hsl(var(--primary) / 0.7);
 }
 
 .buttons-container {
@@ -122,7 +123,7 @@ a:hover {
   display: inline-flex;
   font-family: "Manrope", sans-serif;
   height: 2.5rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
   color: hsl(var(--tertiary-text));
   letter-spacing: 0.05rem;
   border: none;
@@ -131,6 +132,7 @@ a:hover {
   align-items: center;
   font-weight: 600;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 section {
@@ -196,6 +198,7 @@ section {
 .cards-container {
   display: grid;
   grid-template-columns: 1fr;
+  align-items: stretch;
   gap: 2rem;
 }
 

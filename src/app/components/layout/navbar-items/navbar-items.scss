@@ -15,14 +15,18 @@
   padding: 0.5rem;
   color: hsl(var(--secondary-text));
   border-radius: var(--radius);
+  text-decoration: none;
 }
 
 .nav-link:hover {
   color: hsl(var(--primary));
+  background-color: hsla(0, 0%, 95%, 0.8);
+  border-radius: var(--radius);
+
 }
 
 .route-active {
   color: hsl(var(--primary));
-  background-color: hsl(var(--primary) / 0.1);
+  background-color: hsl(120 25% 95% / 0.8);
   border-radius: var(--radius);
 }

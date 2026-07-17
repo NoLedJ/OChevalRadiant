@@ -1,8 +1,8 @@
 .contact-button {
   gap: 0.5rem;
-  background: hsl(var(--primary-text) / 0.4);
+  background: hsl(var(--primary-text));
   &:hover {
-    background: hsl(var(--primary-text) / 0.3);
+    background: hsl(var(--primary-text) / 0.9);
     color: hsl(var(--tertiary-text));
   }
 }

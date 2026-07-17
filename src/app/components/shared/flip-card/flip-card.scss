@@ -28,6 +28,7 @@
   padding: 2rem;
   & > div {
     height: 100%;
+    padding-right: 0.2em;
   }
 }
 
@@ -98,15 +99,16 @@ p {
   padding-top: 2rem;
   padding-bottom: 0;
   align-self: center;
-  color: hsl(var(--primary-variant));
+  color: hsl(var(--primary));
+  text-decoration: underline;
   &:hover {
-    color: hsl(var(--primary));
+    color: hsl(var(--primary) / 0.7);
   }
 }
 
 .flip-card-back > .flip-cta {
-  color: hsl(var(--primary-text)/0.7);
+  color: hsl(var(--primary-text));
   &:hover {
-    color: hsl(var(--primary-text));
+    color: hsl(var(--primary-text) / 0.7);
   }
 }
