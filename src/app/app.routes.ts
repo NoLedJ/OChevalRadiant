@@ -3,8 +3,9 @@ import { Accueil } from './components/pages/accueil/accueil';
 
 export const routes: Routes = [
   {
-    path: 'accueil',
+    path: '',
     title: 'Ô Cheval Radiant - Association d\'équithérapie et projets coopératifs à Maroilles',
+    pathMatch: 'full',
     loadComponent: () =>
       import('./components/pages/accueil/accueil').then(m => m.Accueil)
   },

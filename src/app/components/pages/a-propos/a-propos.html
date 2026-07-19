@@ -32,29 +32,7 @@
         }
       </ul>
     </div>
-    <div class="carousel fade-in" animateOnVisible="visible">
-      <div class="carousel-photos-container">
-        @for(photo of sources_thumbnail; track $index) {
-          <img
-            src="{{ photo }}"
-            alt="Les installations - {{ $index + 1 }}"
-            (click)="openLightbox($index)"
-            (keydown.enter)="openLightbox($index)"
-          >
-        }
-      </div>
-      <div aria-hidden class="carousel-photos-container">
-        @for(photo of sources_thumbnail; track $index) {
-          <img
-            src="{{ photo }}"
-            alt="Les installations - {{ $index + 1 }}"
-            (click)="openLightbox($index)"
-            (keydown.enter)="openLightbox($index)"
-          >
-        }
-      </div>
-    </div>
-    <fslightbox	[toggler]="toggler"	[sources]="sources" [slide]="slide" />
+    <app-carousel [nbOfPhotos]="nbOfPhotos" [photosUrl]="photosUrl"></app-carousel>
   </div>
 </section>
 <section>

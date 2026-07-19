@@ -2,7 +2,7 @@
   "accueil": {
     "id": 1,
     "nom": "Accueil",
-    "routerLink": "accueil"
+    "routerLink": ""
   },
   "a_propos": {
     "id": 2,

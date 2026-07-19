@@ -4,7 +4,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: hsl(0 0% 100% / 0.6);
+  background: hsl(var(--tertiary-text) / 0.6);
 }
 
 nav {
@@ -26,7 +26,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
+  border: 2px solid hsl(var(--primary-text));
   border-radius: var(--radius);
   padding: 0.5rem;
   background: hsl(var(--menu));

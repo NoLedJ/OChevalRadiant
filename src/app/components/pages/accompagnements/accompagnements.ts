@@ -1,14 +1,14 @@
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { BannerSection } from '../../layout/banner-section/banner-section';
 import { CTASection } from '../../layout/cta-section/cta-section';
+import { Carousel } from '../../shared/carousel/carousel';
 import { ProposalCard } from '../../shared/proposal-card/proposal-card';
 import import_accompagnements_text_json from './accompagnements-text.json';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FsLightbox } from "fslightbox-angular";
 
 @Component({
   selector: 'app-accompagnements',
-  imports: [ProposalCard, CTASection, BannerSection, AnimateOnVisibleDirective, FsLightbox],
+  imports: [ProposalCard, CTASection, BannerSection, AnimateOnVisibleDirective, Carousel],
   templateUrl: './accompagnements.html',
   styleUrl: './accompagnements.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -25,21 +25,6 @@ export class Accompagnements {
   cta_text: string = this.accompagnements_text.cta_section.text;
 
   nbOfPhotos = 4;
-  toggler: boolean = false;
-  sources: string[] = [];
-  sources_thumbnail: string[] = [];
-  slide: number = 0;
-
-  constructor() {
-    for (let i = 1; i <= this.nbOfPhotos; i++) {
-      this.sources.push(`${this.accompagnements_text.studio.photos_url}${i}.webp`);
-      this.sources_thumbnail.push(`${this.accompagnements_text.studio.photos_url}${i}-thumbnail.webp`);
-    }
-  }
-
-  openLightbox(index: number): void {
-    this.slide = index + 1;
-    this.toggler = !this.toggler;
-  }
+  photosUrl = this.accompagnements_text.studio.photos_url;
 
 }

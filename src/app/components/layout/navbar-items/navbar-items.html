@@ -1,6 +1,12 @@
 <ul class="main-container" [style.flex-direction]="popUpMenu() ? 'column' : 'row'">
   @for(navlink of nav_items; track navlink.id ) {
     <li class="nav-item">
-      <a class="nav-link" ariaCurrentWhenActive="page" [routerLink]=navlink.routerLink routerLinkActive="route-active" (click)="openMenu.set(false)">{{ navlink.nom }}</a>
+      <a
+        class="nav-link"
+        ariaCurrentWhenActive="page"
+        [routerLink]=navlink.routerLink
+        routerLinkActive="route-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="openMenu.set(false)">{{ navlink.nom }}</a>
     </li>
   }

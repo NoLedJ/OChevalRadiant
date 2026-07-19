@@ -1,3 +1,7 @@
+:host {
+  --card-height: auto;
+}
+
 .contact-button {
   gap: 0.5rem;
   background: hsl(var(--primary-text));
@@ -8,6 +12,10 @@
 }
 
 @media (min-width: 920px) {
+  :host {
+    --card-height: stretch;
+  }
+
   .cards-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

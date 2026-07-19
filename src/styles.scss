@@ -41,10 +41,10 @@ body {
   color: hsl(var(--primary-text));
 
   --primary: 120 25% 35%;
-  --primary-variant: 104 11% 43%;
+  --primary-variant: 87 59% 54%;
   --secondary: 40 37% 97%;
   --tertiary: 39 50% 90%;
-  --primary-text: 29 31% 42%;
+  --primary-text: 29 31 42;
   --secondary-text: 0 0% 40%;
   --tertiary-text: 0 0% 100%;
   --footer-link: 100 100% 92%;
@@ -227,41 +227,6 @@ section {
 
 .shadow {
   box-shadow: 2px 2px 6px hsl(var(--shadow));
-}
-
-.carousel {
-  display: flex;
-  width: 100%;
-  height: 15rem;
-  overflow-x: auto;
-  scrollbar-width: none;
-  margin-top: 3rem;
-}
-
-.carousel-photos-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding-right: 1rem;
-  animation: 25s spin infinite linear;
-  & > img {
-    flex: 0 0 5em;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--radius);
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-  }
-}
-
-@keyframes spin {
-  from {
-    translate: 0;
-  }
-  to {
-    translate: -100%;
-  }
 }
 
 .fly-card {

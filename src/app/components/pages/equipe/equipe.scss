@@ -1,3 +1,7 @@
+:host {
+  --card-height: auto;
+}
+
 .cards-container {
   justify-content: center;
 }
@@ -16,6 +20,10 @@
 }
 
 @media (min-width: 768px) {
+  :host {
+    --card-height: stretch;
+  }
+
   .cards-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

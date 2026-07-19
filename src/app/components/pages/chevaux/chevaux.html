@@ -4,10 +4,12 @@
       <h1>{{ chevaux_text.chevaux_section.title }}</h1>
       <p class="title-subtitle" [innerHTML]="chevaux_text.chevaux_section.subtitle | safeHtml"></p>
     </div>
-    <div class="cards-container">
-      @for (card of chevaux_text.chevaux_section.card; track card.id) {
-        <app-presentation-card [card]="card"></app-presentation-card>
-      }
+    <div>
+      <div class="cards-container">
+        @for (card of chevaux_text.chevaux_section.card; track card.id) {
+          <app-presentation-card [card]="card"></app-presentation-card>
+        }
+      </div>
     </div>
   </div>
 </section>

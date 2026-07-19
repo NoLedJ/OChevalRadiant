@@ -1,17 +1,17 @@
 import import_a_propos_text_json from './a-propos-text.json';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FsLightbox } from "fslightbox-angular";
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { BannerSection } from '../../layout/banner-section/banner-section';
 import { CTASection } from '../../layout/cta-section/cta-section';
 import { Router } from '@angular/router';
 import { SafeHtmlPipe } from "../../../pipes/safe-html-pipe";
+import { Carousel } from '../../shared/carousel/carousel';
 
 
 @Component({
   selector: 'app-a-propos',
-  imports: [FsLightbox, BannerSection, CTASection, AnimateOnVisibleDirective, SafeHtmlPipe],
+  imports: [BannerSection, CTASection, AnimateOnVisibleDirective, SafeHtmlPipe, Carousel],
   templateUrl: './a-propos.html',
   styleUrl: './a-propos.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -29,17 +29,9 @@ export class APropos {
   cta_question: string = this.a_propos_text.cta_section.question;
 
   nbOfPhotos = 7;
-  toggler: boolean = false;
-  sources: string[] = [];
-  sources_thumbnail: string[] = [];
-  slide: number = 0;
+  photosUrl = this.a_propos_text.installations_section.photos_url;
 
-  constructor(private readonly router: Router) {
-    for (let i = 1; i <= this.nbOfPhotos; i++) {
-      this.sources.push(`${this.a_propos_text.installations_section.photos_url}${i}.webp`);
-      this.sources_thumbnail.push(`${this.a_propos_text.installations_section.photos_url}${i}-thumbnail.webp`);
-    }
-  }
+  constructor(private readonly router: Router) {}
 
   onHtmlClick(event: Event) {
     const target = event.target as HTMLElement;
@@ -51,11 +43,6 @@ export class APropos {
         this.router.navigateByUrl(url);
       }
     }
-  }
-
-  openLightbox(index: number): void {
-    this.slide = index + 1;
-    this.toggler = !this.toggler;
   }
 
 }
