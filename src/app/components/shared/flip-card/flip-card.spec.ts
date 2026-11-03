@@ -14,6 +14,9 @@ describe('FlipCard', () => {
 
     fixture = TestBed.createComponent(FlipCard);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('card', {
+      id: 1, light_version: 'Résumé', signature: 'Témoin', paragraphs: ['Témoignage complet']
+    });
     fixture.detectChanges();
   });
 

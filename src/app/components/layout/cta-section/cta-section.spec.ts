@@ -1,3 +1,4 @@
+import { provideRouter } from '@angular/router';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CTASection } from './cta-section';
@@ -8,7 +9,8 @@ describe('CTASection', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CTASection]
+      imports: [CTASection],
+      providers: [provideRouter([])]
     })
     .compileComponents();
 
