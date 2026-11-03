@@ -1,14 +1,37 @@
 # ---------------------------------------------------------
 # 🔁 SPA Fallback (Angular routing)
 # ---------------------------------------------------------
+Options -MultiViews -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
 RewriteEngine On
 RewriteBase /
 
-# Si fichier/dossier n'existe pas → renvoyer index.html
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^.*$ /index.html [L]
+# Domaine de production uniquement : ne pas rediriger localhost.
+# HTTPS doit refléter le TLS réel ; ne pas faire confiance à un X-Forwarded-Proto arbitraire.
+RewriteCond %{HTTP_HOST} ^(?:www\.)?ochevalradiant\.com(?::[0-9]+)?$ [NC]
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.ochevalradiant\.com(?::[0-9]+)?$ [NC]
+RewriteRule ^ https://ochevalradiant.com%{REQUEST_URI} [R=301,L,NE]
 
+# Une demande directe de la page d’erreur reste une vraie 404.
+RewriteCond %{ENV:REDIRECT_STATUS} !^404$
+RewriteRule ^404\.html$ - [R=404,L]
+
+# Fichiers internes : pas d'URL alternative indexable.
+RewriteRule ^_seo(?:/|$) - [R=404,L]
+RewriteCond %{THE_REQUEST} \s/+index\.html[?\s] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(a\-propos|equipe|chevaux|bienfaits|accompagnements|experiences|projets|partenaires|contact|mentions\-legales|politique\-confidentialite|conditions_utilisation)/$ /$1 [R=301,L]
+
+# Routes connues seulement : métadonnées HTTP propres à chaque page.
+RewriteRule ^(a\-propos|equipe|chevaux|bienfaits|accompagnements|experiences|projets|partenaires|contact|mentions\-legales|politique\-confidentialite|conditions_utilisation)$ _seo/$1.html [END]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Inconnus et ressources manquantes : vrai statut 404, sans retour accueil.
+RewriteRule ^ - [R=404,L]
 
 # ---------------------------------------------------------
 # 🗜️ Compression Gzip / Brotli
@@ -41,7 +64,7 @@ RewriteRule ^.*$ /index.html [L]
 </IfModule>
 
 # Empêcher le cache sur index.html (important pour Angular)
-<FilesMatch "index\.html$">
+<FilesMatch "\.html$">
     <IfModule mod_headers.c>
         Header set Cache-Control "no-cache, no-store, must-revalidate"
         Header set Pragma "no-cache"
