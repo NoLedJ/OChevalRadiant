@@ -14,24 +14,21 @@ RewriteCond %{HTTPS} !=on [OR]
 RewriteCond %{HTTP_HOST} ^www\.ochevalradiant\.com(?::[0-9]+)?$ [NC]
 RewriteRule ^ https://ochevalradiant.com%{REQUEST_URI} [R=301,L,NE]
 
-# Une demande directe de la page d’erreur reste une vraie 404.
-RewriteCond %{ENV:REDIRECT_STATUS} !^404$
-RewriteRule ^404\.html$ - [R=404,L]
+# Le document d'erreur est une ressource terminale, jamais une nouvelle erreur.
+# Accès direct : 200 + noindex ; ErrorDocument conserve le 404 de l'URL inconnue.
+# Ne pas dépendre de REDIRECT_STATUS pour sortir du traitement d'erreur.
+RewriteRule ^404\.html$ - [END]
 
 # Fichiers internes : pas d'URL alternative indexable.
-RewriteRule ^_seo(?:/|$) - [R=404,L]
+RewriteRule ^_seo(?:/|$) - [R=404,END,NC]
 RewriteCond %{THE_REQUEST} \s/+index\.html[?\s] [NC]
 RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^(a\-propos|equipe|chevaux|bienfaits|accompagnements|experiences|projets|partenaires|contact|mentions\-legales|politique\-confidentialite|conditions_utilisation)/$ /$1 [R=301,L]
 
 # Routes connues seulement : métadonnées HTTP propres à chaque page.
 RewriteRule ^(a\-propos|equipe|chevaux|bienfaits|accompagnements|experiences|projets|partenaires|contact|mentions\-legales|politique\-confidentialite|conditions_utilisation)$ _seo/$1.html [END]
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-
-# Inconnus et ressources manquantes : vrai statut 404, sans retour accueil.
-RewriteRule ^ - [R=404,L]
+# Pas de fallback ni de R=404 global : le serveur sert les fichiers existants,
+# et son 404 natif utilise ErrorDocument pour les URL/ressources absentes.
 
 # ---------------------------------------------------------
 # 🗜️ Compression Gzip / Brotli
