@@ -7,6 +7,6 @@
         [routerLink]=navlink.routerLink
         routerLinkActive="route-active"
         [routerLinkActiveOptions]="{ exact: true }"
-        (click)="openMenu.set(false)">{{ navlink.nom }}</a>
+        (click)="closeMenu()">{{ navlink.nom }}</a>
     </li>
   }

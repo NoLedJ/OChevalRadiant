@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input, model } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, inject, input } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import import_navigation_links_json from './navigation-link.json';
 
@@ -14,8 +14,12 @@ export class NavbarItems {
   navigation_links_json = import_navigation_links_json;
 
   popUpMenu = input(false);
-  openMenu = model();
+  private readonly element = inject<ElementRef<HTMLElement>>(ElementRef);
 
   nav_items = Object.values(this.navigation_links_json);
+
+  closeMenu(): void {
+    this.element.nativeElement.closest<HTMLElement>('[popover]')?.hidePopover();
+  }
 
 }

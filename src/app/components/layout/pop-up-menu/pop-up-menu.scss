@@ -1,4 +1,23 @@
+[popover] {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  background: transparent;
+  color: inherit;
+  overflow: visible;
+}
+
+[popover]::backdrop { background: transparent; }
+[popover]:popover-open .modal { animation: modal-fade 0.5s ease-in; }
+[popover]:popover-open .menu { animation: slide-fade 0.5s ease-in; }
+
 .modal {
+  border: 0;
+  padding: 0;
+  background: transparent;
   position: absolute;
   height: 100dvh;
   width:100vw;
@@ -32,10 +51,6 @@
   }
 }
 
-.modal-enter-animation {
-  animation: modal-fade 0.5s ease-in;
-}
-
 @keyframes modal-fade {
   from {
     opacity: 0;
@@ -45,9 +60,6 @@
   }
 }
 
-.pop-up-enter-animation {
-  animation: slide-fade 0.5s ease-in;
-}
 @keyframes slide-fade {
   from {
     transform: translateX(250px);
@@ -56,4 +68,8 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [popover]:popover-open .modal, [popover]:popover-open .menu { animation: none; }
 }

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, model } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NavbarItems } from "../../layout/navbar-items/navbar-items";
 
 @Component({
@@ -8,8 +8,4 @@ import { NavbarItems } from "../../layout/navbar-items/navbar-items";
   styleUrl: './pop-up-menu.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PopUpMenu {
-
-  openMenu = model<boolean>();
-
-}
+export class PopUpMenu {}

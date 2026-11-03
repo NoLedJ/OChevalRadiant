@@ -1,5 +1,7 @@
-<div class="modal" animate.enter="modal-enter-animation" (click)="openMenu.set(false)" (keydown)="openMenu.set(false)"></div>
-<div class="menu" animate.enter="pop-up-enter-animation">
-  <button class="button close" (click)="openMenu.set(false)">Fermer le menu</button>
-  <app-navbar-items [popUpMenu]="true" [(openMenu)]="openMenu"></app-navbar-items>
+<div id="site-navigation" popover="auto" aria-label="Navigation mobile">
+  <button class="modal" popovertarget="site-navigation" popovertargetaction="hide" aria-label="Fermer le menu en arrière-plan" tabindex="-1"></button>
+  <div class="menu">
+    <button class="button close" popovertarget="site-navigation" popovertargetaction="hide" autofocus>Fermer le menu</button>
+    <app-navbar-items [popUpMenu]="true"></app-navbar-items>
+  </div>
 </div>

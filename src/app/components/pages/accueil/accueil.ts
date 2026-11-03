@@ -3,13 +3,13 @@ import import_navigation_link_json from '../../layout/navbar-items/navigation-li
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FacebookButton } from "../../shared/facebook-button/facebook-button";
 import { DefinitionCard } from '../../shared/definition-card/definition-card';
-import { RouterLink } from '@angular/router';
+import { ActionLink } from '../../shared/action-link/action-link';
 import { AnimateOnVisibleDirective } from '../../../directives/animate-on-visible.directive';
 import { BannerSection } from '../../layout/banner-section/banner-section';
 
 @Component({
   selector: 'app-accueil',
-  imports: [FacebookButton, DefinitionCard, RouterLink, AnimateOnVisibleDirective, BannerSection],
+  imports: [FacebookButton, DefinitionCard, ActionLink, AnimateOnVisibleDirective, BannerSection],
   templateUrl: './accueil.html',
   styleUrl: './accueil.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
