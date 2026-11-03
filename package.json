@@ -1,12 +1,14 @@
 {
   "name": "ocheval-radiant",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
+    "typecheck": "tsc --project tsconfig.spec.json --noEmit && ngc --project tsconfig.app.json --noEmit"
   },
   "prettier": {
     "printWidth": 100,
@@ -22,21 +24,21 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "^20.3.0",
-    "@angular/compiler": "^20.3.0",
-    "@angular/core": "^20.3.0",
-    "@angular/forms": "^20.3.0",
-    "@angular/platform-browser": "^20.3.0",
-    "@angular/router": "^20.3.0",
+    "@angular/common": "~20.3.35",
+    "@angular/compiler": "~20.3.35",
+    "@angular/core": "~20.3.35",
+    "@angular/forms": "~20.3.35",
+    "@angular/platform-browser": "~20.3.35",
+    "@angular/router": "~20.3.35",
     "fslightbox-angular": "^1.1.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular/build": "^20.3.24",
-    "@angular/cli": "^20.3.24",
-    "@angular/compiler-cli": "^20.3.0",
+    "@angular/build": "~20.3.42",
+    "@angular/cli": "~20.3.42",
+    "@angular/compiler-cli": "~20.3.35",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
