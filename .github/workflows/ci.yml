@@ -47,6 +47,13 @@ jobs:
       - name: Build production files
         run: npm run build -- --configuration production
 
+      - name: Validate SEO routing under Apache
+        shell: bash
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install --no-install-recommends -y apache2 openssl
+          bash scripts/check-http-seo.sh
+
       - name: Audit production dependencies
         run: npm audit --omit=dev
 
