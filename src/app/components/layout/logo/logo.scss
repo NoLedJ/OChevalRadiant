@@ -7,11 +7,16 @@
 }
 
 .logo {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
   display: flex;
   align-items: center;
   gap: 1rem;
   cursor: pointer;
 }
+
+.logo:hover { color: inherit; }
 
 .logo-image, .footer-logo-image {
   width: 4rem;
