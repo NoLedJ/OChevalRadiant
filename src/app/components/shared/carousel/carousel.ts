@@ -1,10 +1,11 @@
-import { Component, effect, input } from '@angular/core';
+import { Component, effect, input, ChangeDetectionStrategy } from '@angular/core';
 import { FsLightbox } from 'fslightbox-angular';
 
 @Component({
   selector: 'app-carousel',
   imports: [FsLightbox],
   templateUrl: './carousel.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './carousel.scss',
 })
 export class Carousel {
