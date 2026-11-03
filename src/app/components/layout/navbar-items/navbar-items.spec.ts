@@ -1,3 +1,4 @@
+import { provideRouter } from '@angular/router';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavbarItems } from './navbar-items';
@@ -8,7 +9,8 @@ describe('NavbarItems', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavbarItems]
+      imports: [NavbarItems],
+      providers: [provideRouter([])]
     })
     .compileComponents();
 

@@ -14,6 +14,9 @@ describe('PresentationCard', () => {
 
     fixture = TestBed.createComponent(PresentationCard);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('card', {
+      id: 1, nom: 'Équipe', info: 'Présentation', photo_url: '/images/logo/logo.jpg'
+    });
     fixture.detectChanges();
   });
 

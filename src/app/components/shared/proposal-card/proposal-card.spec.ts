@@ -14,6 +14,9 @@ describe('ProposalCard', () => {
 
     fixture = TestBed.createComponent(ProposalCard);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('card', {
+      id: 1, nom: 'Accompagnement', info1: 'Une séance adaptée.'
+    });
     fixture.detectChanges();
   });
 
