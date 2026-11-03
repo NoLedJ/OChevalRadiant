@@ -51,6 +51,6 @@ jobs:
         run: npm audit --omit=dev
 
       - name: Reject high and critical tooling vulnerabilities
-        # v1.0.1 accepts 22 moderate tooling findings; see docs/releases/v1.0.1.md.
+        # Angular 22: 8 moderate tooling findings; see docs/migrations/angular22.md.
         # No continue-on-error: high/critical findings and audit failures block this job.
         run: npm audit --audit-level=high
