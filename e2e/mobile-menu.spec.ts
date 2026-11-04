@@ -79,6 +79,11 @@ test('wheel, scroll containment, close button, backdrop and restored page positi
   await page.mouse.move(500, 200);
   await page.mouse.wheel(0, 1000);
   await expect.poll(() => page.locator('.menu-links').evaluate(el => el.scrollTop)).toBeGreaterThan(0);
+  // WebKit on Linux applies wheel deltas asynchronously; wait for the end,
+  // not merely for the first nonzero scroll offset.
+  await expect.poll(() => page.locator('.menu-links').evaluate(
+    el => el.scrollHeight - el.clientHeight - el.scrollTop,
+  )).toBeLessThanOrEqual(1);
   await visibleInsidePanel(page, `${menu} li:last-child a`);
   await page.mouse.wheel(0, 1000);
   await page.mouse.move(30, 200);

@@ -53,6 +53,12 @@ areas et injection des gestes tactiles, dont les tests utilisent des outils prop
 sur moteurs automatisés sous Windows ; une validation sur appareil iOS physique
 avec Safari et ses barres de navigateur reste distincte.
 
+La passe Ubuntu a identifié une attente trop courte dans le test de molette
+WebKit : le premier déplacement ne signifie pas que le défilement est terminé.
+Le test attend désormais la position de fin (`scrollHeight - clientHeight -
+scrollTop ≤ 1 px`) avant de mesurer le dernier lien. Cette synchronisation
+conserve les mêmes assertions et les trois seules exclusions ci-dessus.
+
 ## Comparaison avec main
 
 La base a été extraite avec `git archive main` puis compilée dans
