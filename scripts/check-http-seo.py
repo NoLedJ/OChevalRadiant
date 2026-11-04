@@ -71,6 +71,7 @@ for path, page in pages.items():
     url = '/' + path
     status, headers, body = get(url + '?utm_source=test')
     head = Head(body.decode('utf-8'))
+    assert ('contact-without-js' in body.decode('utf-8')) == (path == 'contact'), path
     canonical = 'https://ochevalradiant.com' + url
     assert status == 200 and head.lang == 'fr', path
     assert head.title == page['title'] and head.meta['description'] == page['description'], path
@@ -88,6 +89,7 @@ root = Path(args.root)
 error_document = (root / '404.html').read_bytes()
 error_head = Head(error_document.decode('utf-8'))
 assert error_head.lang == 'fr' and error_head.canonicals == []
+assert b'contact-without-js' not in error_document
 assert [tag for tag, _ in error_head.tags].count('header') == 1
 assert [tag for tag, _ in error_head.tags].count('footer') == 1
 assert any(tag == 'app-header' for tag, _ in error_head.tags)
