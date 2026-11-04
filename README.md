@@ -49,7 +49,23 @@ npm run test:ci
 
 ## Running end-to-end tests
 
-There is no configured `ng e2e` runner. The PR workflow runs the HTTP/HTTPS routing recipe under Apache on Ubuntu; the browser checks and remaining compatibility limits are documented in the SEO report. To reproduce the HTTP recipe on Ubuntu with Apache/OpenSSL installed and a completed build:
+The mobile menu has a Playwright suite covering short viewports, keyboard/focus,
+native popover behavior, scrolling, safe areas, zoom and desktop navigation.
+With Chrome and Edge installed:
+
+```bash
+npx playwright install webkit
+npm run test:e2e
+```
+
+The Ubuntu PR workflow runs Chrome and WebKit and archives the browser report.
+Edge is covered locally. The three Chromium-specific probes (native browser zoom,
+safe-area overrides and injected touch drags) are excluded on WebKit; see the
+[mobile menu validation report](docs/mobile-menu-validation.md) for exact coverage,
+screenshots and remaining Safari/iOS limits.
+
+The PR workflow also runs the HTTP/HTTPS routing recipe under Apache on Ubuntu.
+To reproduce that recipe with Apache/OpenSSL installed and a completed build:
 
 ```bash
 bash scripts/check-http-seo.sh
