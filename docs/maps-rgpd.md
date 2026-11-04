@@ -27,7 +27,9 @@ création de tag ou de Release n’en fait partie.
 - Le texte d’information demandé, le lien vers la confidentialité et le lien Maps
   explicite dans un nouvel onglet sont présents. Adresse et contacts restent lisibles.
 - Le site étant CSR, le repli `noscript` est dans le shell `src/index.html` :
-  adresse, téléphone, e-mail et lien Maps accessibles sur les routes CSR sans JS.
+  adresse, téléphone, e-mail et lien Maps accessibles sans JS sur `/contact`.
+  Le générateur SEO retire uniquement ce bloc des 12 autres shells, sans modifier
+  leurs métadonnées ni les éventuels replis de styles Angular.
   Le générateur 404 exclut ce repli, car sa page possède déjà son contenu rendu.
   `public/404.html` est régénéré par le build habituel ; `.htaccess` est inchangé.
 - Le conteneur Contact limite le débordement horizontal préexistant. Le titre et
@@ -70,6 +72,7 @@ restent à compléter séparément avant une revue juridique globale du site.
 | --- | --- |
 | TypeScript et compilateur Angular (`npm run typecheck`) | Réussi |
 | Tests Angular (`npm run test:ci`) | 56 réussis, dont 9 Contact |
+| HTML généré sans JS (`npm run test:html`, après le build) | 5 réussis : Contact, accueil, Équipe, 404 et 13 métadonnées |
 | Build de production, SEO et 404 | Réussi, sans avertissement de budget |
 | Audit production | 0 vulnérabilité |
 | Audit global au seuil high | Réussi : 8 modérées d’outillage préexistantes, 0 élevée/critique |

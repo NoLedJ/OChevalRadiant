@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
+    "test:html": "node --test scripts/generated-html.test.mjs",
     "typecheck": "tsc --project tsconfig.spec.json --noEmit && ngc --project tsconfig.app.json --noEmit"
   },
   "prettier": {

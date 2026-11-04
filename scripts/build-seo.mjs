@@ -6,10 +6,13 @@ const pages = JSON.parse(await readFile('src/app/seo-pages.json', 'utf8'));
 const origin = 'https://ochevalradiant.com';
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 const shell = await readFile(join(root, 'index.html'), 'utf8');
+// Keep Angular's stylesheet noscript fallbacks; remove only the Contact content.
+const genericShell = shell.replace(/^[ \t]*<noscript>\s*<section aria-labelledby="contact-without-js"[\s\S]*?<\/noscript>\r?\n/m, '');
 await mkdir(join(root, '_seo'), { recursive: true });
 for (const [path, page] of Object.entries(pages)) {
   const url = origin + (path ? '/' + path : '/');
-  const html = shell.replace(/<title>[^<]*<\/title>/, `<title>${escape(page.title)}</title>`)
+  const html = (path === 'contact' ? shell : genericShell)
+    .replace(/<title>[^<]*<\/title>/, `<title>${escape(page.title)}</title>`)
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${escape(page.description)}">`)
     .replace('</head>', `<link rel="canonical" href="${url}">
 <meta name="robots" content="index, follow">
