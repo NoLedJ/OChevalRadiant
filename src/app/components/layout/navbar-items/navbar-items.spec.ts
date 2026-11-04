@@ -22,4 +22,17 @@ describe('NavbarItems', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('explicitly includes all ten mobile links in keyboard navigation', () => {
+    fixture.componentRef.setInput('popUpMenu', true);
+    fixture.detectChanges();
+    const links = fixture.nativeElement.querySelectorAll('a') as NodeListOf<HTMLAnchorElement>;
+    expect(links.length).toBe(10);
+    links.forEach(link => expect(link.getAttribute('tabindex')).toBe('0'));
+  });
+
+  it('keeps the browser default keyboard behavior for desktop links', () => {
+    const links = fixture.nativeElement.querySelectorAll('a') as NodeListOf<HTMLAnchorElement>;
+    links.forEach(link => expect(link.hasAttribute('tabindex')).toBeFalse());
+  });
 });

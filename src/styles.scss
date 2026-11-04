@@ -19,6 +19,13 @@
   font-display: swap;
 }
 
+// The native popover state also covers Escape, light dismiss and route-link clicks.
+html:has(#site-navigation:popover-open),
+body:has(#site-navigation:popover-open) {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
 html {
   font-variation-settings: normal;
   -webkit-tap-highlight-color: transparent;
