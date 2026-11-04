@@ -5,45 +5,46 @@
   "responsable_traitement": {
     "title": "Responsable du traitement",
     "paragraph_01": "L’association est responsable du traitement des données collectées sur ce site.",
-    "paragraph_02": "Les informations de contact figurent dans les mentions légales ou la page de contact."  },
+    "paragraph_02": "Les informations de contact figurent dans les mentions légales ou la page de contact."
+  },
   "donnees_collectees": {
     "title": "Données collectées",
-    "paragraph_01": "Ce site ne collecte aucune donnée personnelle directe, car il ne comporte pas de formulaire de contact ni de zone de saisie d’informations.",
+    "paragraph_01": "Le site ne comporte pas de formulaire de contact ni de zone de saisie d’informations personnelles. Le chargement volontaire de Google Maps peut toutefois transmettre des données à Google, comme décrit ci-dessous.",
     "donnees_collectees_automatiquement": {
-      "title": "Données collectées automatiquement",
-      "paragraph_01": "Pour assurer le bon fonctionnement du site, certaines données techniques peuvent être collectées automatiquement :",
-      "list_01": "type de navigateur",
-      "list_02": "pages consultées",
-      "list_03": "durée de visite",
-      "list_04": "données de navigation anonymisées",
-      "list_05": "cookies strictement nécessaires",
-      "paragraph_02": "Aucune donnée permettant d’identifier directement un visiteur n’est enregistrée."
+      "title": "Données techniques et Google Maps",
+      "paragraph_01": "Après activation de la carte, Google peut recevoir notamment :",
+      "list_01": "votre adresse IP",
+      "list_02": "le type et les paramètres de votre navigateur et de votre appareil",
+      "list_03": "la date et l’heure de la requête et son URL de provenance",
+      "list_04": "des informations sur vos interactions avec le service Google Maps",
+      "list_05": "des identifiants liés aux cookies ou technologies similaires, selon vos paramètres",
+      "paragraph_02": "Ces informations ne sont pas nécessairement anonymes. Les traitements de Google dépendent notamment de vos paramètres de navigateur et de compte Google."
     }
   },
   "finalite_collecte": {
-    "title": "Propriété intellectuelle",
-    "paragraph_01": "Les données techniques collectées servent uniquement à :",
-    "list_01": "assurer le fonctionnement du site",
-    "list_02": "améliorer la navigation et la sécurité",
-    "list_03": "produire des statistiques anonymes",
-    "paragraph_02": "Aucune donnée n’est utilisée à des fins commerciales."
+    "title": "Finalités",
+    "paragraph_01": "Sur ce site, la carte vous permet de :",
+    "list_01": "repérer Ô Cheval Radiant à Maroilles",
+    "list_02": "consulter une carte interactive si vous le souhaitez",
+    "list_03": "accéder au service Google Maps pour préparer votre venue",
+    "paragraph_02": "Google décrit ses propres finalités de traitement dans ses règles de confidentialité, notamment le fonctionnement, la sécurité et l’amélioration de ses services et, selon vos paramètres, leur personnalisation."
   },
   "base_legale_traitement": {
     "title": "Base légale du traitement",
     "paragraph_01": "Le traitement repose sur :",
     "list_01": "notre intérêt légitime à assurer la sécurité et le bon fonctionnement du site",
-    "list_02": "votre consentement, si des cookies non essentiels sont utilisés (ce qui n’est pas le cas actuellement)"
+    "list_02": "votre consentement au chargement du service tiers Google Maps, exprimé par l’activation volontaire de l’aperçu ou du bouton « Afficher la carte »"
   },
   "duree_conservation": {
     "title": "Durée de conservation",
-    "paragraph_01": "Les données techniques anonymisées sont conservées pour une durée limitée, strictement nécessaire à l’analyse du fonctionnement du site."
+    "paragraph_01": "Le site ne mémorise pas votre choix d’affichage de la carte : il reste uniquement dans la mémoire du composant pendant la visite de la page Contact. Il est réinitialisé après un rechargement ou une nouvelle navigation vers Contact. Pour les données reçues par Google après activation, reportez-vous à ses règles de confidentialité ; aucune durée de conservation propre à Google n’est fixée par ce site."
   },
   "destinataire_donnees": {
-    "title": "Destinataires des données",
-    "paragraph_01": "Les données sont accessibles uniquement :",
-    "list_01": "à l’hébergeur du site",
-    "list_02": "aux administrateurs techniques",
-    "paragraph_02": "Aucun transfert hors Union européenne n’est effectué."
+    "title": "Destinataires et transferts internationaux",
+    "paragraph_01": "Les destinataires dépendent du service utilisé :",
+    "list_01": "l’hébergeur et les administrateurs techniques, pour le fonctionnement du site",
+    "list_02": "Google, uniquement lorsque vous activez la carte intégrée ou ouvrez un lien vers son service",
+    "paragraph_02": "Google indique disposer de serveurs dans plusieurs pays : les informations reçues après activation peuvent être traitées hors de votre pays, notamment hors de l’Espace économique européen. Google décrit les cadres applicables à ses transferts sur sa page consacrée aux transferts de données. Le site ne garantit pas une localisation exclusive de ces traitements dans l’Union européenne."
   },
   "droits": {
     "title": "Vos droits",
@@ -55,11 +56,11 @@
     "paragraph_02": "Pour exercer vos droits, vous pouvez nous contacter via les informations de contact disponibles dans les mention légales ou notre page de contact."
   },
   "cookies": {
-    "title": "Cookies",
-    "paragraph_01": "Le site utilise uniquement :",
-    "list_01": "des cookies essentiels au fonctionnement",
-    "list_02": "éventuellement des cookies de mesure d’audience anonymisés",
-    "paragraph_02": "Si des outils tiers sont ajoutés ultérieurement (ex : statistiques avancées), une bannière de consentement sera mise en place."
+    "title": "Cookies et choix d’affichage",
+    "paragraph_01": "Pour la carte de la page Contact :",
+    "list_01": "avant activation, seule une illustration locale est affichée et aucun contenu Google Maps n’est chargé",
+    "list_02": "après activation, Google peut utiliser des cookies ou technologies similaires, notamment pour le fonctionnement, la sécurité, l’analyse ou la personnalisation, selon vos paramètres",
+    "paragraph_02": "Le site n’enregistre ce choix dans aucun cookie, stockage local ou stockage de session. « Masquer la carte » retire l’iframe et restaure l’image locale. Cela n’efface pas les données déjà transmises à Google ni les éventuels cookies déjà déposés ; vous pouvez gérer ces derniers dans votre navigateur et vos paramètres Google."
   },
   "securite": {
     "title": "Sécurité",
@@ -77,5 +78,11 @@
   "contact": {
     "title": "Contact",
     "paragraph_01": "Pour toute question relative à la protection des données, veuillez nous contacter via les informations de la page de contact ou celles inclus dans la première partie des mentions légales."
+  },
+  "google_maps": {
+    "title": "Carte Google Maps facultative",
+    "paragraph_01": "La carte interactive de la page Contact est désactivée par défaut. Elle n’est chargée qu’après un clic sur « Afficher la carte ». Vous pouvez consulter les coordonnées et nous contacter sans l’activer. Un lien explicite permet aussi d’ouvrir Google Maps dans un nouvel onglet.",
+    "paragraph_02": "Le service est fourni par Google. Pour les utilisateurs de l’Espace économique européen, Google indique que Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irlande) est en principe responsable du traitement des informations d’utilisation, sauf avis spécifique au service. Google LLC est responsable des informations indexées et affichées dans Google Maps.",
+    "paragraph_03": "L’aperçu local est une illustration originale sans échelle, et non une capture Google Maps. Une fois la carte activée, les attributions de Google et des fournisseurs cartographiques sont affichées dans le service intégré."
   }
 }
