@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1104 700" width="1104" height="700">
+  <title>Plan schématique d’Ô Cheval Radiant à Maroilles</title>
+  <desc>Plan original sans échelle. Repère au 1 Chemin de la Rosière, 59550 Maroilles. Le tracé simplifié des voies est indicatif et ne constitue pas un itinéraire.</desc>
+  <rect width="1104" height="700" fill="#eef0e8"/>
+  <!-- Original schematic geometry; no third-party tiles or geographic dataset. -->
+  <g stroke="#dde3d4" stroke-width="2" fill="#e3ead9">
+    <path d="M0 0H260L301 128L0 187Z"/>
+    <path d="M282 0H660L677 115L325 158Z" fill="#e8edde"/>
+    <path d="M710 0H1104V162L743 132Z"/>
+    <path d="M0 209L284 157L320 291L0 330Z" fill="#d6e3cc"/>
+    <path d="M48 410L287 394L332 519L0 582V466Z"/>
+    <path d="M790 192L1104 227V354L812 315Z" fill="#d8e5ce"/>
+    <path d="M852 390L1104 411V571L870 521Z"/>
+    <path d="M0 610L322 550L366 700H0Z" fill="#dae6d0"/>
+    <path d="M754 584L1104 619V700H744Z" fill="#dbe6d1"/>
+  </g>
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-20 377L170 357L354 335L552 335L739 358L921 349L1124 375" stroke="#c8c7bb" stroke-width="26"/>
+    <path d="M-20 377L170 357L354 335L552 335L739 358L921 349L1124 375" stroke="#fffdf5" stroke-width="21"/>
+    <path d="M664 -20L699 133L720 244L739 358L713 478L664 720" stroke="#c8c7bb" stroke-width="19"/>
+    <path d="M664 -20L699 133L720 244L739 358L713 478L664 720" stroke="#fffdf5" stroke-width="14"/>
+    <path d="M235 -20L277 129L314 229L354 335L379 441L431 573L479 720M-20 169L180 143L277 129M314 229L441 211L550 213M720 244L900 211L1124 207M379 441L209 476L-20 501M713 478L897 502L1124 551" stroke="#d3d1c5" stroke-width="12"/>
+    <path d="M235 -20L277 129L314 229L354 335L379 441L431 573L479 720M-20 169L180 143L277 129M314 229L441 211L550 213M720 244L900 211L1124 207M379 441L209 476L-20 501M713 478L897 502L1124 551" stroke="#fffef8" stroke-width="8"/>
+    <path d="M552 335L552 301M431 573L560 551L680 550" stroke="#b4b7a9" stroke-width="4" stroke-dasharray="7 7"/>
+  </g>
+  <g fill="#d4cec1" stroke="#c4bdae" stroke-width="1.5">
+    <path d="M452 278h31v21h-31ZM490 287h23v17h-23ZM573 287h38v24h-38Z"/>
+    <path d="M616 276h22v35h-22ZM762 289h28v29h-28ZM803 276h39v21h-39Z"/>
+    <path d="M602 389h29v20h-29ZM647 401h20v31h-20ZM272 373h23v20h-23Z"/>
+  </g>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#53604c" paint-order="stroke" stroke="#eef0e8" stroke-width="6" stroke-linejoin="round">
+    <text x="552" y="89" font-size="30" letter-spacing="4">MAROILLES</text>
+    <text x="552" y="392" font-size="25" transform="rotate(3 552 392)">Chemin de la Rosière</text>
+  </g>
+  <rect x="363" y="131" width="378" height="87" rx="10" fill="#fffef9" stroke="#cdd5c4" stroke-width="2"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <text x="552" y="167" font-size="30" font-weight="700" fill="#355f37">Ô Cheval Radiant</text>
+    <text x="552" y="198" font-size="23" fill="#53594c">1 Chemin de la Rosière</text>
+  </g>
+  <ellipse cx="552" cy="322" rx="19" ry="6" fill="#000" opacity=".14"/>
+  <path d="M552 231c-24 0-43 19-43 43 0 30 43 52 43 52s43-22 43-52c0-24-19-43-43-43Z" fill="#426f43" stroke="#fffef9" stroke-width="4"/>
+  <circle cx="552" cy="273" r="13" fill="#fffef9"/>
+  <rect x="272" y="514" width="560" height="48" rx="6" fill="#fffef9" fill-opacity=".94"/>
+  <text x="552" y="545" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" fill="#53594c">Plan schématique original · sans échelle</text>
+</svg>

@@ -1,3 +1,8 @@
+:host {
+  display: block;
+  overflow-x: clip;
+}
+
 .contact-content {
   display: grid;
   grid-template-columns: 1fr;
@@ -40,9 +45,112 @@ app-stylized-icon > .icon-content {
 }
 
 .map-content {
+  min-width: 0;
   & > h2 {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+.map-widget {
+  position: relative;
+  padding-bottom: 2.75rem;
+}
+
+.map-stage {
+  height: 350px;
+  border-radius: var(--radius);
+  overflow: hidden;
+
+  > img, > iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    object-fit: cover;
+  }
+}
+
+.map-toggle {
+  position: absolute;
+  inset: 0 0 auto;
+  width: 100%;
+  height: 350px;
+  padding: 0;
+  border-radius: var(--radius);
+  background: transparent;
+  cursor: pointer;
+
+  .map-toggle-label {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1rem;
+    border-radius: calc(var(--radius) - 2px);
+    background: hsl(var(--primary));
+    box-shadow: 0 2px 8px #0003;
+  }
+
+  &:hover .map-toggle-label {
+    background: hsl(var(--primary) / 0.9);
+  }
+
+  &.map-hide {
+    top: 354px;
+    right: 0;
+    left: auto;
+    width: auto;
+    height: 2.5rem;
+    padding: 0 0.25rem;
+    color: hsl(var(--primary));
+    background: transparent;
+    box-shadow: none;
+    font-size: 0.8rem;
+    text-decoration: underline;
+
+    .map-toggle-label {
+      position: static;
+      transform: none;
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+}
+
+// Same scale, easing and entry/exit durations as the original global .zoom.
+// Only the preview image moves; the clickable frame and its label stay fixed.
+.map-stage > img {
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .map-widget:has(.map-toggle:not(.map-hide):hover) .map-stage > img {
+    transform: scale(1.03);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .map-stage > img {
+    transition: none;
+  }
+}
+
+.map-toggle:focus-visible, .map-notice a:focus-visible {
+  outline: 3px solid hsl(var(--primary));
+  outline-offset: 4px;
+}
+
+.map-notice {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+
+  + .map-notice {
+    margin-top: 0.5rem;
   }
 }
 

@@ -33,16 +33,40 @@
       </div>
       <div class="map-content fade-in-left" animateOnVisible="visible">
         <h2>{{ contact_text.map_section.title }}</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4301.12967233051!2d3.7314095827493023!3d50.13369488196895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2630039f7b9e7%3A0xf4936306271fb5e4!2s%C3%94%20Cheval%20Radiant!5e0!3m2!1sfr!2sfr!4v1780377343467!5m2!1sfr!2sfr"
-          [title]="contact_text.map_section.iframe_title"
-          width="100%"
-          height="350"
-          style="border:0; border-radius: var(--radius);"
-          allowfullscreen=""
-          loading="eager"
-          class="zoom shadow"
-        ></iframe>
+        <div class="map-widget">
+          <div id="contact-map" class="map-stage shadow" [class.zoom]="mapVisible()">
+            @if (mapVisible()) {
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4301.12967233051!2d3.7314095827493023!3d50.13369488196895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2630039f7b9e7%3A0xf4936306271fb5e4!2s%C3%94%20Cheval%20Radiant!5e0!3m2!1sfr!2sfr!4v1780377343467!5m2!1sfr!2sfr"
+                [title]="contact_text.map_section.iframe_title"
+                width="100%"
+                height="350"
+                style="border:0; border-radius: var(--radius);"
+                allowfullscreen=""
+                loading="eager"
+              ></iframe>
+            } @else {
+              <img
+                src="/images/contact-location.svg"
+                alt="Plan schématique d’Ô Cheval Radiant, 1 Chemin de la Rosière, 59550 Maroilles. Sans échelle."
+                width="1104"
+                height="700"
+              >
+            }
+          </div>
+          <button
+            type="button"
+            class="map-toggle button"
+            [class.map-hide]="mapVisible()"
+            [attr.aria-expanded]="mapVisible()"
+            aria-controls="contact-map"
+            aria-describedby="map-privacy"
+            (click)="mapVisible.set(!mapVisible())"
+          ><span class="map-toggle-label">{{ mapVisible() ? 'Masquer la carte' : 'Afficher la carte' }}</span></button>
+        </div>
+        <p id="map-privacy" class="map-notice">En affichant cette carte, vous autorisez son chargement depuis Google Maps. Certaines données, comme votre adresse IP, peuvent être transmises à Google.</p>
+        <p class="map-notice"><a routerLink="/politique-confidentialite">Politique de confidentialité</a></p>
+        <p class="map-notice"><a href="https://www.google.com/maps/search/?api=1&amp;query=%C3%94%20Cheval%20Radiant%2C%201%20Chemin%20de%20la%20Rosi%C3%A8re%2C%2059550%20Maroilles" target="_blank" rel="noopener noreferrer">Ouvrir Ô Cheval Radiant dans Google Maps (nouvel onglet)</a></p>
       </div>
     </div>
   </div>

@@ -17,6 +17,8 @@ const chrome = [process.env.CHROME_BIN,
 if (!chrome) throw new Error('Chrome is required to generate 404.html; set CHROME_BIN (as for test:ci).');
 
 let shell = await readFile(join(root, 'index.html'), 'utf8');
+// The 404 already has a rendered no-JS page; omit the CSR shell's contact fallback.
+shell = shell.replace(/^[ \t]*<noscript>\s*<section aria-labelledby="contact-without-js"[\s\S]*?<\/noscript>\r?\n/m, '');
 // Embed the exact compiled global stylesheet so even a missing CSS request can
 // display a fully styled error document. Component styles come from Angular.
 for (const match of shell.matchAll(/<link\b[^>]*rel="stylesheet"[^>]*>/g)) {
