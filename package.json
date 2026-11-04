@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
+    "test:e2e": "playwright test",
     "test:html": "node --test scripts/generated-html.test.mjs",
     "typecheck": "tsc --project tsconfig.spec.json --noEmit && ngc --project tsconfig.app.json --noEmit"
   },
@@ -40,6 +41,7 @@
     "@angular/build": "~22.2.5",
     "@angular/cli": "~22.2.5",
     "@angular/compiler-cli": "~22.2.4",
+    "@playwright/test": "^1.64.1",
     "@types/jasmine": "~5.1.0",
     "istanbul-lib-instrument": "^6.0.3",
     "jasmine-core": "~5.9.0",

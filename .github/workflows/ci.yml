@@ -64,3 +64,37 @@ jobs:
         # Angular 22: 8 moderate tooling findings; see docs/migrations/angular22.md.
         # No continue-on-error: high/critical findings and audit failures block this job.
         run: npm audit --audit-level=high
+
+  mobile-menu:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24.19.0'
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Install WebKit and system libraries
+        run: npx playwright install --with-deps webkit
+
+      - name: Test mobile menu in Chrome and WebKit
+        # Edge is covered locally. WebKit skips only the three Chromium-specific probes.
+        run: npm run test:e2e -- --project=chrome --project=webkit
+
+      - name: Archive browser report and attached screenshots
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: mobile-menu-browser-report
+          path: tmp/mobile-menu/report/
+          retention-days: 14
