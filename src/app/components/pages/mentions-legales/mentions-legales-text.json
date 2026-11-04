@@ -22,20 +22,20 @@
     "title": "Propriété intellectuelle",
     "paragraph_01": "L’ensemble du contenu présent sur ce site (textes, images, photographies, logos, éléments graphiques, structure du site) est protégé par le droit d’auteur.",
     "paragraph_02": "Toute reproduction, représentation, modification ou diffusion, totale ou partielle, est interdite sans autorisation préalable.",
-    "paragraph_03": "Les photos présentes sur le site sont la propriété de l’association ou utilisées avec autorisation."
+    "paragraph_03": "Les photos présentes sur le site sont la propriété de l’association ou utilisées avec autorisation. L’aperçu de localisation est une illustration originale sans échelle. La carte interactive Google Maps et ses données restent soumises aux droits et attributions de Google et de ses fournisseurs."
   },
   "donnees_personnelles": {
     "title": "Données personnelles",
-    "paragraph_01": "Ce site ne collecte aucune donnée personnelle directe, car il ne comporte pas de formulaire de contact.",
-    "paragraph_02": "Seules des données techniques anonymisées peuvent être collectées pour assurer le bon fonctionnement du site (cookies essentiels, statistiques anonymes).",
-    "paragraph_03": "Pour plus d’informations, consultez notre politique de confidentialité."
+    "paragraph_01": "Le site ne comporte pas de formulaire de contact. La carte Google Maps de la page Contact est facultative et désactivée par défaut ; elle n’est chargée qu’après un clic sur « Afficher la carte ».",
+    "paragraph_02": "Après activation, le fournisseur Google peut recevoir des données techniques, dont votre adresse IP, des informations sur votre navigateur et vos interactions avec la carte. Ces données ne sont pas nécessairement anonymes et peuvent être traitées hors de l’Espace économique européen selon les informations publiées par Google.",
+    "paragraph_03": "Le fournisseur et les traitements associés sont détaillés dans notre politique de confidentialité et les règles de confidentialité de Google."
   },
   "cookies": {
-    "title": "Cookies",
-    "paragraph_01": "Le site utilise uniquement :",
-    "paragraph_02": "des cookies strictement nécessaires à son fonctionnement",
-    "paragraph_03": "éventuellement des cookies de mesure d’audience anonymisés",
-    "paragraph_04": "Aucun cookie publicitaire n’est utilisé."
+    "title": "Google Maps, cookies et choix d’affichage",
+    "paragraph_01": "Le choix d’afficher la carte reste uniquement en mémoire pendant votre visite de la page Contact :",
+    "paragraph_02": "aucun cookie, stockage local ou stockage de session n’est créé par le site pour ce choix ; la carte est désactivée après un rechargement ou une nouvelle visite",
+    "paragraph_03": "après activation, Google peut utiliser des cookies ou technologies similaires selon vos paramètres, pour les finalités décrites dans sa politique",
+    "paragraph_04": "« Masquer la carte » retire le contenu intégré sans effacer les données déjà transmises ni les éventuels cookies de Google. Vous pouvez gérer ces derniers dans votre navigateur et vos paramètres Google."
   },
   "limitation_responsabilite": {
     "title": "Limitation de responsabilité",
