@@ -2,6 +2,8 @@
   <button class="modal" popovertarget="site-navigation" popovertargetaction="hide" aria-label="Fermer le menu en arrière-plan" tabindex="-1"></button>
   <div class="menu">
     <button class="button close" popovertarget="site-navigation" popovertargetaction="hide" autofocus>Fermer le menu</button>
-    <app-navbar-items [popUpMenu]="true"></app-navbar-items>
+    <nav class="menu-links" aria-label="Navigation principale">
+      <app-navbar-items [popUpMenu]="true"></app-navbar-items>
+    </nav>
   </div>
 </div>

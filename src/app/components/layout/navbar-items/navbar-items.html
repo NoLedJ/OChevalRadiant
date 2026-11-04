@@ -3,6 +3,7 @@
     <li class="nav-item">
       <a
         class="nav-link"
+        [attr.tabindex]="popUpMenu() ? 0 : null"
         ariaCurrentWhenActive="page"
         [routerLink]=navlink.routerLink
         routerLinkActive="route-active"

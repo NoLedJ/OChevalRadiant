@@ -7,7 +7,8 @@
   height: 100dvh;
   background: transparent;
   color: inherit;
-  overflow: visible;
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 [popover]::backdrop { background: transparent; }
@@ -34,10 +35,25 @@
   right: 0;
   height: 100dvh;
   width: 250px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
+    env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
   background: hsl(var(--menu));
 }
 
+.menu-links {
+  flex: 1 1 auto;
+  min-height: 0;
+  // Leave room for the last link's native keyboard focus outline.
+  padding-bottom: 0.5rem;
+  overflow-y: auto;
+  scroll-padding-block: 0.5rem;
+  overscroll-behavior-y: contain;
+}
+
 .close {
+  flex-shrink: 0;
   background: hsl(var(--primary-text));
   justify-content: center;
   border-radius: 0;
