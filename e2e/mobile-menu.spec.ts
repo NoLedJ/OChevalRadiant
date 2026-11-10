@@ -39,6 +39,26 @@ async function capture(page: Page, name: string, project: string) {
   await test.info().attach(name, { path: file, contentType: 'image/png' });
 }
 
+test('entrance slides without scrolling the focused popover', async ({ page }) => {
+  await page.setViewportSize(sizes[1]);
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Ouvrir le menu', exact: true }).click();
+  const popover = page.locator(menu);
+  await expect(page.locator(`${menu} .close`)).toBeFocused();
+  const frames = await popover.evaluate(el => {
+    const panel = el.querySelector('.menu') as HTMLElement;
+    const animation = panel.getAnimations()[0];
+    animation.pause();
+    return [100, 450, 500].map(time => {
+      animation.currentTime = time;
+      return { x: panel.getBoundingClientRect().x, scrollLeft: el.scrollLeft };
+    });
+  });
+  expect(frames.map(frame => frame.scrollLeft)).toEqual([0, 0, 0]);
+  expect(frames[0].x).toBeGreaterThan(frames[1].x + 100);
+  expect(frames[1].x).toBeGreaterThan(frames[2].x);
+});
+
 for (const size of sizes) {
   test(`${size.width}x${size.height}: all ten links by keyboard, internal scroll and Escape`, async ({ page }, info) => {
     await page.setViewportSize(size);
